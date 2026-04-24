@@ -5,6 +5,7 @@ venv/
 .vscode/
 .idea/
 *.iml
+_templates/
 .DS_Store
 Thumbs.db
 *.out
