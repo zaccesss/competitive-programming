@@ -3,6 +3,8 @@ __pycache__/
 .venv/
 venv/
 .vscode/
+.idea/
+*.iml
 .DS_Store
 Thumbs.db
 *.out
