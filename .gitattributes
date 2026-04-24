@@ -1,0 +1,13 @@
+* text=auto
+*.py text
+*.cpp text
+*.java text
+*.js text
+*.ts text
+*.go text
+*.rs text
+*.c text
+*.cs text
+*.kt text
+*.swift text
+*.php text
