@@ -1,41 +1,90 @@
-# Competitive Programming
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Competitive%20Programming&fontSize=36&fontAlignY=35&fontColor=ffffff&animation=fadeIn" />
+</p>
+
+<p align="center">
+  <a href="https://linktr.ee/zaccess">
+    <img src="https://img.shields.io/badge/Linktree-zaccess-1de9b6?style=for-the-badge&logo=linktree&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/isaacadjei">
+    <img src="https://img.shields.io/badge/LinkedIn-Isaac_Adjei-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://isaacadjei.me">
+    <img src="https://img.shields.io/badge/Website-isaacadjei.me-000000?style=for-the-badge" />
+  </a>
+  <a href="mailto:contact@zacess.com">
+    <img src="https://img.shields.io/badge/Email-Contact-ff6f61?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  🔎 &nbsp;
+  <a href="#overview">Overview</a> &nbsp;•&nbsp;
+  <a href="#platforms">Platforms</a> &nbsp;•&nbsp;
+  <a href="#tech-stack">Tech Stack</a> &nbsp;•&nbsp;
+  <a href="#templates">Templates</a> &nbsp;•&nbsp;
+  <a href="#repository-structure">Structure</a> &nbsp;•&nbsp;
+  <a href="#goals">Goals</a>
+</p>
+
+---
+
+## Overview
 
 A structured competitive programming repository for solving problems across LeetCode, Codeforces and NeetCode in multiple languages.
 
-This repository is designed to keep solutions organised, templates reusable and progress easy to maintain over time. It supports a clean workflow for daily practice, interview preparation and long-term algorithm study.
+Every platform is organised by language and difficulty so solutions are easy to find, compare and build on over time. Reusable templates provide a clean starting point for each language so setup is never the bottleneck.
 
-## Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-E76F00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![CSharp](https://img.shields.io/badge/CSharp-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+---
 
 ## Platforms
 
-- **LeetCode**: structured by language and difficulty for daily problem solving and interview practice
-- **Codeforces**: mirrored language and difficulty layout for contest practice and algorithm drills
-- **NeetCode**: mirrored language and difficulty layout for curated interview preparation
+| Platform | URL | Folder |
+|----------|-----|--------|
+| LeetCode | https://leetcode.com | `leetcode/` |
+| Codeforces | https://codeforces.com | `codeforces/` |
+| NeetCode | https://neetcode.io | `neetcode/` |
+
+---
+
+## Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-E76F00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
+  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
+  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+</p>
+
+---
 
 ## Templates
 
-The `templates/` directory contains reusable starter files for each supported language.
+The `templates/` directory contains a ready-to-use scaffold for each supported language.
 
-Each language folder is structured as a lightweight template workspace. Alongside hello world references and neutral starter files, the folders can include local README files, local ignore files and build placeholders where they are useful. The setup is editor-agnostic, so it works cleanly in VS Code, JetBrains IDEs or a terminal-first workflow.
+Each folder includes a hello world reference file, a neutral starter entry file, a local README with run or build instructions and a local ignore file scoped to that language. Build placeholders are included for compiled languages.
+
+The setup is editor-agnostic and works with VS Code, JetBrains IDEs and terminal-based workflows without modification.
+
+---
 
 ## Repository Structure
 
+<details>
+<summary><b>Click to expand full directory tree</b></summary>
+
 ```text
 competitive-programming/
+│
 ├── leetcode/
 │   ├── python/
 │   │   ├── easy/
@@ -52,32 +101,13 @@ competitive-programming/
 │   ├── kotlin/
 │   ├── swift/
 │   └── php/
+│
 ├── codeforces/
-│   ├── python/
-│   ├── cpp/
-│   ├── java/
-│   ├── javascript/
-│   ├── typescript/
-│   ├── go/
-│   ├── rust/
-│   ├── c/
-│   ├── csharp/
-│   ├── kotlin/
-│   ├── swift/
-│   └── php/
+│   └── (same language and difficulty structure as leetcode/)
+│
 ├── neetcode/
-│   ├── python/
-│   ├── cpp/
-│   ├── java/
-│   ├── javascript/
-│   ├── typescript/
-│   ├── go/
-│   ├── rust/
-│   ├── c/
-│   ├── csharp/
-│   ├── kotlin/
-│   ├── swift/
-│   └── php/
+│   └── (same language and difficulty structure as leetcode/)
+│
 └── templates/
     ├── python/
     ├── cpp/
@@ -93,32 +123,45 @@ competitive-programming/
     └── php/
 ```
 
+</details>
+
+---
+
 ## Folder Guide
 
-- `leetcode/`: problem solutions grouped by language and difficulty
-- `codeforces/`: contest and practice solutions grouped by language and difficulty
-- `neetcode/`: curated roadmap solutions grouped by language and difficulty
-- `templates/`: reusable starter files for fast problem setup in each language
+- `leetcode/` — solutions grouped by language and difficulty for daily problem solving and interview practice
+- `codeforces/` — contest and practice solutions grouped by language and difficulty
+- `neetcode/` — curated roadmap solutions grouped by language and difficulty
+- `templates/` — reusable scaffold files for fast and clean problem setup in each language
 
-## Languages
-
-- Python
-- C++
-- Java
-- JavaScript
-- TypeScript
-- Go
-- Rust
-- C
-- CSharp
-- Kotlin
-- Swift
-- PHP
+---
 
 ## Goals
 
-- Build a consistent archive of competitive programming solutions
+- Build a consistent archive of competitive programming solutions across three platforms
 - Practise data structures and algorithms across multiple languages
 - Maintain reusable templates for faster problem setup
-- Keep repository structure clean and easy to scale
-- Track long-term progress across interview prep and contest platforms
+- Keep the repository structure clean, consistent and easy to scale
+- Track long-term progress across interview prep and contest practice
+
+---
+
+<div align="center">
+
+<br />
+
+Made with 💻 by [Isaac Adjei (Zaccess)](https://isaacadjei.me)
+
+<br />
+
+[![isaacadjei.me](https://img.shields.io/badge/isaacadjei.me-000000?style=for-the-badge)](https://isaacadjei.me)
+[![zacess.com](https://img.shields.io/badge/zacess.com-000000?style=for-the-badge)](https://zacess.com)
+[![GitHub](https://img.shields.io/badge/GitHub-zaccesss-181717?style=for-the-badge&logo=github)](https://github.com/zaccesss)
+
+<br />
+
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer" />
+</p>
