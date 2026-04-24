@@ -1,6 +1,6 @@
 # competitive-programming
 
-> A structured multi-language competitive programming repository for LeetCode, Codeforces and NeetCode. Clean layout, reusable templates and a long-term archive of solved problems.
+> A structured multi-language competitive programming repository for LeetCode, Codeforces and NeetCode. Clean layout and a long-term archive of solved problems.
 
 <p align="center">
   <a href="https://isaacadjei.me">
@@ -22,9 +22,9 @@ Every platform folder follows the same core layout:
 - language second
 - difficulty third
 
-That makes it easy to compare the same problem-solving approach across languages, keep templates reusable and grow the repository without having to rethink the structure later.
+That makes it easy to compare the same problem-solving approach across languages and grow the repository without having to rethink the structure later.
 
-**3 platforms. 12 languages. Shared templates. One consistent structure.**
+**3 platforms. 12 languages. One consistent structure.**
 
 ---
 
@@ -109,19 +109,6 @@ competitive-programming/
 │   ├── kotlin/
 │   ├── swift/
 │   └── php/
-└── templates/
-    ├── python/
-    ├── cpp/
-    ├── java/
-    ├── javascript/
-    ├── typescript/
-    ├── go/
-    ├── rust/
-    ├── c/
-    ├── csharp/
-    ├── kotlin/
-    ├── swift/
-    └── php/
 ```
 
 </details>
@@ -142,16 +129,6 @@ Used for contest practice and problem-solving under tighter constraints. The str
 
 Used for roadmap-based preparation. This keeps curated patterns and interview-focused problems separate from general platform grinding.
 
-### `templates/`
-
-Each template folder is a reusable mini scaffold for that language and includes:
-
-- a hello world reference file
-- a neutral starter entry file
-- a language-specific `.gitignore`
-- a local `README.md` with build or run instructions
-- build placeholders where compiled languages need them
-
 ---
 
 ## Workflow
@@ -161,8 +138,7 @@ The repository is designed to stay consistent regardless of language or editor.
 1. Pick a platform.
 2. Pick a language.
 3. Add the solution in the correct difficulty folder.
-4. Reuse the matching template when needed.
-5. Commit in small increments with clear prefixes.
+4. Commit in small increments with clear prefixes.
 
 This keeps the archive readable on GitHub, easy to maintain locally and simple to keep in sync across devices.
 
@@ -172,7 +148,6 @@ This keeps the archive readable on GitHub, easy to maintain locally and simple t
 
 - Solutions stay grouped in a predictable place every time.
 - Difficulty-based folders make progress visible without extra tooling.
-- Templates reduce repeated setup and keep submissions clean.
 - Multi-language support makes it easier to compare syntax and approaches.
 - The same structure works in VS Code, JetBrains IDEs and terminal-only workflows.
 
@@ -183,7 +158,6 @@ This keeps the archive readable on GitHub, easy to maintain locally and simple t
 - 3 competitive programming platforms
 - 12 language tracks across each platform
 - full difficulty scaffolding across the repository
-- reusable starter templates for every supported language
 - first accepted LeetCode Python solution already added
 
 ---
@@ -193,7 +167,6 @@ This keeps the archive readable on GitHub, easy to maintain locally and simple t
 - build a long-term archive of solved problems
 - improve algorithmic thinking through repetition and pattern recognition
 - practise the same ideas across multiple languages
-- keep setup friction low with reusable scaffolds
 - grow the repository into a clean record of interview prep and contest practice
 
 ---
