@@ -9,7 +9,7 @@
   <a href="https://www.linkedin.com/in/isaacadjei">
     <img src="https://img.shields.io/badge/LinkedIn-Isaac_Adjei-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge" />
   </a>
-  <a href="mailto:contact@zacess.com">
+  <a href="mailto:code@isaacadjei.me">
     <img src="https://img.shields.io/badge/Email-Contact-ff6f61?style=for-the-badge&logo=gmail&logoColor=white" alt="Email badge" />
   </a>
 </p>
@@ -175,7 +175,7 @@ This keeps the archive readable on GitHub, easy to maintain locally and simple t
 
 <br />
 
-Made with 💻 by [Isaac Adjei (Zaccess)](https://zacess.com)
+Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 
 <br />
 
