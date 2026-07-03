@@ -1,0 +1,37 @@
+public class Solution {
+    public int FirstMissingPositive(int[] nums) {
+
+        int n = nums.Length;
+
+        // Placed each valid number into its correct index.
+        for (int i = 0; i < n; i++) {
+
+            while (
+                nums[i] > 0 &&
+                nums[i] <= n &&
+                nums[i] != nums[nums[i] - 1]
+            ) {
+
+                int temp = nums[i];
+
+                nums[i] =
+                    nums[temp - 1];
+
+                nums[temp - 1] =
+                    temp;
+            }
+        }
+
+        // Found first missing positive.
+        for (int i = 0; i < n; i++) {
+
+            if (nums[i] != i + 1) {
+
+                return i + 1;
+            }
+        }
+
+        // All numbers 1..n exist.
+        return n + 1;
+    }
+}
