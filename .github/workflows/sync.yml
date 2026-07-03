@@ -66,11 +66,11 @@ jobs:
           fi
 
           msg="$(printf '%s, ' "${parts[@]}")"
-          # The solutions are mine, so sync commits carry my identity: the same name
-          # and email as every other commit on my account. GitHub never emails the
-          # commit author address, and this address is already public in my history.
+          # The solutions are mine, so sync commits carry my identity. I use my
+          # GitHub noreply address: it attributes and counts exactly like my real
+          # one, but code search finds no spammable email in this file.
           git config user.name "Isaac Adjei"
-          git config user.email "offices.isaac@gmail.com"
+          git config user.email "190771985+zaccesss@users.noreply.github.com"
           git commit --quiet -m "sync: ${msg%, }"
           git push --quiet
           echo "Committed: sync: ${msg%, }"
