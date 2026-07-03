@@ -1,0 +1,73 @@
+name: Sync
+
+# I aggregate my three submission repos into this one. Each platform keeps its own
+# source repo as the write target (LeetHub pushes LeetCode, the official NeetCode
+# GitHub Sync pushes NeetCode, my own scripts push Codeforces) and this workflow
+# copies each source into its platform folder here, so the whole archive is
+# browsable in one place. The source repos stay the systems of record.
+on:
+  schedule:
+    - cron: "17 * * * *" # hourly safety net, off the top of the hour to dodge the cron rush
+  repository_dispatch:
+    types: [sync] # instant path: my mirror-ops Worker fires this when a source repo is pushed
+  workflow_dispatch: # manual: the first run or a forced resync
+
+permissions:
+  contents: write
+
+# Sync runs must not interleave. New triggers queue behind a running sync.
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pull the three source repos into their platform folders
+        run: |
+          set -euo pipefail
+
+          declare -A SOURCES=(
+            [codeforces]=codeforces-submissions
+            [leetcode]=leetcode-submissions
+            [neetcode]=neetcode-submissions
+          )
+
+          parts=()
+          for folder in codeforces leetcode neetcode; do
+            src="${SOURCES[$folder]}"
+            clone="$RUNNER_TEMP/$src"
+            git clone --quiet --depth 1 "https://github.com/${{ github.repository_owner }}/$src.git" "$clone"
+
+            # Copy the source working tree over the platform folder. --delete keeps
+            # removals in sync. The source's .git and .github never come across, and
+            # LICENSE stays out so this repo keeps exactly one licence at the root.
+            rsync -a --delete \
+              --exclude='.git' \
+              --exclude='.github' \
+              --exclude='LICENSE' \
+              "$clone/" "$folder/"
+
+            # Force-add so this repo's root .gitignore can never hide a file the
+            # source repo deliberately tracks (codeforces tracks bin/, for example).
+            git add -Af "$folder"
+
+            if ! git diff --cached --quiet -- "$folder"; then
+              parts+=("$folder @ $(git -C "$clone" rev-parse --short HEAD)")
+            fi
+          done
+
+          if git diff --cached --quiet; then
+            echo "Nothing changed - already in sync."
+            exit 0
+          fi
+
+          msg="$(printf '%s, ' "${parts[@]}")"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --quiet -m "sync: ${msg%, }"
+          git push --quiet
+          echo "Committed: sync: ${msg%, }"
