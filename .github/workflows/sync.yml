@@ -66,8 +66,11 @@ jobs:
           fi
 
           msg="$(printf '%s, ' "${parts[@]}")"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # The solutions are mine, so sync commits carry my identity: the same name
+          # and email as every other commit on my account. GitHub never emails the
+          # commit author address, and this address is already public in my history.
+          git config user.name "Isaac Adjei"
+          git config user.email "offices.isaac@gmail.com"
           git commit --quiet -m "sync: ${msg%, }"
           git push --quiet
           echo "Committed: sync: ${msg%, }"
