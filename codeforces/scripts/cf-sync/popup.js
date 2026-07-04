@@ -12,6 +12,14 @@ chrome.storage.sync.get(['cfHandle', 'githubToken', 'githubRepo'], (data) => {
   if (data.githubRepo)  $('githubRepo').value  = data.githubRepo;
 });
 
+// Surface the last push failure (set by background.js) until a push succeeds.
+chrome.storage.local.get('lastError', ({ lastError }) => {
+  if (!lastError) return;
+  const el = $('lastError');
+  el.textContent = `Last push failed (${new Date(lastError.at).toLocaleString()}): ${lastError.detail}`;
+  el.style.display = 'block';
+});
+
 $('btnSave').addEventListener('click', () => {
   const config = {
     cfHandle:    $('cfHandle').value.trim(),
