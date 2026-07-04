@@ -5,6 +5,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [v1.1.1] - 2026-07-04
+
+### Changed
+
+- `neetcode-submissions` is public again. NeetCode's GitHub integration cannot see private repositories - it reported the repo as not found and then tried to recreate it - so the private flip broke its sync. codeforces-submissions and leetcode-submissions stay private since LeetHub and my own tooling handle private repos fine
+
+---
+
 ## [v1.1.0] - 2026-07-04
 
 ### Changed
