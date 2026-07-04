@@ -46,11 +46,11 @@ That split is deliberate. LeetHub and the NeetCode GitHub Sync each expect to ow
 
 ## Platforms
 
-| Platform   | Profile                                                                     | Folder        | Source repo (private)     | How solutions land                                     |
-| ---------- | --------------------------------------------------------------------------- | ------------- | ------------------------- | ------------------------------------------------------ |
-| Codeforces | [codeforces.com/profile/zaccesss](https://codeforces.com/profile/zaccesss) | `codeforces/` | `codeforces-submissions`  | pushed by my own scripts after each session            |
-| LeetCode   | [leetcode.com/u/zacadjei](https://leetcode.com/u/zacadjei)                 | `leetcode/`   | `leetcode-submissions`    | pushed by LeetHub the moment a submission is accepted  |
-| NeetCode   | [neetcode.io/profile/zaccess](https://neetcode.io/profile/zaccess)         | `neetcode/`   | `neetcode-submissions`    | pushed by the official NeetCode GitHub Sync            |
+| Platform   | Profile                                                                    | Folder        | Source repo (private)    | How solutions land                                    |
+| ---------- | -------------------------------------------------------------------------- | ------------- | ------------------------ | ----------------------------------------------------- |
+| Codeforces | [codeforces.com/profile/zaccesss](https://codeforces.com/profile/zaccesss) | `codeforces/` | `codeforces-submissions` | pushed by my own scripts after each session           |
+| LeetCode   | [leetcode.com/u/zacadjei](https://leetcode.com/u/zacadjei)                 | `leetcode/`   | `leetcode-submissions`   | pushed by LeetHub the moment a submission is accepted |
+| NeetCode   | [neetcode.io/profile/zaccess](https://neetcode.io/profile/zaccess)         | `neetcode/`   | `neetcode-submissions`   | pushed by the official NeetCode GitHub Sync           |
 
 Each platform folder keeps the exact structure its tooling produces, and each contains its own README describing that layout in detail.
 
