@@ -36,7 +36,7 @@
 
 ## About
 
-This repository is the single place to browse all of my competitive programming work. I never commit solutions here directly. Instead, each platform has its own private source repo that the platform tooling writes to, and a sync workflow clones them with a read-only token and copies every source into its platform folder here. This archive is the public face of the whole collection.
+This repository is the single place to browse all of my competitive programming work. I never commit solutions here directly. Instead, each platform has its own source repo that the platform tooling writes to - codeforces and leetcode private, neetcode public because its sync tool cannot reach private repositories - and a sync workflow clones them with a read-only token and copies every source into its platform folder here. This archive is the public face of the whole collection.
 
 That split is deliberate. LeetHub and the NeetCode GitHub Sync each expect to own a whole repository, so they keep their own. This repo adds the part they cannot do: one archive, one structure, one place to send people.
 
@@ -46,7 +46,7 @@ That split is deliberate. LeetHub and the NeetCode GitHub Sync each expect to ow
 
 ## Platforms
 
-| Platform   | Profile                                                                    | Folder        | Source repo (private)    | How solutions land                                    |
+| Platform   | Profile                                                                    | Folder        | Source repo              | How solutions land                                    |
 | ---------- | -------------------------------------------------------------------------- | ------------- | ------------------------ | ----------------------------------------------------- |
 | Codeforces | [codeforces.com/profile/zaccesss](https://codeforces.com/profile/zaccesss) | `codeforces/` | `codeforces-submissions` | pushed by my own scripts after each session           |
 | LeetCode   | [leetcode.com/u/zacadjei](https://leetcode.com/u/zacadjei)                 | `leetcode/`   | `leetcode-submissions`   | pushed by LeetHub the moment a submission is accepted |
@@ -66,7 +66,7 @@ One workflow, [`sync.yml`](.github/workflows/sync.yml), with three triggers - th
 | `schedule`                     | Hourly                                                                   | Safety net that heals anything the instant path missed |
 | `workflow_dispatch`            | Manually                                                                 | The first run or a forced resync               |
 
-Each run shallow-clones the three private source repos with a read-only fine-grained token, copies each working tree over its platform folder (deletions included) and commits only if something actually changed, with a message naming the sources that moved:
+Each run shallow-clones the three source repos with a read-only fine-grained token, copies each working tree over its platform folder (deletions included) and commits only if something actually changed, with a message naming the sources that moved:
 
 ```text
 sync: leetcode @ 0ab979a
