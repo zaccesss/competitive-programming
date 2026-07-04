@@ -31,6 +31,10 @@
       font-size: 11px; padding: 4px 8px; border-radius: 4px; margin-top: 6px;
       width: auto; cursor: pointer;
     }
+    #lastError {
+      display: none; margin-top: 8px; padding: 6px 8px; font-size: 11px;
+      color: #dc2626; background: #fef2f2; border: 1px solid #fecaca; border-radius: 5px;
+    }
   </style>
 </head>
 <body>
@@ -48,6 +52,7 @@
   <button type="button" id="btnSave">Save</button>
 
   <p id="status"></p>
+  <p id="lastError"></p>
 
   <hr>
   <p class="hint">Syncs automatically when CF shows Accepted — no polling, no delay. Must be logged in to Codeforces. GitHub token needs <code>repo</code> scope.</p>

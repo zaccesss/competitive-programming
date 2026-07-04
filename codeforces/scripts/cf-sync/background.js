@@ -66,25 +66,55 @@ const pushToGitHub = async (token, repo, filePath, content, message) => {
     if (check.ok) sha = (await check.json()).sha;
   } catch { /* file doesn't exist yet, sha stays undefined */ }
 
-  const res = await fetch(url, {
-    method: 'PUT',
-    headers: ghHeaders(token),
-    body: JSON.stringify({
-      message,
-      // encodeURIComponent → unescape converts UTF-8 to binary string so btoa
-      // can base64-encode it without choking on non-ASCII chars in problem names
-      content: btoa(unescape(encodeURIComponent(content))),
-      ...(sha && { sha }),
-    }),
-  });
-  return res.ok;
+  let res;
+  try {
+    res = await fetch(url, {
+      method: 'PUT',
+      headers: ghHeaders(token),
+      body: JSON.stringify({
+        message,
+        // encodeURIComponent → unescape converts UTF-8 to binary string so btoa
+        // can base64-encode it without choking on non-ASCII chars in problem names
+        content: btoa(unescape(encodeURIComponent(content))),
+        ...(sha && { sha }),
+      }),
+    });
+  } catch {
+    return { ok: false, detail: 'network error reaching api.github.com' };
+  }
+  if (res.ok) return { ok: true };
+
+  // Read GitHub's error message so a dead token (401 Bad credentials) or a
+  // wrong repo (404) can be shown in the popup instead of dying silently.
+  let detail = `HTTP ${res.status}`;
+  try { detail += ` - ${(await res.json()).message}`; } catch { /* non-JSON body */ }
+  return { ok: false, detail };
+};
+
+// ── failure visibility ────────────────────────────────────────────────────────
+
+// A failed push must never be silent again: a revoked token once 401'd for two
+// days and cost three solutions before anyone noticed. The badge flags the
+// icon and the popup shows the stored detail until the next successful push.
+const flagError = async (detail) => {
+  await chrome.storage.local.set({ lastError: { detail, at: Date.now() } });
+  chrome.action.setBadgeText({ text: '!' });
+  chrome.action.setBadgeBackgroundColor({ color: '#dc2626' });
+};
+
+const clearError = async () => {
+  await chrome.storage.local.remove('lastError');
+  chrome.action.setBadgeText({ text: '' });
 };
 
 // ── message handler ───────────────────────────────────────────────────────────
 
 const handlePush = async ({ contestId, index, name, lang, submId, code }) => {
   const cfg = await chrome.storage.sync.get(['githubToken', 'githubRepo']);
-  if (!cfg.githubToken || !cfg.githubRepo) return { ok: false, error: 'not configured' };
+  if (!cfg.githubToken || !cfg.githubRepo) {
+    await flagError('not configured - open the popup and fill in all three fields');
+    return { ok: false, error: 'not configured' };
+  }
 
   const { synced = {} } = await chrome.storage.local.get('synced');
   const key = `${contestId}-${index}`;
@@ -101,13 +131,17 @@ const handlePush = async ({ contestId, index, name, lang, submId, code }) => {
   const path   = `practice/${rating}/${slug}.${ext}`;
   const msg    = `[Codeforces] Practice ${rating} - ${name} - ${label}`;
 
-  const ok = await pushToGitHub(cfg.githubToken, cfg.githubRepo, path, code, msg);
-  if (ok) {
+  const result = await pushToGitHub(cfg.githubToken, cfg.githubRepo, path, code, msg);
+  if (result.ok) {
     synced[key] = submId;
     await chrome.storage.local.set({ synced });
+    await clearError();
     console.log(`[cf-sync] pushed ${path}`);
+  } else {
+    await flagError(`${path}: ${result.detail}`);
+    console.log(`[cf-sync] push failed - ${result.detail}`);
   }
-  return { ok };
+  return { ok: result.ok };
 };
 
 // ── lifecycle ─────────────────────────────────────────────────────────────────
