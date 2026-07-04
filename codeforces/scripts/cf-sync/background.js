@@ -118,9 +118,10 @@ const handlePush = async ({ contestId, index, name, lang, submId, code }) => {
 
   const { synced = {} } = await chrome.storage.local.get('synced');
   const key = `${contestId}-${index}`;
-  // Store submId per problem so if the user solves it again with a better
-  // solution, the new submId won't match and we push the updated code.
-  if (synced[key] === submId) return { ok: true, skipped: true };
+  // Store submId per problem so a re-solve pushes the updated code. CF ids
+  // increase monotonically, so at-or-below the recorded id is the same or an
+  // older attempt - skip it so old code can never overwrite newer code.
+  if (synced[key] && Number(submId) <= Number(synced[key])) return { ok: true, skipped: true };
 
   const meta   = await getCFMeta();
   // Some CF problems have no rating (null) — 'unrated' keeps them together
