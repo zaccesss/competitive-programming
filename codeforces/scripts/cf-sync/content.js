@@ -77,10 +77,13 @@ const processRow = async (row) => {
   const lang     = langCell?.textContent?.trim() || 'C++';
 
   // The list view never shows the actual code — only the submission detail page
-  // does. We fetch it here (same-origin, cookies auto-included).
-  const doc  = await fetchCFPage(`https://codeforces.com/contest/${contestId}/submission/${submId}`);
+  // does. We fetch it here (same-origin, cookies auto-included). Fetch the URL
+  // form the row itself links to: problemset submissions live at
+  // /problemset/submission/{id}/{submId} and CF does not reliably serve their
+  // source at the constructed /contest/... form, which made this exit silently.
+  const doc  = await fetchCFPage(submLink.href);
   const code = doc && readCode(doc);
-  if (!code) return;
+  if (!code) { console.log('[cf-sync] no code found at', submLink.href); return; }
 
   push({ contestId, index, name, lang, submId, code });
 };
@@ -89,16 +92,40 @@ const isMyPage = /\/my(\?|$)/.test(location.pathname + location.search);
 const isProblemsetStatus = location.pathname.startsWith('/problemset/status');
 
 if (contestIdFromUrl && isMyPage || isProblemsetStatus) {
-  // Only process the first accepted row on load — fetching ALL rows at once
-  // causes CF to return 503 (rate limit). The MutationObserver handles new rows.
-  const rows = [...document.querySelectorAll('table tr')];
-  console.log('[cf-sync] scanning top row of', rows.length, 'total');
-  for (const row of rows) {
-    if (row.querySelector('.verdict-accepted, [class*="verdict-format-accepted"]')) {
-      processRow(row);
-      break;
+  // Sweep accepted rows top-down, one code fetch at a time with spacing so CF
+  // never 503s. Rows already recorded in synced storage cost nothing (no
+  // fetch), and the sweep ends after 3 consecutive already-synced rows — that
+  // boundary means everything older was pushed long ago, so pre-extension
+  // history is never bulk-imported by accident. A hard cap of 10 pushes per
+  // page load bounds the worst case; refresh again to continue past it.
+  const sweep = async () => {
+    const { synced = {} } = await chrome.storage.local.get('synced');
+    const rows = [...document.querySelectorAll('table tr')];
+    console.log('[cf-sync] sweeping', rows.length, 'rows');
+    let seenSynced = 0;
+    let pushes = 0;
+    for (const row of rows) {
+      if (!row.querySelector('.verdict-accepted, [class*="verdict-format-accepted"]')) continue;
+      const submId   = subIdFromHref(row.querySelector('a[href*="/submission/"]')?.href);
+      const probLink = row.querySelector('td a[href*="/problem/"]');
+      const index    = probLink?.href?.split('/').pop()?.split('?')[0];
+      const cid      = contestIdFromUrl || probLink?.href?.match(/\/(?:contest|problem)\/(\d+)\//)?.[1];
+      if (!submId || !index || !cid) continue;
+      // CF submission ids increase monotonically: at-or-below the recorded id
+      // means the same or an OLDER attempt, which must never overwrite newer code.
+      const last = synced[`${cid}-${index}`];
+      if (last && Number(submId) <= Number(last)) {
+        if (++seenSynced >= 3) { console.log('[cf-sync] sweep done - reached synced history'); return; }
+        continue;
+      }
+      seenSynced = 0;
+      if (++pushes > 10) { console.log('[cf-sync] sweep cap reached - refresh the page to continue'); return; }
+      await processRow(row);
+      await new Promise((r) => setTimeout(r, 2000)); // spacing between code fetches
     }
-  }
+    console.log('[cf-sync] sweep done - end of table');
+  };
+  sweep();
 
   new MutationObserver((mutations) => {
     for (const m of mutations) {
