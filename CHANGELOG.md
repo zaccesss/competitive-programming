@@ -5,6 +5,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [v1.1.0] - 2026-07-04
+
+### Changed
+
+- The three source repos are now private. The sync clones them with a read-only fine-grained token (the SOURCES_TOKEN secret), so this archive is the public face of the whole collection
+- Sync commits are authored with my GitHub noreply address, so no file in this repo carries an address code search can harvest
+- README and SECURITY.md no longer link to the source repos, which are not visible to visitors anymore
+
+### Removed
+
+- The mirror workflows in the three source repos, ahead of the central mirror-ops system taking over all mirroring
+
+---
+
 ## [v1.0.0] - 2026-07-03
 
 ### Changed
