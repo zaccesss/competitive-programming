@@ -27,6 +27,12 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Pull the three source repos into their platform folders
+        env:
+          # Optional. While the source repos are public the clone below works
+          # anonymously and this stays empty. To make the sources private, add a
+          # fine-grained PAT with read-only Contents on the three repos as the
+          # SOURCES_TOKEN secret and everything keeps working unchanged.
+          SOURCES_TOKEN: ${{ secrets.SOURCES_TOKEN }}
         run: |
           set -euo pipefail
 
@@ -40,7 +46,7 @@ jobs:
           for folder in codeforces leetcode neetcode; do
             src="${SOURCES[$folder]}"
             clone="$RUNNER_TEMP/$src"
-            git clone --quiet --depth 1 "https://github.com/${{ github.repository_owner }}/$src.git" "$clone"
+            git clone --quiet --depth 1 "https://${SOURCES_TOKEN:+x-access-token:${SOURCES_TOKEN}@}github.com/${{ github.repository_owner }}/$src.git" "$clone"
 
             # Copy the source working tree over the platform folder. --delete keeps
             # removals in sync. The source's .git and .github never come across, and
