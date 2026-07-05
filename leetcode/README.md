@@ -104,6 +104,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [0396-rotate-function](https://github.com/zaccessss/leetcode-submissions/tree/master/0396-rotate-function) |
 | [0705-design-hashset](https://github.com/zaccessss/leetcode-submissions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/zaccessss/leetcode-submissions/tree/master/0706-design-hashmap) |
+| [1301-number-of-paths-with-max-score](https://github.com/zaccesss/leetcode-submissions/tree/master/1301-number-of-paths-with-max-score) |
 | [1306-jump-game-iii](https://github.com/zaccesss/leetcode-submissions/tree/master/1306-jump-game-iii) |
 | [1340-jump-game-v](https://github.com/zaccesss/leetcode-submissions/tree/master/1340-jump-game-v) |
 | [1345-jump-game-iv](https://github.com/zaccesss/leetcode-submissions/tree/master/1345-jump-game-iv) |
@@ -270,6 +271,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | ------- |
 | [0396-rotate-function](https://github.com/zaccessss/leetcode-submissions/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/zaccessss/leetcode-submissions/tree/master/0788-rotated-digits) |
+| [1301-number-of-paths-with-max-score](https://github.com/zaccesss/leetcode-submissions/tree/master/1301-number-of-paths-with-max-score) |
 | [1340-jump-game-v](https://github.com/zaccesss/leetcode-submissions/tree/master/1340-jump-game-v) |
 | [1871-jump-game-vii](https://github.com/zaccesss/leetcode-submissions/tree/master/1871-jump-game-vii) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/zaccessss/leetcode-submissions/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
@@ -283,6 +285,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | ------- |
 | [0048-rotate-image](https://github.com/zaccessss/leetcode-submissions/tree/master/0048-rotate-image) |
 | [0304-range-sum-query-2d-immutable](https://github.com/zaccessss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
+| [1301-number-of-paths-with-max-score](https://github.com/zaccesss/leetcode-submissions/tree/master/1301-number-of-paths-with-max-score) |
 | [1861-rotating-the-box](https://github.com/zaccessss/leetcode-submissions/tree/master/1861-rotating-the-box) |
 | [1914-cyclically-rotating-a-grid](https://github.com/zaccessss/leetcode-submissions/tree/master/1914-cyclically-rotating-a-grid) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/2812-find-the-safest-path-in-a-grid) |
