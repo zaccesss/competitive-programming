@@ -104,6 +104,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [0396-rotate-function](https://github.com/zaccessss/leetcode-submissions/tree/master/0396-rotate-function) |
 | [0705-design-hashset](https://github.com/zaccessss/leetcode-submissions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/zaccessss/leetcode-submissions/tree/master/0706-design-hashmap) |
+| [1288-remove-covered-intervals](https://github.com/zaccesss/leetcode-submissions/tree/master/1288-remove-covered-intervals) |
 | [1301-number-of-paths-with-max-score](https://github.com/zaccesss/leetcode-submissions/tree/master/1301-number-of-paths-with-max-score) |
 | [1306-jump-game-iii](https://github.com/zaccesss/leetcode-submissions/tree/master/1306-jump-game-iii) |
 | [1340-jump-game-v](https://github.com/zaccesss/leetcode-submissions/tree/master/1340-jump-game-v) |
@@ -169,6 +170,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [0217-contains-duplicate](https://github.com/zaccessss/leetcode-submissions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/zaccessss/leetcode-submissions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [1288-remove-covered-intervals](https://github.com/zaccesss/leetcode-submissions/tree/master/1288-remove-covered-intervals) |
 | [1340-jump-game-v](https://github.com/zaccesss/leetcode-submissions/tree/master/1340-jump-game-v) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/zaccesss/leetcode-submissions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2126-destroying-asteroids](https://github.com/zaccesss/leetcode-submissions/tree/master/2126-destroying-asteroids) |
