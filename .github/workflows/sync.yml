@@ -15,10 +15,17 @@ on:
 permissions:
   contents: write
 
-# Sync runs must not interleave. New triggers queue behind a running sync.
+# Sync runs must not interleave. Every run re-clones all three sources at their
+# current HEAD and syncs all three platform folders, so only the LAST run in a
+# burst needs to finish - it captures the full current state. A new trigger
+# therefore cancels the run in flight and restarts, collapsing a burst into a
+# single sync. This coalesces tools that push several times per action (LeetHub
+# commits solution, README, topic tags and stats as separate pushes) into one
+# commit instead of a pile-up of runs racing on the push. Applies to all three
+# sources uniformly, since the group is shared across the whole workflow.
 concurrency:
   group: sync
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   sync:
@@ -78,5 +85,23 @@ jobs:
           git config user.name "Isaac Adjei"
           git config user.email "190771985+zaccesss@users.noreply.github.com"
           git commit --quiet -m "sync: ${msg%, }"
-          git push --quiet
-          echo "Committed: sync: ${msg%, }"
+
+          # Bursty repository_dispatch events can still let two sync runs race to
+          # push. The concurrency group above cancels an in-flight run when a new
+          # one starts, but cancellation is not instant: a run can push in the
+          # brief window before its cancel lands, leaving the next run's commit
+          # behind main and its push rejected as non-fast-forward. Rather than
+          # fail, re-fetch and rebase this sync commit onto the new remote tip and
+          # retry. Sync commits are auto-generated and each source maps to its own
+          # platform folder, so the rebase applies cleanly.
+          for attempt in 1 2 3 4 5; do
+            if git push --quiet; then
+              echo "Committed: sync: ${msg%, }"
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - rebasing on remote main and retrying."
+            git pull --rebase --quiet origin main
+          done
+
+          echo "Push still failing after 5 attempts - giving up." >&2
+          exit 1
