@@ -198,6 +198,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [3093-longest-common-suffix-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3093-longest-common-suffix-queries) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3121-count-the-number-of-special-characters-ii) |
+| [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 | [3838-weighted-word-mapping](https://github.com/zaccesss/leetcode-submissions/tree/master/3838-weighted-word-mapping) |
 ## Trie
 |  |
@@ -269,6 +270,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3753-total-waviness-of-numbers-in-range-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3753-total-waviness-of-numbers-in-range-ii) |
 | [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
+| [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -300,6 +302,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/zaccesss/leetcode-submissions/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1871-jump-game-vii](https://github.com/zaccesss/leetcode-submissions/tree/master/1871-jump-game-vii) |
 | [2574-left-and-right-sum-differences](https://github.com/zaccesss/leetcode-submissions/tree/master/2574-left-and-right-sum-differences) |
+| [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## String Matching
 |  |
 | ------- |
