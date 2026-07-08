@@ -75,6 +75,8 @@ sync: codeforces @ ad7e501, neetcode @ 6f08a5a
 
 The sources' `.github/` and `LICENSE` files stay behind, so this repo carries exactly one licence and no inherited workflows.
 
+Platform tooling often pushes several times for one action - LeetHub commits the solution, its README, the topic tags and the stats as separate pushes - so a single submission can fire several `repository_dispatch` events within seconds. The workflow coalesces them instead of racing: because every run reconciles all three folders from their current HEAD, a fresh trigger cancels the run already in flight and only the last one finishes, so a burst becomes one commit. If two runs still reach the push together, the loser re-fetches, rebases onto the new tip and retries, so a sync is never left failing on a non-fast-forward push.
+
 ---
 
 ## Structure
