@@ -5,6 +5,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [v1.1.2] - 2026-07-08
+
+### Fixed
+
+- The sync workflow no longer fails when a source repo is pushed several times in quick succession. Platform tooling can fan one action out into a burst of pushes - LeetHub commits the solution, its README, the topic tags and the stats separately - so a single accepted submission fired several `repository_dispatch` events within seconds, and the overlapping runs raced to push, leaving the losers rejected as non-fast-forward. The concurrency group now cancels an in-flight run when a new one starts (`cancel-in-progress: true`), so a burst collapses into one sync, and the push step re-fetches, rebases and retries if two runs still race, so a run is never left failing on a non-fast-forward push
+
+---
+
 ## [v1.1.1] - 2026-07-04
 
 ### Changed
