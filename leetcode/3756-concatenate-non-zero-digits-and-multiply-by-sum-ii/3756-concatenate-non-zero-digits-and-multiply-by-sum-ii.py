@@ -2,10 +2,15 @@ class Solution:
     def sumAndMultiply(self, s: str, queries: List[List[int]]) -> List[int]:
 
         MOD = 10 ** 9 + 7
+        n = len(s)
 
         # stored the positions and values of the non-zero digits
         positions = []
         digits = []
+
+        # mapped each string position to its index in the non-zero list
+        nextNonZero = [-1] * n
+        prevNonZero = [-1] * n
 
         for i, ch in enumerate(s):
             if ch != "0":
@@ -13,6 +18,23 @@ class Solution:
                 digits.append(int(ch))
 
         m = len(digits)
+
+        # built the mapping to the previous non-zero digit
+        idx = -1
+        for i in range(n):
+            if idx + 1 < m and positions[idx + 1] == i:
+                idx += 1
+            prevNonZero[i] = idx
+
+        # built the mapping to the next non-zero digit
+        idx = m
+        for i in range(n - 1, -1, -1):
+            if idx - 1 >= 0 and positions[idx - 1] == i:
+                idx -= 1
+            if idx == m:
+                nextNonZero[i] = -1
+            else:
+                nextNonZero[i] = idx
 
         # built the powers of 10
         pow10 = [1] * (m + 1)
@@ -29,18 +51,16 @@ class Solution:
         for i in range(m):
             prefixSum[i + 1] = prefixSum[i] + digits[i]
 
-        from bisect import bisect_left, bisect_right
-
         answer = []
 
         for left, right in queries:
 
-            # found the non-zero digits inside the query range
-            l = bisect_left(positions, left)
-            r = bisect_right(positions, right) - 1
+            # found the first and last non-zero digits in the range
+            l = nextNonZero[left]
+            r = prevNonZero[right]
 
             # returned 0 if there were no non-zero digits
-            if l > r:
+            if l == -1 or r == -1 or l > r:
                 answer.append(0)
                 continue
 
