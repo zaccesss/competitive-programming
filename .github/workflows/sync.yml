@@ -83,7 +83,7 @@ jobs:
           # GitHub noreply address: it attributes and counts exactly like my real
           # one, but code search finds no spammable email in this file.
           git config user.name "Isaac Adjei"
-          git config user.email "190771985+zaccesss@users.noreply.github.com"
+          git config user.email "code@isaacadjei.me"
           git commit --quiet -m "sync: ${msg%, }"
 
           # Bursty repository_dispatch events can still let two sync runs race to
