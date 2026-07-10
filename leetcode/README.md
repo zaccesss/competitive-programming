@@ -132,6 +132,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/zaccesss/leetcode-submissions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3532-path-existence-queries-in-a-graph-i) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
@@ -178,6 +179,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [2126-destroying-asteroids](https://github.com/zaccesss/leetcode-submissions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/zaccesss/leetcode-submissions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2784-check-if-array-is-good](https://github.com/zaccesss/leetcode-submissions/tree/master/2784-check-if-array-is-good) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Simulation
@@ -216,6 +218,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [1861-rotating-the-box](https://github.com/zaccessss/leetcode-submissions/tree/master/1861-rotating-the-box) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/zaccesss/leetcode-submissions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2540-minimum-common-value](https://github.com/zaccesss/leetcode-submissions/tree/master/2540-minimum-common-value) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Divide and Conquer
@@ -282,6 +285,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [1340-jump-game-v](https://github.com/zaccesss/leetcode-submissions/tree/master/1340-jump-game-v) |
 | [1871-jump-game-vii](https://github.com/zaccesss/leetcode-submissions/tree/master/1871-jump-game-vii) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/zaccessss/leetcode-submissions/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
 | [3660-jump-game-ix](https://github.com/zaccessss/leetcode-submissions/tree/master/3660-jump-game-ix) |
@@ -328,6 +332,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/zaccesss/leetcode-submissions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2126-destroying-asteroids](https://github.com/zaccesss/leetcode-submissions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/zaccesss/leetcode-submissions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3689-maximum-total-subarray-value-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3689-maximum-total-subarray-value-i) |
@@ -342,6 +347,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [2812-find-the-safest-path-in-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3161-block-placement-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3161-block-placement-queries) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3532-path-existence-queries-in-a-graph-i) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
@@ -355,6 +361,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 |  |
 | ------- |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/zaccesss/leetcode-submissions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 ## Sliding Window
 |  |
@@ -394,6 +401,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/zaccesss/leetcode-submissions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3532-path-existence-queries-in-a-graph-i) |
+| [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
 ## Shortest Path
 |  |
