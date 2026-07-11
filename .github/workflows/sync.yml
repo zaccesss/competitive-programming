@@ -40,6 +40,7 @@ jobs:
           # fine-grained PAT with read-only Contents on the three repos as the
           # SOURCES_TOKEN secret and everything keeps working unchanged.
           SOURCES_TOKEN: ${{ secrets.SOURCES_TOKEN }}
+          SIGNING_KEY: ${{ secrets.CI_SIGNING_KEY }}
         run: |
           set -euo pipefail
 
@@ -82,6 +83,13 @@ jobs:
           # The solutions are mine, so sync commits carry my identity. I use my
           # GitHub noreply address: it attributes and counts exactly like my real
           # one, but code search finds no spammable email in this file.
+          if [ -n "$SIGNING_KEY" ]; then
+            printf '%s\n' "$SIGNING_KEY" > ~/.sign_key && chmod 600 ~/.sign_key
+            ssh-keygen -y -f ~/.sign_key > ~/.sign_key.pub
+            git config gpg.format ssh
+            git config user.signingkey ~/.sign_key.pub
+            git config commit.gpgsign true
+          fi
           git config user.name "Isaac Adjei"
           git config user.email "code@isaacadjei.me"
           git commit --quiet -m "sync: ${msg%, }"
