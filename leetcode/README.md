@@ -384,6 +384,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 ## Enumeration
 |  |
 | ------- |
+| [1291-sequential-digits](https://github.com/zaccesss/leetcode-submissions/tree/master/1291-sequential-digits) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Tree
 |  |
