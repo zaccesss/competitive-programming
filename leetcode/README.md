@@ -132,6 +132,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [3161-block-placement-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3161-block-placement-queries) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/zaccesss/leetcode-submissions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
+| [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/zaccesss/leetcode-submissions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
@@ -166,6 +167,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/zaccesss/leetcode-submissions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3121-count-the-number-of-special-characters-ii) |
+| [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Sorting
@@ -239,6 +241,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | ------- |
 | [0169-majority-element](https://github.com/zaccessss/leetcode-submissions/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -278,6 +281,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [0396-rotate-function](https://github.com/zaccessss/leetcode-submissions/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/zaccessss/leetcode-submissions/tree/master/0788-rotated-digits) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/zaccesss/leetcode-submissions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
+| [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/zaccesss/leetcode-submissions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
@@ -320,6 +324,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/zaccesss/leetcode-submissions/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1871-jump-game-vii](https://github.com/zaccesss/leetcode-submissions/tree/master/1871-jump-game-vii) |
 | [2574-left-and-right-sum-differences](https://github.com/zaccesss/leetcode-submissions/tree/master/2574-left-and-right-sum-differences) |
+| [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## String Matching
 |  |
@@ -338,6 +343,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 ## Number Theory
 |  |
 | ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/zaccesss/leetcode-submissions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/zaccesss/leetcode-submissions/tree/master/3658-gcd-of-odd-and-even-sums) |
@@ -362,6 +368,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [2540-minimum-common-value](https://github.com/zaccesss/leetcode-submissions/tree/master/2540-minimum-common-value) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3161-block-placement-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3161-block-placement-queries) |
+| [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
@@ -432,4 +439,8 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 |  |
 | ------- |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
+## Combinatorics
+|  |
+| ------- |
+| [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 <!---LeetCode Topics End-->
