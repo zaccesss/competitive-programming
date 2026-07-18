@@ -116,6 +116,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [1861-rotating-the-box](https://github.com/zaccessss/leetcode-submissions/tree/master/1861-rotating-the-box) |
 | [1914-cyclically-rotating-a-grid](https://github.com/zaccessss/leetcode-submissions/tree/master/1914-cyclically-rotating-a-grid) |
 | [1929-concatenation-of-array](https://github.com/zaccessss/leetcode-submissions/tree/master/1929-concatenation-of-array) |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2126-destroying-asteroids](https://github.com/zaccesss/leetcode-submissions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/zaccesss/leetcode-submissions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/zaccesss/leetcode-submissions/tree/master/2161-partition-array-according-to-given-pivot) |
@@ -280,6 +281,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 | [0048-rotate-image](https://github.com/zaccessss/leetcode-submissions/tree/master/0048-rotate-image) |
 | [0396-rotate-function](https://github.com/zaccessss/leetcode-submissions/tree/master/0396-rotate-function) |
 | [0788-rotated-digits](https://github.com/zaccessss/leetcode-submissions/tree/master/0788-rotated-digits) |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/zaccesss/leetcode-submissions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/zaccesss/leetcode-submissions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
@@ -343,6 +345,7 @@ Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
 ## Number Theory
 |  |
 | ------- |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/zaccesss/leetcode-submissions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
