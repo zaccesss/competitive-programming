@@ -40,7 +40,10 @@ This repository is the single place to browse all of my competitive programming 
 
 That split is deliberate. LeetHub and the NeetCode GitHub Sync each expect to own a whole repository, so they keep their own. This repo adds the part they cannot do: one archive, one structure, one place to send people.
 
-**Anything inside `codeforces/`, `leetcode/` or `neetcode/` is a synced snapshot.** Solutions change on the platforms (or in the source repos) and flow here automatically - direct edits to those folders would be overwritten by the next sync. Everything else at the root (this README, CHANGELOG, LICENSE, NOTICE, CODE_OF_CONDUCT, SECURITY, the workflow) is owned here and never touched by the sync.
+> [!WARNING]
+> Anything inside `codeforces/`, `leetcode/` or `neetcode/` is a synced snapshot. Solutions change on the platforms (or in the source repos) and flow here automatically, so direct edits to those folders would be overwritten by the next sync.
+
+Everything else at the root (this README, CHANGELOG, LICENSE, NOTICE, CODE_OF_CONDUCT, SECURITY, the workflow) is owned here and never touched by the sync.
 
 ---
 

@@ -5,6 +5,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [v1.1.4] - 2026-08-05
+
+### Added
+
+- `.github/workflows/gitleaks-scan.yml`, a pinned gitleaks scan on every push to main and every pull request targeting main, matching the rest of the fleet, since sync.yml here handles the SOURCES_TOKEN and CI_SIGNING_KEY secrets
+
+### Changed
+
+- The synced-snapshot warning in the README and the do not open a public issue line in SECURITY.md are now GitHub alert callouts instead of bolded text
+
+---
+
 ## [v1.1.3] - 2026-08-05
 
 ### Removed
