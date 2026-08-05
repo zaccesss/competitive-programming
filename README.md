@@ -40,7 +40,7 @@ This repository is the single place to browse all of my competitive programming 
 
 That split is deliberate. LeetHub and the NeetCode GitHub Sync each expect to own a whole repository, so they keep their own. This repo adds the part they cannot do: one archive, one structure, one place to send people.
 
-**Anything inside `codeforces/`, `leetcode/` or `neetcode/` is a synced snapshot.** Solutions change on the platforms (or in the source repos) and flow here automatically - direct edits to those folders would be overwritten by the next sync. The root of this repo (this README, LICENSE, SECURITY.md, the workflow) is owned here and never touched by the sync.
+**Anything inside `codeforces/`, `leetcode/` or `neetcode/` is a synced snapshot.** Solutions change on the platforms (or in the source repos) and flow here automatically - direct edits to those folders would be overwritten by the next sync. Everything else at the root (this README, CHANGELOG, LICENSE, NOTICE, CODE_OF_CONDUCT, SECURITY, the workflow) is owned here and never touched by the sync.
 
 ---
 
@@ -98,7 +98,7 @@ competitive-programming/
 │   ├── Data Structures & Algorithms/
 │   │   └── two-integer-sum/submission-0.py
 │   └── README.md
-├── CHANGELOG.md · CODE_OF_CONDUCT.md · LICENSE · SECURITY.md
+├── CHANGELOG.md · CODE_OF_CONDUCT.md · LICENSE · NOTICE.md · SECURITY.md
 └── README.md                            ← owned here, never touched by the sync
 ```
 
@@ -150,21 +150,4 @@ You can also reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me
 
 ---
 
-<div align="center">
-
-<br />
-
-Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
-
-<br />
-
-[![isaacadjei.me](https://img.shields.io/badge/isaacadjei.me-000000?style=for-the-badge)](https://isaacadjei.me)
-[![zacess.com](https://img.shields.io/badge/zacess.com-000000?style=for-the-badge)](https://zacess.com)
-
-<br />
-
-</div>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer" alt="Footer banner" />
-</p>
+Made with 💻 by [Isaac Adjei](https://isaacadjei.me), also at [zacess.com](https://zacess.com).
