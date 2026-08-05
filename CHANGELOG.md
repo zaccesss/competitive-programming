@@ -5,6 +5,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [v1.1.3] - 2026-08-05
+
+### Removed
+
+- The animated capsule-render footer banner in the README, left over from an old README-generator style I don't want anymore
+
+### Fixed
+
+- The Structure diagram in the README now lists NOTICE.md alongside the other root files
+- The closing section no longer duplicates the portfolio badge from the top of the README in a second badge block
+
+---
+
 ## [v1.1.2] - 2026-07-08
 
 ### Fixed
