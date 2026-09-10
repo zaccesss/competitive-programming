@@ -3,7 +3,7 @@
 <p>A number is valid if each digit remains a digit after rotation. For example:</p>
 
 <ul>
-	<li><code>0</code>, <code>1</code> and <code>8</code> rotate to themselves,</li>
+	<li><code>0</code>, <code>1</code>, and <code>8</code> rotate to themselves,</li>
 	<li><code>2</code> and <code>5</code> rotate to each other (in this case they are rotated in a different direction, in other words, <code>2</code> or <code>5</code> gets mirrored),</li>
 	<li><code>6</code> and <code>9</code> rotate to each other, and</li>
 	<li>the rest of the numbers do not rotate to any other number and become invalid.</li>

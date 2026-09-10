@@ -34,7 +34,7 @@ int main() {
             return static_cast<char>(toupper(c));
         });
     } else {
-        // If lowercase is more common or counts are tied, convert to lowercase
+        // If lowercase is more common, or counts are tied, convert to lowercase
         transform(word.begin(), word.end(), word.begin(), [](unsigned char c) {
             return static_cast<char>(tolower(c));
         });
