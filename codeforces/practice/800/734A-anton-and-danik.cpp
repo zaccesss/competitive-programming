@@ -3,7 +3,7 @@
 // Solution by zac
 //
 // This code counts how many games Anton and Danik won.
-// Then it prints the player with more wins, or "Friendship" if tied.
+// Then it prints the player with more wins or "Friendship" if tied.
 
 #include <iostream>
 #include <string>
