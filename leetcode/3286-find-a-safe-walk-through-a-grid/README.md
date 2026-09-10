@@ -2,11 +2,11 @@
 
 <p>You start on the upper-left corner <code>(0, 0)</code> and would like to get to the lower-right corner <code>(m - 1, n - 1)</code>.</p>
 
-<p>You can move up, down, left, or right from one cell to another adjacent cell as long as your health <em>remains</em> <strong>positive</strong>.</p>
+<p>You can move up, down, left or right from one cell to another adjacent cell as long as your health <em>remains</em> <strong>positive</strong>.</p>
 
 <p>Cells <code>(i, j)</code> with <code>grid[i][j] = 1</code> are considered <strong>unsafe</strong> and reduce your health by 1.</p>
 
-<p>Return <code>true</code> if you can reach the final cell with a health value of 1 or more, and <code>false</code> otherwise.</p>
+<p>Return <code>true</code> if you can reach the final cell with a health value of 1 or more and <code>false</code> otherwise.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
