@@ -1,6 +1,6 @@
 <h2><a href="https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation">3933. Minimum Jumps to Reach End via Prime Teleportation</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> of length <code>n</code>.</p>
 
-<p>You start at index 0 and your goal is to reach index <code>n - 1</code>.</p>
+<p>You start at index 0, and your goal is to reach index <code>n - 1</code>.</p>
 
 <p>From any index <code>i</code>, you may perform one of the following operations:</p>
 

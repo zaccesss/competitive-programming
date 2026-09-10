@@ -131,6 +131,6 @@
 	<li data-end="166" data-start="154"><code data-end="164" data-start="154">u<sub>i</sub> != v<sub>i</sub></code></li>
 	<li data-end="191" data-start="169"><code data-end="189" data-start="169">0 &lt;= cost<sub>i</sub> &lt;= 10<sup>9</sup></code></li>
 	<li data-end="213" data-start="194"><code data-end="211" data-start="194">0 &lt;= k &lt;= 5 * 10<sup>13</sup></code></li>
-	<li data-end="309" data-start="216"><code data-end="227" data-start="216">online[i]</code> is either <code data-end="244" data-is-only-node="" data-start="238">true</code> or <code data-end="255" data-start="248">false</code> and both <code data-end="277" data-start="266">online[0]</code> and <code data-end="295" data-start="282">online[n &minus; 1]</code> are <code data-end="306" data-start="300">true</code>.</li>
+	<li data-end="309" data-start="216"><code data-end="227" data-start="216">online[i]</code> is either <code data-end="244" data-is-only-node="" data-start="238">true</code> or <code data-end="255" data-start="248">false</code>, and both <code data-end="277" data-start="266">online[0]</code> and <code data-end="295" data-start="282">online[n &minus; 1]</code> are <code data-end="306" data-start="300">true</code>.</li>
 	<li data-end="362" data-is-last-node="" data-start="312">The given graph is a directed acyclic graph.</li>
 </ul>

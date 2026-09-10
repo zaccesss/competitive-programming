@@ -3,7 +3,7 @@
 <p>The customer can choose <strong>any</strong> candy to take away for free as long as the cost of the chosen candy is less than or equal to the <strong>minimum</strong> cost of the two candies bought.</p>
 
 <ul>
-	<li>For example, if there are <code>4</code> candies with costs <code>1</code>, <code>2</code>, <code>3</code> and <code>4</code> and the customer buys candies with costs <code>2</code> and <code>3</code>, they&nbsp;can take the candy with cost <code>1</code> for free, but not the candy with cost <code>4</code>.</li>
+	<li>For example, if there are <code>4</code> candies with costs <code>1</code>, <code>2</code>, <code>3</code>, and <code>4</code>, and the customer buys candies with costs <code>2</code> and <code>3</code>, they&nbsp;can take the candy with cost <code>1</code> for free, but not the candy with cost <code>4</code>.</li>
 </ul>
 
 <p>Given a <strong>0-indexed</strong> integer array <code>cost</code>, where <code>cost[i]</code> denotes the cost of the <code>i<sup>th</sup></code> candy, return <em>the <strong>minimum cost</strong> of buying <strong>all</strong> the candies</em>.</p>
@@ -14,9 +14,9 @@
 <pre>
 <strong>Input:</strong> cost = [1,2,3]
 <strong>Output:</strong> 5
-<strong>Explanation:</strong> We buy the candies with costs 2 and 3 and take the candy with cost 1 for free.
+<strong>Explanation:</strong> We buy the candies with costs 2 and 3, and take the candy with cost 1 for free.
 The total cost of buying all candies is 2 + 3 = 5. This is the <strong>only</strong> way we can buy the candies.
-Note that we cannot buy candies with costs 1 and 3 and then take the candy with cost 2 for free.
+Note that we cannot buy candies with costs 1 and 3, and then take the candy with cost 2 for free.
 The cost of the free candy has to be less than or equal to the minimum cost of the purchased candies.
 </pre>
 
