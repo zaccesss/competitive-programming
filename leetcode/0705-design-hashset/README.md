@@ -34,5 +34,5 @@ myHashSet.contains(2); // return False, (already removed)</pre>
 
 <ul>
 	<li><code>0 &lt;= key &lt;= 10<sup>6</sup></code></li>
-	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>add</code>, <code>remove</code> and <code>contains</code>.</li>
+	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>add</code>, <code>remove</code>, and <code>contains</code>.</li>
 </ul>

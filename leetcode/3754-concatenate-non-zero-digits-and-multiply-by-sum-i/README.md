@@ -17,7 +17,7 @@
 <p><strong>Explanation:</strong></p>
 
 <ul>
-	<li>The non-zero digits are 1, 2, 3 and 4. Thus, <code>x = 1234</code>.</li>
+	<li>The non-zero digits are 1, 2, 3, and 4. Thus, <code>x = 1234</code>.</li>
 	<li>The sum of digits is <code>sum = 1 + 2 + 3 + 4 = 10</code>.</li>
 	<li>Therefore, the answer is <code>x * sum = 1234 * 10 = 12340</code>.</li>
 </ul>

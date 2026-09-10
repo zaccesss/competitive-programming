@@ -1,7 +1,7 @@
 // Runs on:
-//   codeforces.com/contest/{id}/my         - post-submit redirect, live verdict table
-//   codeforces.com/contest/{id}/submission/{submId} - individual submission view
-//   codeforces.com/problemset/status*      - problemset submit redirect
+//   codeforces.com/contest/{id}/my         — post-submit redirect, live verdict table
+//   codeforces.com/contest/{id}/submission/{submId} — individual submission view
+//   codeforces.com/problemset/status*      — problemset submit redirect
 
 // In-memory dedupe for this page session. Persistent dedupe lives in
 // chrome.storage.local (background.js). This prevents duplicate messages when
@@ -48,7 +48,7 @@ const push = ({ contestId, index, name, lang, submId, code }) => {
   );
 };
 
-// ── /contest/{id}/my  - submission list ──────────────────────────────────────
+// ── /contest/{id}/my  — submission list ──────────────────────────────────────
 
 // On contest pages the contestId is in the URL; on /problemset/status we pull
 // it from each row's problem link instead (e.g. /problemset/problem/53/D → 53)
@@ -76,7 +76,7 @@ const processRow = async (row) => {
   const langCell = row.querySelector('.source-code-cell, td:nth-child(5)');
   const lang     = langCell?.textContent?.trim() || 'C++';
 
-  // The list view never shows the actual code - only the submission detail page
+  // The list view never shows the actual code — only the submission detail page
   // does. We fetch it here (same-origin, cookies auto-included). Fetch the URL
   // form the row itself links to: problemset submissions live at
   // /problemset/submission/{id}/{submId} and CF does not reliably serve their
@@ -94,7 +94,7 @@ const isProblemsetStatus = location.pathname.startsWith('/problemset/status');
 if (contestIdFromUrl && isMyPage || isProblemsetStatus) {
   // Sweep accepted rows top-down, one code fetch at a time with spacing so CF
   // never 503s. Rows already recorded in synced storage cost nothing (no
-  // fetch) and the sweep ends after 3 consecutive already-synced rows - that
+  // fetch), and the sweep ends after 3 consecutive already-synced rows — that
   // boundary means everything older was pushed long ago, so pre-extension
   // history is never bulk-imported by accident. A hard cap of 10 pushes per
   // page load bounds the worst case; refresh again to continue past it.
@@ -135,7 +135,7 @@ if (contestIdFromUrl && isMyPage || isProblemsetStatus) {
           if (node.tagName === 'TR') {
             processRow(node);
           } else {
-            // CF updates verdict by injecting a span inside an existing TR -
+            // CF updates verdict by injecting a span inside an existing TR —
             // find the ancestor row and re-evaluate it
             const rows = [...node.querySelectorAll('tr')];
             if (rows.length) rows.forEach(processRow);
@@ -144,7 +144,7 @@ if (contestIdFromUrl && isMyPage || isProblemsetStatus) {
         }
       }
       if (m.type === 'characterData') {
-        // m.target is a Text node - climb to its parent element then find the row
+        // m.target is a Text node — climb to its parent element then find the row
         const row = m.target.parentElement?.closest?.('tr');
         if (row) processRow(row);
       }
@@ -152,7 +152,7 @@ if (contestIdFromUrl && isMyPage || isProblemsetStatus) {
   }).observe(document.body, { childList: true, subtree: true, characterData: true });
 }
 
-// ── /contest/{id}/submission/{submId}  - direct view ─────────────────────────
+// ── /contest/{id}/submission/{submId}  — direct view ─────────────────────────
 
 const submId = location.pathname.match(/\/submission\/(\d+)/)?.[1];
 

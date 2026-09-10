@@ -12,7 +12,7 @@ int main() {
         return 0;
     }
 
-    // brute force X in [-1000, 1000] - safe range since |B/A| <= 1000
+    // brute force X in [-1000, 1000] — safe range since |B/A| <= 1000
     // and for n>=2 the valid X is bounded by 1000^(1/n) anyway
     for (long long x = -1000; x <= 1000; x++) {
         long long val = A;

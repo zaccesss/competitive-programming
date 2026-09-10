@@ -17,7 +17,7 @@ int main() {
     for (int i = 0; i < n; ++i) cin >> b[i]; // read current list
 
     const int INF = 1000000000; // large value representing impossible match (different lengths)
-    // cost[i][j] = number of differing characters to change a[i] into b[j] or INF if lengths differ
+    // cost[i][j] = number of differing characters to change a[i] into b[j], or INF if lengths differ
     vector<vector<int>> cost(n, vector<int>(n, INF));
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
