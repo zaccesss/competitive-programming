@@ -59,7 +59,7 @@ In the range <code>[198, 202]</code>:
 
 <p><strong>Explanation:</strong></p>
 
-<p>Number <code>4848</code>: the second digit 8 is a peak, and the third digit 4 is a valley, giving a waviness of 2.</p>
+<p>Number <code>4848</code>: the second digit 8 is a peak and the third digit 4 is a valley, giving a waviness of 2.</p>
 </div>
 
 <p>&nbsp;</p>

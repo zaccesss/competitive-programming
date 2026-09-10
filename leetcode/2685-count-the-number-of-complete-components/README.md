@@ -2,7 +2,7 @@
 
 <p>Return <em>the number of <strong>complete connected components</strong> of the graph</em>.</p>
 
-<p>A <strong>connected component</strong> is a subgraph of a graph in which there exists a path between any two vertices, and no vertex of the subgraph shares an edge with a vertex outside of the subgraph.</p>
+<p>A <strong>connected component</strong> is a subgraph of a graph in which there exists a path between any two vertices and no vertex of the subgraph shares an edge with a vertex outside of the subgraph.</p>
 
 <p>A connected component is said to be <b>complete</b> if there exists an edge between every pair of its vertices.</p>
 
@@ -24,7 +24,7 @@
 <pre>
 <strong>Input:</strong> n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]
 <strong>Output:</strong> 1
-<strong>Explanation:</strong> The component containing vertices 0, 1, and 2 is complete since there is an edge between every pair of two vertices. On the other hand, the component containing vertices 3, 4, and 5 is not complete since there is no edge between vertices 4 and 5. Thus, the number of complete components in this graph is 1.
+<strong>Explanation:</strong> The component containing vertices 0, 1 and 2 is complete since there is an edge between every pair of two vertices. On the other hand, the component containing vertices 3, 4 and 5 is not complete since there is no edge between vertices 4 and 5. Thus, the number of complete components in this graph is 1.
 </pre>
 
 <p>&nbsp;</p>
