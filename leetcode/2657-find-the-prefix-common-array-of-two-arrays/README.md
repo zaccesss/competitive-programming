@@ -14,8 +14,8 @@
 <strong>Output:</strong> [0,2,3,4]
 <strong>Explanation:</strong> At i = 0: no number is common, so C[0] = 0.
 At i = 1: 1 and 3 are common in A and B, so C[1] = 2.
-At i = 2: 1, 2, and 3 are common in A and B, so C[2] = 3.
-At i = 3: 1, 2, 3, and 4 are common in A and B, so C[3] = 4.
+At i = 2: 1, 2 and 3 are common in A and B, so C[2] = 3.
+At i = 3: 1, 2, 3 and 4 are common in A and B, so C[3] = 4.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
@@ -25,7 +25,7 @@ At i = 3: 1, 2, 3, and 4 are common in A and B, so C[3] = 4.
 <strong>Output:</strong> [0,1,3]
 <strong>Explanation:</strong> At i = 0: no number is common, so C[0] = 0.
 At i = 1: only 3 is common in A and B, so C[1] = 1.
-At i = 2: 1, 2, and 3 are common in A and B, so C[2] = 3.
+At i = 2: 1, 2 and 3 are common in A and B, so C[2] = 3.
 </pre>
 
 <p>&nbsp;</p>
