@@ -5,7 +5,7 @@
 <ul>
 	<li><code>MyHashMap()</code> initializes the object with an empty map.</li>
 	<li><code>void put(int key, int value)</code> inserts a <code>(key, value)</code> pair into the HashMap. If the <code>key</code> already exists in the map, update the corresponding <code>value</code>.</li>
-	<li><code>int get(int key)</code> returns the <code>value</code> to which the specified <code>key</code> is mapped, or <code>-1</code> if this map contains no mapping for the <code>key</code>.</li>
+	<li><code>int get(int key)</code> returns the <code>value</code> to which the specified <code>key</code> is mapped or <code>-1</code> if this map contains no mapping for the <code>key</code>.</li>
 	<li><code>void remove(key)</code> removes the <code>key</code> and its corresponding <code>value</code> if the map contains the mapping for the <code>key</code>.</li>
 </ul>
 
@@ -36,5 +36,5 @@ myHashMap.get(2);    // return -1 (i.e., not found), The map is now [[1,1]]
 
 <ul>
 	<li><code>0 &lt;= key, value &lt;= 10<sup>6</sup></code></li>
-	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>put</code>, <code>get</code>, and <code>remove</code>.</li>
+	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>put</code>, <code>get</code> and <code>remove</code>.</li>
 </ul>

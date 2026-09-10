@@ -21,7 +21,7 @@ const getCFMeta = async () => {
     for (const p of data.result.problems) map[`${p.contestId}-${p.index}`] = p.rating ?? null;
     _meta   = map;
     _metaAt = Date.now();
-  } catch { /* network failure — keep stale cache */ }
+  } catch { /* network failure - keep stale cache */ }
   return _meta;
 };
 
@@ -59,7 +59,7 @@ const pushToGitHub = async (token, repo, filePath, content, message) => {
   const url = `${GH_API}/repos/${repo}/contents/${filePath}`;
 
   // GitHub's Contents API requires the current file SHA when updating an
-  // existing file — omitting it returns 409 Conflict. New files don't need it.
+  // existing file - omitting it returns 409 Conflict. New files don't need it.
   let sha;
   try {
     const check = await fetch(url, { headers: ghHeaders(token) });
@@ -124,7 +124,7 @@ const handlePush = async ({ contestId, index, name, lang, submId, code }) => {
   if (synced[key] && Number(submId) <= Number(synced[key])) return { ok: true, skipped: true };
 
   const meta   = await getCFMeta();
-  // Some CF problems have no rating (null) — 'unrated' keeps them together
+  // Some CF problems have no rating (null) - 'unrated' keeps them together
   const rating = meta?.[`${contestId}-${index}`] ?? 'unrated';
   const ext    = langExt(lang);
   const label  = langLabel(lang);
@@ -157,7 +157,7 @@ chrome.runtime.onMessage.addListener((msg, _, respond) => {
     return true;
   }
   if (msg.action === 'sync') {
-    respond({ ok: true, note: 'content-script mode — submit on CF to trigger sync' });
+    respond({ ok: true, note: 'content-script mode - submit on CF to trigger sync' });
   }
 });
 
