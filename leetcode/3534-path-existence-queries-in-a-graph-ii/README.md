@@ -110,7 +110,7 @@
 	<li>Nodes 1 and 2: <code>|nums[1] - nums[2]| = |6 - 1| = 5 &gt; 1</code></li>
 </ul>
 
-<p>Thus, no node can reach any other node, and the output is <code>[0, -1, -1]</code>.</p>
+<p>Thus, no node can reach any other node and the output is <code>[0, -1, -1]</code>.</p>
 </div>
 
 <p>&nbsp;</p>

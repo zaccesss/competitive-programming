@@ -23,5 +23,5 @@ You can expect a response within 72 hours.
 
 ## Out of Scope
 
-- The source repositories (codeforces-submissions and leetcode-submissions are private, neetcode-submissions is public) — their content surfaces in this repository, so report it here
-- Third-party platforms and tools (Codeforces, LeetCode, NeetCode, LeetHub, GitHub) — report those to the respective provider
+- The source repositories (codeforces-submissions and leetcode-submissions are private, neetcode-submissions is public) - their content surfaces in this repository, so report it here
+- Third-party platforms and tools (Codeforces, LeetCode, NeetCode, LeetHub, GitHub) - report those to the respective provider

@@ -34,6 +34,6 @@ jobs:
           sudo mv /tmp/gitleaks /usr/local/bin/gitleaks
 
       # I scan the working tree files for hard-coded credentials. --redact keeps any finding out of
-      # the log, and --exit-code=1 fails the workflow if anything is found.
+      # the log and --exit-code=1 fails the workflow if anything is found.
       - name: Run Gitleaks
         run: gitleaks detect --no-git --redact --exit-code=1
