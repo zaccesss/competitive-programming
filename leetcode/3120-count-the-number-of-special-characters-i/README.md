@@ -12,7 +12,7 @@
 
 <p><strong>Explanation:</strong></p>
 
-<p>The special characters in <code>word</code> are <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code>.</p>
+<p>The special characters in <code>word</code> are <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code> and <code>&#39;c&#39;</code>.</p>
 </div>
 
 <p><strong class="example">Example 2:</strong></p>

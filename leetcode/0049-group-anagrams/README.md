@@ -13,7 +13,7 @@
 <ul>
 	<li>There is no string in strs that can be rearranged to form <code>&quot;bat&quot;</code>.</li>
 	<li>The strings <code>&quot;nat&quot;</code> and <code>&quot;tan&quot;</code> are anagrams as they can be rearranged to form each other.</li>
-	<li>The strings <code>&quot;ate&quot;</code>, <code>&quot;eat&quot;</code>, and <code>&quot;tea&quot;</code> are anagrams as they can be rearranged to form each other.</li>
+	<li>The strings <code>&quot;ate&quot;</code>, <code>&quot;eat&quot;</code> and <code>&quot;tea&quot;</code> are anagrams as they can be rearranged to form each other.</li>
 </ul>
 </div>
 

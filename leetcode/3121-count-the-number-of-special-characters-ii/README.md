@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-the-number-of-special-characters-ii">3405. Count the Number of Special Characters II</a></h2><h3>Medium</h3><hr><p>You are given a string <code>word</code>. A letter&nbsp;<code>c</code> is called <strong>special</strong> if it appears <strong>both</strong> in lowercase and uppercase in <code>word</code>, and <strong>every</strong> lowercase occurrence of <code>c</code> appears before the <strong>first</strong> uppercase occurrence of <code>c</code>.</p>
+<h2><a href="https://leetcode.com/problems/count-the-number-of-special-characters-ii">3405. Count the Number of Special Characters II</a></h2><h3>Medium</h3><hr><p>You are given a string <code>word</code>. A letter&nbsp;<code>c</code> is called <strong>special</strong> if it appears <strong>both</strong> in lowercase and uppercase in <code>word</code> and <strong>every</strong> lowercase occurrence of <code>c</code> appears before the <strong>first</strong> uppercase occurrence of <code>c</code>.</p>
 
 <p>Return the number of<em> </em><strong>special</strong> letters<em> </em>in<em> </em><code>word</code>.</p>
 
@@ -12,7 +12,7 @@
 
 <p><strong>Explanation:</strong></p>
 
-<p>The special characters are <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code>.</p>
+<p>The special characters are <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code> and <code>&#39;c&#39;</code>.</p>
 </div>
 
 <p><strong class="example">Example 2:</strong></p>
