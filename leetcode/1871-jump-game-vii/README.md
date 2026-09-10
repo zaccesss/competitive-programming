@@ -5,7 +5,7 @@
 	<li><code>s[j] == &#39;0&#39;</code>.</li>
 </ul>
 
-<p>Return <code>true</code><i> if you can reach index </i><code>s.length - 1</code><i> in </i><code>s</code><em>, or </em><code>false</code><em> otherwise.</em></p>
+<p>Return <code>true</code><i> if you can reach index </i><code>s.length - 1</code><i> in </i><code>s</code><em> or </em><code>false</code><em> otherwise.</em></p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

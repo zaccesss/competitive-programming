@@ -55,7 +55,7 @@ Everything else at the root (this README, CHANGELOG, LICENSE, NOTICE, CODE_OF_CO
 | LeetCode   | [leetcode.com/u/zacadjei](https://leetcode.com/u/zacadjei)                 | `leetcode/`   | `leetcode-submissions`   | pushed by LeetHub the moment a submission is accepted |
 | NeetCode   | [neetcode.io/profile/zaccess](https://neetcode.io/profile/zaccess)         | `neetcode/`   | `neetcode-submissions`   | pushed by the official NeetCode GitHub Sync           |
 
-Each platform folder keeps the exact structure its tooling produces, and each contains its own README describing that layout in detail.
+Each platform folder keeps the exact structure its tooling produces and each contains its own README describing that layout in detail.
 
 ---
 

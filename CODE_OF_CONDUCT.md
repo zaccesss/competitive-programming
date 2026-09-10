@@ -6,7 +6,7 @@ This is a personal competitive programming archive. Interactions (issues, discus
 
 - Respectful and constructive
 - On-topic and relevant to the project
-- Free of spam, harassment, or hate speech
+- Free of spam, harassment or hate speech
 
 ## Enforcement
 

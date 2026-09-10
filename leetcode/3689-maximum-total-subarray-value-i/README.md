@@ -1,6 +1,6 @@
 <h2><a href="https://leetcode.com/problems/maximum-total-subarray-value-i">4005. Maximum Total Subarray Value I</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> of length <code>n</code> and an integer <code>k</code>.</p>
 
-<p>You need to choose <strong>exactly</strong> <code>k</code> non-empty <span data-keyword="subarray-nonempty">subarrays</span> <code>nums[l..r]</code> of <code>nums</code>. Subarrays may overlap, and the exact same subarray (same <code>l</code> and <code>r</code>) <strong>can</strong> be chosen more than once.</p>
+<p>You need to choose <strong>exactly</strong> <code>k</code> non-empty <span data-keyword="subarray-nonempty">subarrays</span> <code>nums[l..r]</code> of <code>nums</code>. Subarrays may overlap and the exact same subarray (same <code>l</code> and <code>r</code>) <strong>can</strong> be chosen more than once.</p>
 
 <p>The <strong>value</strong> of a subarray <code>nums[l..r]</code> is defined as: <code>max(nums[l..r]) - min(nums[l..r])</code>.</p>
 
