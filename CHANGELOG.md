@@ -12,10 +12,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `CODEOWNERS` and `SUPPORT.md`, matching the rest of the fleet
 - `.markdownlint.json`, `.github/workflows/markdownlint.yml` and its own `.github/workflows/README.md`, scoped to the root docs and `.github/` only since the platform folders are synced snapshots overwritten on the next run
 - YAML issue forms for bug reports and enhancements plus a pull request template
+- `.github/ISSUE_TEMPLATE/config.yml` disabling the blank issue option, pointing to the security policy and code@isaacadjei.me instead
 
 ### Changed
 
 - The Contact and Support section in the README now points to `SUPPORT.md` and `SECURITY.md` as callouts instead of plain prose
+- The top badge row and footer now use flat CI and licence shields instead of the old chunky Portfolio/LinkedIn/Email and platform badges, matching the rest of the fleet
 
 ---
 
