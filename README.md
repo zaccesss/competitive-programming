@@ -147,10 +147,14 @@ New languages appear here automatically the moment a solution in one lands in a 
 
 ## Contact and Support
 
-Open an [issue](https://github.com/zaccesss/competitive-programming/issues) in this repository for questions or bugs.
+Open an [issue](https://github.com/zaccesss/competitive-programming/issues) in this repository for questions or bugs. See [SUPPORT.md](SUPPORT.md) for the full breakdown of where to go.
 
-You can also reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or via my [website contact page](https://isaacadjei.me/contact).
+> [!TIP]
+> Reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or via my [website contact page](https://isaacadjei.me/contact).
+
+> [!IMPORTANT]
+> For a security issue, follow [SECURITY.md](SECURITY.md) rather than posting publicly.
 
 ---
 
-Made with 💻 by [Isaac Adjei](https://isaacadjei.me), also at [zacess.com](https://zacess.com).
+Made by [Isaac Adjei](https://isaacadjei.me), also at [zacess.com](https://zacess.com).

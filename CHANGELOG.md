@@ -5,6 +5,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [Unreleased]
+
+### Added
+
+- `CODEOWNERS` and `SUPPORT.md`, matching the rest of the fleet
+- `.markdownlint.json`, `.github/workflows/markdownlint.yml` and its own `.github/workflows/README.md`, scoped to the root docs and `.github/` only since the platform folders are synced snapshots overwritten on the next run
+- YAML issue forms for bug reports and enhancements plus a pull request template
+
+### Changed
+
+- The Contact and Support section in the README now points to `SUPPORT.md` and `SECURITY.md` as callouts instead of plain prose
+
+---
+
 ## [v1.1.4] - 2026-08-05
 
 ### Added
