@@ -2,35 +2,10 @@
 
 > **One repo. Three platforms.** Every Codeforces, LeetCode and NeetCode solution I write, synced automatically into a single long-term archive.
 
-<p align="center">
-  <a href="https://isaacadjei.me">
-    <img src="https://img.shields.io/badge/Portfolio-isaacadjei.me-000000?style=for-the-badge&logo=googlechrome&logoColor=06ffa5" alt="Portfolio badge" />
-  </a>
-  <a href="https://www.linkedin.com/in/isaacadjei">
-    <img src="https://img.shields.io/badge/LinkedIn-Isaac_Adjei-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn badge" />
-  </a>
-  <a href="mailto:code@isaacadjei.me">
-    <img src="https://img.shields.io/badge/Email-Contact-ff6f61?style=for-the-badge&logo=gmail&logoColor=white" alt="Email badge" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://codeforces.com/profile/zaccesss">
-    <img src="https://img.shields.io/badge/Codeforces-zaccesss-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces badge" />
-  </a>
-  <a href="https://leetcode.com/u/zacadjei">
-    <img src="https://img.shields.io/badge/LeetCode-zacadjei-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode badge" />
-  </a>
-  <a href="https://neetcode.io/profile/zaccess">
-    <img src="https://img.shields.io/badge/NeetCode-zaccess-00C7B7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="NeetCode badge" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/zaccesss/competitive-programming/actions/workflows/sync.yml">
-    <img src="https://github.com/zaccesss/competitive-programming/actions/workflows/sync.yml/badge.svg" alt="Sync workflow status" />
-  </a>
-</p>
+[![Sync](https://github.com/zaccesss/competitive-programming/actions/workflows/sync.yml/badge.svg)](https://github.com/zaccesss/competitive-programming/actions/workflows/sync.yml)
+[![Markdown Lint](https://github.com/zaccesss/competitive-programming/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/zaccesss/competitive-programming/actions/workflows/markdownlint.yml)
+[![Gitleaks](https://github.com/zaccesss/competitive-programming/actions/workflows/gitleaks-scan.yml/badge.svg)](https://github.com/zaccesss/competitive-programming/actions/workflows/gitleaks-scan.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
@@ -157,4 +132,4 @@ Open an [issue](https://github.com/zaccesss/competitive-programming/issues) in t
 
 ---
 
-Made by [Isaac Adjei](https://isaacadjei.me), also at [zacess.com](https://zacess.com).
+Made by [Isaac Adjei](https://isaacadjei.me).
