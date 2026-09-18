@@ -29,4 +29,3 @@ g++ -std=c++17 -O2 -pipe -o bin/practice/1000/230A practice/1000/230A-dragons.cp
 
 Why this rule?
 - Keeping compiled binaries in `bin/` avoids accidentally committing large binaries, prevents running outdated artifacts in source folders and keeps the repo clean.
-
