@@ -2,10 +2,8 @@
 
 > **@zaccesss** · Solutions pushed manually after each contest or practice session
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-isaacadjei.me-000000?style=for-the-badge&logo=googlechrome&logoColor=06ffa5)](https://isaacadjei.me)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Isaac_Adjei-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/isaacadjei)
-[![Email](https://img.shields.io/badge/Email-Contact-ff6f61?style=for-the-badge&logo=gmail&logoColor=white)](mailto:code@isaacadjei.me)
-[![Codeforces](https://img.shields.io/badge/Codeforces-zaccesss-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/zaccesss)
+[![Markdown Lint](https://github.com/zaccesss/codeforces-submissions/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/zaccesss/codeforces-submissions/actions/workflows/markdownlint.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
@@ -99,7 +97,16 @@ VS Code users can also run the default build task with `Ctrl+Shift+B`.
 
 ---
 
-Made with 💻 by [Isaac Adjei](https://isaacadjei.me)
+## Contact and Support
 
-[![isaacadjei.me](https://img.shields.io/badge/isaacadjei.me-000000?style=for-the-badge)](https://isaacadjei.me)
-[![zacess.com](https://img.shields.io/badge/zacess.com-000000?style=for-the-badge)](https://zacess.com)
+Open an [issue](https://github.com/zaccesss/codeforces-submissions/issues) in this repository for questions or bugs. See [SUPPORT.md](SUPPORT.md) for the full breakdown of where to go.
+
+> [!TIP]
+> Reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
+
+> [!IMPORTANT]
+> For a security issue, follow [SECURITY.md](SECURITY.md) rather than posting publicly.
+
+---
+
+Made by [Isaac Adjei](https://isaacadjei.me).
