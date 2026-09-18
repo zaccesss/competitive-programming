@@ -59,14 +59,37 @@ jobs:
             # Copy the source working tree over the platform folder. --delete keeps
             # removals in sync. The source's .git and .github never come across, and
             # LICENSE stays out so this repo keeps exactly one licence at the root.
-            rsync -a --delete \
-              --exclude='.git' \
-              --exclude='.github' \
-              --exclude='LICENSE' \
-              "$clone/" "$folder/"
+            # The hygiene bundle files (CODEOWNERS, CODE_OF_CONDUCT.md, SECURITY.md,
+            # SUPPORT.md, CHANGELOG.md, .markdownlint.json) stay out too, since this
+            # repo already has its own copy of each at the root covering the whole
+            # aggregated archive.
+            exclude_args=(
+              --exclude='.git'
+              --exclude='.github'
+              --exclude='LICENSE'
+              --exclude='CODEOWNERS'
+              --exclude='CODE_OF_CONDUCT.md'
+              --exclude='SECURITY.md'
+              --exclude='SUPPORT.md'
+              --exclude='CHANGELOG.md'
+              --exclude='.markdownlint.json'
+            )
 
-            # Force-add so this repo's root .gitignore can never hide a file the
-            # source repo deliberately tracks (codeforces tracks bin/, for example).
+            # codeforces-submissions also carries local build tooling and editor
+            # config that has no value once merged read-only into this archive.
+            if [ "$folder" = "codeforces" ]; then
+              exclude_args+=(
+                --exclude='scripts'
+                --exclude='.vscode'
+                --exclude='.gitignore'
+                --exclude='bin'
+              )
+            fi
+
+            rsync -a --delete "${exclude_args[@]}" "$clone/" "$folder/"
+
+            # Force-add in case a source repo tracks a file this repo's own
+            # .gitignore would otherwise hide.
             git add -Af "$folder"
 
             if ! git diff --cached --quiet -- "$folder"; then
