@@ -8,7 +8,7 @@ int main() {
 
     int removals = 0;  // count how many stones must be removed
 
-    // If two neighboring stones have the same color,
+    // if two neighboring stones have the same color,
     // we need to remove one of them.
     for (int i = 1; i < n; i++) {
         if (s[i] == s[i - 1]) {

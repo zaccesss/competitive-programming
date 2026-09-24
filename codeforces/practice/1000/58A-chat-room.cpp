@@ -1,4 +1,4 @@
-// Solution for Codeforces 58A - Chat room
+// solution for Codeforces 58A - Chat room
 
 #include <bits/stdc++.h>
 using namespace std;

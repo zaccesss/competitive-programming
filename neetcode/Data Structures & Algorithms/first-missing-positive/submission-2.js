@@ -7,7 +7,7 @@ class Solution {
 
         const n = nums.length;
 
-        // Placed each valid number into its correct index.
+        // placed each valid number into its correct index.
         for (let i = 0; i < n; i++) {
 
             while (
@@ -29,7 +29,7 @@ class Solution {
             }
         }
 
-        // Found first missing positive.
+        // found first missing positive.
         for (let i = 0; i < n; i++) {
 
             if (nums[i] !== i + 1) {
@@ -38,7 +38,7 @@ class Solution {
             }
         }
 
-        // All numbers 1..n exist.
+        // all numbers 1..n exist.
         return n + 1;
     }
 }

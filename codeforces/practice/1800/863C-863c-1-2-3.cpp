@@ -10,17 +10,17 @@ int main() {
 
     int A[4][4], B[4][4];
 
-    // Alice's transitions
+    // alice's transitions
     for (int i = 1; i <= 3; i++)
         for (int j = 1; j <= 3; j++)
             cin >> A[i][j];
 
-    // Bob's transitions
+    // bob's transitions
     for (int i = 1; i <= 3; i++)
         for (int j = 1; j <= 3; j++)
             cin >> B[i][j];
 
-    // First visit time of each state
+    // first visit time of each state
     int vis[4][4];
     memset(vis, -1, sizeof(vis));
 
@@ -35,7 +35,7 @@ int main() {
         vis[a][b] = step;
         state.push_back({a, b});
 
-        // Update score
+        // update score
         if ((a == 1 && b == 3) || (a == 2 && b == 1) || (a == 3 && b == 2))
             alice++;
         else if ((b == 1 && a == 3) || (b == 2 && a == 1) || (b == 3 && a == 2))

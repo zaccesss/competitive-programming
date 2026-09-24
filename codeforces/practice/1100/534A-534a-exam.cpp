@@ -6,7 +6,7 @@ int main() {
     int n;
     cin >> n;
 
-    // Handle small cases separately
+    // handle small cases separately
     if (n == 1) {
         cout << 1 << "\n";
         cout << 1 << "\n";
@@ -25,15 +25,15 @@ int main() {
         return 0;
     }
 
-    // For n >= 4, we can use all students
+    // for n >= 4, we can use all students
     cout << n << "\n";
 
-    // Print all even numbers first
+    // print all even numbers first
     for (int i = 2; i <= n; i += 2) {
         cout << i << " ";
     }
 
-    // Then print all odd numbers
+    // then print all odd numbers
     for (int i = 1; i <= n; i += 2) {
         cout << i << " ";
     }

@@ -4,7 +4,7 @@ func firstMissingPositive(
 
     n := len(nums)
 
-    // Placed each valid number into its correct index.
+    // placed each valid number into its correct index.
     for i := 0; i < n; i++ {
 
         for nums[i] > 0 &&
@@ -18,7 +18,7 @@ func firstMissingPositive(
         }
     }
 
-    // Found first missing positive.
+    // found first missing positive.
     for i := 0; i < n; i++ {
 
         if nums[i] != i+1 {
@@ -27,6 +27,6 @@ func firstMissingPositive(
         }
     }
 
-    // All numbers 1..n exist.
+    // all numbers 1..n exist.
     return n + 1
 }

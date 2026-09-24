@@ -10,8 +10,8 @@ int main() {
         unique_letters.insert(ch);  // set only keeps one of each letter
     }
 
-    // If the number of unique letters is even, print "CHAT WITH HER!"
-    // If odd, print "IGNORE HIM!"
+    // if the number of unique letters is even, print "CHAT WITH HER!"
+    // if odd, print "IGNORE HIM!"
     if (unique_letters.size() % 2 == 0) {
         cout << "CHAT WITH HER!" << '\n';
     } else {

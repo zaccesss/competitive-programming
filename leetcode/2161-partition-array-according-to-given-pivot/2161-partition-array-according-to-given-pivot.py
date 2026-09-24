@@ -1,12 +1,12 @@
 class Solution:
     def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
 
-        # Used three lists for partitioning.
+        # used three lists for partitioning.
         less = []
         equal = []
         greater = []
 
-        # Processed all numbers.
+        # processed all numbers.
         for num in nums:
 
             if num < pivot:
@@ -18,5 +18,5 @@ class Solution:
             else:
                 equal.append(num)
 
-        # Returned the partitioned array.
+        # returned the partitioned array.
         return less + equal + greater

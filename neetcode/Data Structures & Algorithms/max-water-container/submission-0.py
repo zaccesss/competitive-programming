@@ -4,7 +4,7 @@ class Solution:
         left = 0
         right = len(heights) - 1
 
-        # Used answer to store maximum area.
+        # used answer to store maximum area.
         answer = 0
 
         while left < right:
@@ -16,7 +16,7 @@ class Solution:
                 heights[right]
             )
 
-            # Calculated current container area.
+            # calculated current container area.
             area = width * height
 
             answer = max(
@@ -24,7 +24,7 @@ class Solution:
                 area
             )
 
-            # Moved the smaller height.
+            # moved the smaller height.
             if heights[left] < heights[right]:
 
                 left += 1
@@ -33,5 +33,5 @@ class Solution:
 
                 right -= 1
 
-        # Returned maximum area.
+        # returned maximum area.
         return answer

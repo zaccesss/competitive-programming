@@ -8,7 +8,7 @@ int main() {
     int n, l, r;
     cin >> n >> l >> r;
  
-    // Convert to 0-based indexing
+    // convert to 0-based indexing
     l--;
     r--;
  
@@ -20,7 +20,7 @@ int main() {
     for (int i = 0; i < n; i++)
         cin >> b[i];
  
-    // Elements before l must remain unchanged
+    // elements before l must remain unchanged
     for (int i = 0; i < l; i++) {
         if (a[i] != b[i]) {
             cout << "LIE\n";
@@ -28,7 +28,7 @@ int main() {
         }
     }
  
-    // Elements after r must remain unchanged
+    // elements after r must remain unchanged
     for (int i = r + 1; i < n; i++) {
         if (a[i] != b[i]) {
             cout << "LIE\n";
@@ -36,7 +36,7 @@ int main() {
         }
     }
  
-    // Extract the subarrays that may have been reordered
+    // extract the subarrays that may have been reordered
     vector<int> firstSegment;
     vector<int> secondSegment;
  
@@ -45,7 +45,7 @@ int main() {
         secondSegment.push_back(b[i]);
     }
  
-    // Order inside the segment does not matter
+    // order inside the segment does not matter
     sort(firstSegment.begin(), firstSegment.end());
     sort(secondSegment.begin(), secondSegment.end());
  

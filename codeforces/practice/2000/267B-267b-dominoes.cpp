@@ -5,15 +5,15 @@
 using namespace std;
 
 struct Edge {
-    int to;      // Destination vertex
-    int id;      // Domino index
+    int to;      // destination vertex
+    int id;      // domino index
 };
 
 struct Domino {
     int left, right;
 };
 
-vector<Edge> graph[7];          // Vertices are only 0..6
+vector<Edge> graph[7];          // vertices are only 0..6
 vector<Domino> dominoes;
 vector<bool> used;
 vector<pair<int, char>> answer;
@@ -25,7 +25,7 @@ void dfs(int u) {
         Edge e = graph[u].back();
         graph[u].pop_back();
 
-        // Skip if this domino has already been used
+        // skip if this domino has already been used
         if (used[e.id])
             continue;
 
@@ -33,7 +33,7 @@ void dfs(int u) {
 
         dfs(e.to);
 
-        // Determine whether this domino was flipped
+        // determine whether this domino was flipped
         if (dominoes[e.id].left == u)
             answer.push_back({e.id + 1, '+'});
         else
@@ -51,7 +51,7 @@ int main() {
 
     vector<int> degree(7, 0);
 
-    // Read dominoes
+    // read dominoes
     for (int i = 0; i < n; i++) {
 
         int a, b;
@@ -66,7 +66,7 @@ int main() {
         degree[b]++;
     }
 
-    // Count odd-degree vertices
+    // count odd-degree vertices
     int odd = 0;
     int start = -1;
 
@@ -81,16 +81,16 @@ int main() {
             start = i;
     }
 
-    // Euler path impossible
+    // euler path impossible
     if (!(odd == 0 || odd == 2)) {
         cout << "No solution\n";
         return 0;
     }
 
-    // Run Hierholzer
+    // run Hierholzer
     dfs(start);
 
-    // Did we use every domino?
+    // did we use every domino?
     if ((int)answer.size() != n) {
         cout << "No solution\n";
         return 0;

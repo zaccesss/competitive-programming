@@ -1,4 +1,4 @@
-// Codeforces 617A - Elephant
+// codeforces 617A - Elephant
 // https://codeforces.com/problemset/problem/617/A
 #include <bits/stdc++.h>
 using namespace std;
@@ -7,10 +7,10 @@ int main() {
     cin.tie(nullptr);
 
     long long n;
-    // Read the target position; exit quietly if no input provided.
+    // read the target position; exit quietly if no input provided.
     if (!(cin >> n)) return 0;
 
-    // Compute and print the minimum number of moves.
+    // compute and print the minimum number of moves.
     cout << (n + 4) / 5 << '\n';
     return 0;
 }

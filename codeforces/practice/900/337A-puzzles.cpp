@@ -15,13 +15,13 @@ int main() {
         cin >> f[i];
     }
 
-    // Sorted puzzle sizes.
+    // sorted puzzle sizes.
     sort(f.begin(), f.end());
 
-    // Used answer to store minimum difference.
+    // used answer to store minimum difference.
     int answer = INT_MAX;
 
-    // Checked every window of size n.
+    // checked every window of size n.
     for (int i = 0; i + n - 1 < m; i++) {
 
         answer = min(

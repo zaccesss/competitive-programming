@@ -1,6 +1,6 @@
-// Codeforces 160A - Twins
+// codeforces 160A - Twins
 // https://codeforces.com/problemset/problem/160/A
-// Solution by zac
+// solution by zac
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -23,7 +23,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         taken_sum += coins[i];
 
-        // Stop once our chosen coins are worth more than the remaining coins.
+        // stop once our chosen coins are worth more than the remaining coins.
         if (taken_sum > total - taken_sum) {
             cout << i + 1 << '\n';
             return 0;

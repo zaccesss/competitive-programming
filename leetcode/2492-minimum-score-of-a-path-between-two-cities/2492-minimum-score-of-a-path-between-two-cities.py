@@ -4,7 +4,7 @@ from collections import defaultdict
 class Solution:
     def minScore(self, n: int, roads: List[List[int]]) -> int:
 
-        # Build adjacency list
+        # build adjacency list
         graph = defaultdict(list)
 
         for u, v, w in roads:
@@ -21,7 +21,7 @@ class Solution:
 
             for neighbor, weight in graph[node]:
 
-                # Update the minimum edge seen
+                # update the minimum edge seen
                 answer = min(answer, weight)
 
                 if neighbor not in visited:

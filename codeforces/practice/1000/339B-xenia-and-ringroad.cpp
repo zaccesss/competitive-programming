@@ -1,6 +1,6 @@
-// Codeforces 339B - Xenia and Ringroad
+// codeforces 339B - Xenia and Ringroad
 // https://codeforces.com/problemset/problem/339/B
-// Solution by zac
+// solution by zac
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -12,7 +12,7 @@ int main() {
     long long n, m;
     cin >> n >> m; // n houses on the ring, m tasks in order
 
-    long long current = 1; // Xenia starts at house 1
+    long long current = 1; // xenia starts at house 1
     long long time = 0;    // total time spent moving
 
     for (long long i = 0; i < m; i++) {

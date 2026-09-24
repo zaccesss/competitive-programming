@@ -7,7 +7,7 @@ impl Solution {
 
         let n = nums.len();
 
-        // Placed each valid number into its correct index.
+        // placed each valid number into its correct index.
         for i in 0..n {
 
             while nums[i] > 0
@@ -25,7 +25,7 @@ impl Solution {
             }
         }
 
-        // Found first missing positive.
+        // found first missing positive.
         for i in 0..n {
 
             if nums[i] != (i + 1) as i32 {
@@ -34,7 +34,7 @@ impl Solution {
             }
         }
 
-        // All numbers 1..n exist.
+        // all numbers 1..n exist.
         (n + 1) as i32
     }
 }

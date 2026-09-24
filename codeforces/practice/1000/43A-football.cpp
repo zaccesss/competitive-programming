@@ -1,4 +1,4 @@
-// Solution for Codeforces 43A - Football
+// solution for Codeforces 43A - Football
 
 #include <bits/stdc++.h>
 using namespace std;
