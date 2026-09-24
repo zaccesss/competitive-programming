@@ -12,13 +12,13 @@ class Solution:
 
         max_cost = 0
 
-        # Build graph and indegree
+        # build graph and indegree
         for u, v, w in edges:
             graph[u].append((v, w))
             indegree[v] += 1
             max_cost = max(max_cost, w)
 
-        # Topological order (only once)
+        # topological order (only once)
         queue = deque()
 
         for i in range(n):
@@ -36,7 +36,7 @@ class Solution:
                 if indegree[v] == 0:
                     queue.append(v)
 
-        # Check whether score >= limit is possible
+        # check whether score >= limit is possible
         def check(limit):
 
             INF = float("inf")
@@ -48,7 +48,7 @@ class Solution:
                 if dp[u] == INF:
                     continue
 
-                # Offline intermediate nodes cannot be used
+                # offline intermediate nodes cannot be used
                 if u != 0 and u != n - 1 and not online[u]:
                     continue
 

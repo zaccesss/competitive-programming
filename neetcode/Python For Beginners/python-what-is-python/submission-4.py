@@ -1,7 +1,7 @@
 from decimal import Decimal, getcontext
 
 def calculate_pi(n):
-    getcontext().prec = n + 2  # Set precision higher than needed for accuracy
+    getcontext().prec = n + 2  # set precision higher than needed for accuracy
     
     C = 426880 * Decimal(10005).sqrt()
     K = 6
@@ -18,7 +18,7 @@ def calculate_pi(n):
         K += 12
     
     pi = C / S
-    return str(pi)[:n + 2]  # Return first n digits plus the '3.'
+    return str(pi)[:n + 2]  # return first n digits plus the '3.'
 
 n=19
 pi_digits = calculate_pi(n)

@@ -4,7 +4,7 @@ class Solution:
         candidate1 = candidate2 = None  # possible majority elements
         count1 = count2 = 0  # counts for each candidate
 
-        # Boyer-Moore Voting Algorithm
+        # boyer-Moore Voting Algorithm
         for num in nums:
 
             if num == candidate1:  # increase count for candidate1

@@ -1,6 +1,6 @@
 name: Sync
 
-# I aggregate my three submission repos into this one. Each platform keeps its own
+# aggregate my three submission repos into this one. Each platform keeps its own
 # source repo as the write target (LeetHub pushes LeetCode, the official NeetCode
 # GitHub Sync pushes NeetCode, my own scripts push Codeforces) and this workflow
 # copies each source into its platform folder here, so the whole archive is
@@ -15,7 +15,7 @@ on:
 permissions:
   contents: write
 
-# Sync runs must not interleave. Every run re-clones all three sources at their
+# sync runs must not interleave. Every run re-clones all three sources at their
 # current HEAD and syncs all three platform folders, so only the LAST run in a
 # burst needs to finish - it captures the full current state. A new trigger
 # therefore cancels the run in flight and restarts, collapsing a burst into a
@@ -35,7 +35,7 @@ jobs:
 
       - name: Pull the three source repos into their platform folders
         env:
-          # Optional. While the source repos are public the clone below works
+          # optional. While the source repos are public the clone below works
           # anonymously and this stays empty. To make the sources private, add a
           # fine-grained PAT with read-only Contents on the three repos as the
           # SOURCES_TOKEN secret and everything keeps working unchanged.
@@ -56,10 +56,10 @@ jobs:
             clone="$RUNNER_TEMP/$src"
             git clone --quiet --depth 1 "https://${SOURCES_TOKEN:+x-access-token:${SOURCES_TOKEN}@}github.com/${{ github.repository_owner }}/$src.git" "$clone"
 
-            # Copy the source working tree over the platform folder. --delete keeps
+            # copy the source working tree over the platform folder. --delete keeps
             # removals in sync. The source's .git and .github never come across, and
             # LICENSE stays out so this repo keeps exactly one licence at the root.
-            # The hygiene bundle files (CODEOWNERS, CODE_OF_CONDUCT.md, SECURITY.md,
+            # the hygiene bundle files (CODEOWNERS, CODE_OF_CONDUCT.md, SECURITY.md,
             # SUPPORT.md, CHANGELOG.md, .markdownlint.json) stay out too, since this
             # repo already has its own copy of each at the root covering the whole
             # aggregated archive.
@@ -88,7 +88,7 @@ jobs:
 
             rsync -a --delete "${exclude_args[@]}" "$clone/" "$folder/"
 
-            # Force-add in case a source repo tracks a file this repo's own
+            # force-add in case a source repo tracks a file this repo's own
             # .gitignore would otherwise hide.
             git add -Af "$folder"
 
@@ -103,7 +103,7 @@ jobs:
           fi
 
           msg="$(printf '%s, ' "${parts[@]}")"
-          # The solutions are mine, so sync commits carry my identity. I use my
+          # the solutions are mine, so sync commits carry my identity. I use my
           # GitHub noreply address: it attributes and counts exactly like my real
           # one, but code search finds no spammable email in this file.
           if [ -n "$SIGNING_KEY" ]; then
@@ -117,7 +117,7 @@ jobs:
           git config user.email "code@isaacadjei.me"
           git commit --quiet -m "sync: ${msg%, }"
 
-          # Bursty repository_dispatch events can still let two sync runs race to
+          # bursty repository_dispatch events can still let two sync runs race to
           # push. The concurrency group above cancels an in-flight run when a new
           # one starts, but cancellation is not instant: a run can push in the
           # brief window before its cancel lands, leaving the next run's commit

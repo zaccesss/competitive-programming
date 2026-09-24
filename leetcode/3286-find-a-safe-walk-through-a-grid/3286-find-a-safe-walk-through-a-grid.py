@@ -11,7 +11,7 @@ class Solution:
         # dist[r][c] = minimum health lost to reach (r, c)
         dist = [[float("inf")] * n for _ in range(m)]
 
-        # Starting cell may already cost 1 health
+        # starting cell may already cost 1 health
         dist[0][0] = grid[0][0]
 
         dq = deque()
@@ -29,17 +29,17 @@ class Solution:
 
                 if 0 <= nr < m and 0 <= nc < n:
 
-                    # Cost to enter the next cell
+                    # cost to enter the next cell
                     new_cost = dist[r][c] + grid[nr][nc]
 
                     if new_cost < dist[nr][nc]:
                         dist[nr][nc] = new_cost
 
-                        # Safe cell (cost 0): process sooner
+                        # safe cell (cost 0): process sooner
                         if grid[nr][nc] == 0:
                             dq.appendleft((nr, nc))
                         else:
                             dq.append((nr, nc))
 
-        # I must finish with at least 1 health remaining
+        # must finish with at least 1 health remaining
         return dist[m - 1][n - 1] < health

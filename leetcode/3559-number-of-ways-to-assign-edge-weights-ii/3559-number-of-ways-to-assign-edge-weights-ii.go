@@ -5,7 +5,7 @@ func assignEdgeWeights(edges [][]int, queries [][]int) []int {
 
 	n := len(edges) + 1
 
-	// Used adjacency list for the tree.
+	// used adjacency list for the tree.
 	graph := make([][]int, n+1)
 
 	for _, edge := range edges {
@@ -16,17 +16,17 @@ func assignEdgeWeights(edges [][]int, queries [][]int) []int {
 		graph[v] = append(graph[v], u)
 	}
 
-	// Used depth to store node depths.
+	// used depth to store node depths.
 	depth := make([]int, n+1)
 
-	// Used binary lifting table.
+	// used binary lifting table.
 	up := make([][]int, LOG)
 
 	for i := 0; i < LOG; i++ {
 		up[i] = make([]int, n+1)
 	}
 
-	// Built depths and parents with BFS.
+	// built depths and parents with BFS.
 	queue := []int{1}
 
 	visited := make([]bool, n+1)
@@ -52,14 +52,14 @@ func assignEdgeWeights(edges [][]int, queries [][]int) []int {
 		}
 	}
 
-	// Built binary lifting table.
+	// built binary lifting table.
 	for k := 1; k < LOG; k++ {
 		for node := 1; node <= n; node++ {
 			up[k][node] = up[k-1][up[k-1][node]]
 		}
 	}
 
-	// Precomputed powers of 2 modulo MOD.
+	// precomputed powers of 2 modulo MOD.
 	pow2 := make([]int, n+1)
 
 	pow2[0] = 1
@@ -68,7 +68,7 @@ func assignEdgeWeights(edges [][]int, queries [][]int) []int {
 		pow2[i] = int((2 * int64(pow2[i-1])) % MOD)
 	}
 
-	// Used LCA to find lowest common ancestor.
+	// used LCA to find lowest common ancestor.
 	var lca func(int, int) int
 
 	lca = func(a, b int) int {
@@ -99,7 +99,7 @@ func assignEdgeWeights(edges [][]int, queries [][]int) []int {
 		return up[0][a]
 	}
 
-	// Processed all queries.
+	// processed all queries.
 	answer := make([]int, len(queries))
 
 	for i, query := range queries {

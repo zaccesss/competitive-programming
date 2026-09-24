@@ -1,22 +1,22 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
 
-        # Lowest buying price seen so far
+        # lowest buying price seen so far
         min_price = prices[0]
 
-        # Maximum profit found
+        # maximum profit found
         max_profit = 0
 
-        # Start from second day
+        # start from second day
         for price in prices[1:]:
 
-            # Profit if sold today
+            # profit if sold today
             profit = price - min_price
 
-            # Update maximum profit
+            # update maximum profit
             max_profit = max(max_profit, profit)
 
-            # Update lowest buying price
+            # update lowest buying price
             min_price = min(min_price, price)
 
         return max_profit

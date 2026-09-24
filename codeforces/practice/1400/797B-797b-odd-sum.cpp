@@ -10,32 +10,32 @@ int main() {
 
     long long sum = 0;
 
-    // Smallest positive odd number
+    // smallest positive odd number
     int smallestPositiveOdd = INT_MAX;
 
-    // Largest negative odd number (closest to zero)
+    // largest negative odd number (closest to zero)
     int largestNegativeOdd = INT_MIN;
 
     for (int i = 0; i < n; i++) {
         int x;
         cin >> x;
 
-        // Take every positive number
+        // take every positive number
         if (x > 0) {
             sum += x;
 
-            // Track the smallest positive odd
+            // track the smallest positive odd
             if (x % 2 != 0)
                 smallestPositiveOdd = min(smallestPositiveOdd, x);
         }
 
-        // Track the largest negative odd
+        // track the largest negative odd
         else if (x % 2 != 0) {
             largestNegativeOdd = max(largestNegativeOdd, x);
         }
     }
 
-    // Already odd
+    // already odd
     if (sum % 2 == 1) {
         cout << sum << "\n";
         return 0;
@@ -43,11 +43,11 @@ int main() {
 
     long long answer = LLONG_MIN;
 
-    // Remove the smallest positive odd
+    // remove the smallest positive odd
     if (smallestPositiveOdd != INT_MAX)
         answer = max(answer, sum - smallestPositiveOdd);
 
-    // Add the largest negative odd
+    // add the largest negative odd
     if (largestNegativeOdd != INT_MIN)
         answer = max(answer, sum + largestNegativeOdd);
 

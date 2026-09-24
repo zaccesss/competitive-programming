@@ -25,7 +25,7 @@ int main() {
     queue<int> q;
     vector<bool> removed(n + 1, false);
 
-    // Remove leaves
+    // remove leaves
     for (int i = 1; i <= n; i++) {
         if (deg[i] == 1) {
             q.push(i);
@@ -51,7 +51,7 @@ int main() {
 
     vector<int> dist(n + 1, -1);
 
-    // Cycle nodes
+    // cycle nodes
     queue<int> bfs;
 
     for (int i = 1; i <= n; i++) {

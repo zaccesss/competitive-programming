@@ -1,4 +1,4 @@
-// Codeforces 318A - Even Odds
+// codeforces 318A - Even Odds
 
 #include <bits/stdc++.h>
 using namespace std;

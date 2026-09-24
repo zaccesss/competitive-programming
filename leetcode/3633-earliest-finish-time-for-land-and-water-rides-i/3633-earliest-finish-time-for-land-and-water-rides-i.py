@@ -7,38 +7,38 @@ class Solution:
         waterDuration: List[int]
     ) -> int:
 
-        # Used answer to store earliest finish time.
+        # used answer to store earliest finish time.
         answer = float("inf")
 
-        # Tried every land ride.
+        # tried every land ride.
         for i in range(len(landStartTime)):
 
-            # Tried every water ride.
+            # tried every water ride.
             for j in range(len(waterStartTime)):
 
-                # Calculated finish time of land ride.
+                # calculated finish time of land ride.
                 landFinish = landStartTime[i] + landDuration[i]
 
-                # Calculated actual start time of water ride.
+                # calculated actual start time of water ride.
                 waterStart = max(waterStartTime[j], landFinish)
 
-                # Updated answer for land then water.
+                # updated answer for land then water.
                 answer = min(
                     answer,
                     waterStart + waterDuration[j]
                 )
 
-                # Calculated finish time of water ride.
+                # calculated finish time of water ride.
                 waterFinish = waterStartTime[j] + waterDuration[j]
 
-                # Calculated actual start time of land ride.
+                # calculated actual start time of land ride.
                 landStart = max(landStartTime[i], waterFinish)
 
-                # Updated answer for water then land.
+                # updated answer for water then land.
                 answer = min(
                     answer,
                     landStart + landDuration[i]
                 )
 
-        # Returned earliest possible finish time.
+        # returned earliest possible finish time.
         return answer

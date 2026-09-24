@@ -16,7 +16,7 @@ class Solution:
 
             m = len(rides)
 
-            # Used prefixMin to store minimum duration.
+            # used prefixMin to store minimum duration.
             prefixMin = [0] * m
             prefixMin[0] = rides[0][1]
 
@@ -26,7 +26,7 @@ class Solution:
                     rides[i][1]
                 )
 
-            # Used suffixMin to store minimum start+duration.
+            # used suffixMin to store minimum start+duration.
             suffixMin = [0] * m
             suffixMin[-1] = rides[-1][0] + rides[-1][1]
 
@@ -40,19 +40,19 @@ class Solution:
 
             for s, d in zip(start1, duration1):
 
-                # Calculated finish time of first ride.
+                # calculated finish time of first ride.
                 finish = s + d
 
                 idx = bisect_right(starts, finish)
 
-                # Used rides already open.
+                # used rides already open.
                 if idx > 0:
                     answer = min(
                         answer,
                         finish + prefixMin[idx - 1]
                     )
 
-                # Used rides opening later.
+                # used rides opening later.
                 if idx < m:
                     answer = min(
                         answer,

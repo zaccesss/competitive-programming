@@ -7,12 +7,12 @@ class Solution:
 
         result = []
 
-        # Processed each word.
+        # processed each word.
         for word in words:
 
             total = 0
 
-            # Calculated word weight.
+            # calculated word weight.
             for ch in word:
 
                 total += (
@@ -23,12 +23,12 @@ class Solution:
 
             value = total % 26
 
-            # Mapped using reverse alphabet.
+            # mapped using reverse alphabet.
             result.append(
                 chr(
                     ord('z') - value
                 )
             )
 
-        # Returned final string.
+        # returned final string.
         return "".join(result)

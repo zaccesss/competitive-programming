@@ -4,7 +4,7 @@ using namespace std;
 using pii = pair<int, int>;
 
 int solve(vector<pii> &v, int budget) {
-    // Keep only affordable fountains
+    // keep only affordable fountains
     vector<pii> a;
     for (auto &x : v)
         if (x.first <= budget)
@@ -13,12 +13,12 @@ int solve(vector<pii> &v, int budget) {
     if (a.size() < 2)
         return 0;
 
-    // Sort by cost
+    // sort by cost
     sort(a.begin(), a.end());
 
     int m = a.size();
 
-    // Prefix maximum beauty
+    // prefix maximum beauty
     vector<int> pre(m);
     pre[0] = a[0].second;
     for (int i = 1; i < m; i++)
@@ -29,7 +29,7 @@ int solve(vector<pii> &v, int budget) {
     for (int i = 1; i < m; i++) {
         int rem = budget - a[i].first;
 
-        // Find last fountain before i within remaining budget
+        // find last fountain before i within remaining budget
         int pos = upper_bound(a.begin(), a.begin() + i, make_pair(rem, INT_MAX))
                   - a.begin() - 1;
 
@@ -68,14 +68,14 @@ int main() {
 
     int ans = 0;
 
-    // One coin + one diamond
+    // one coin + one diamond
     if (bestCoin && bestDia)
         ans = bestCoin + bestDia;
 
-    // Two coins
+    // two coins
     ans = max(ans, solve(coin, c));
 
-    // Two diamonds
+    // two diamonds
     ans = max(ans, solve(dia, d));
 
     cout << ans << '\n';

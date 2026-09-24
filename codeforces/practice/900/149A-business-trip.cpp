@@ -3,50 +3,50 @@ using namespace std;
 
 int main() {
 
-    // Used k to store required flower growth.
+    // used k to store required flower growth.
     int k;
     cin >> k;
 
-    // Returned 0 if no growth was needed.
+    // returned 0 if no growth was needed.
     if (k == 0) {
         cout << 0 << "\n";
         return 0;
     }
 
-    // Used months to store monthly growth values.
+    // used months to store monthly growth values.
     vector<int> months(12);
 
-    // Read all monthly growth values.
+    // read all monthly growth values.
     for (int i = 0; i < 12; i++) {
         cin >> months[i];
     }
 
-    // Sorted growth values in descending order.
+    // sorted growth values in descending order.
     sort(months.begin(), months.end(), greater<int>());
 
-    // Used total to track accumulated growth.
+    // used total to track accumulated growth.
     int total = 0;
 
-    // Used count to track months used.
+    // used count to track months used.
     int count = 0;
 
-    // Looped through sorted growth values.
+    // looped through sorted growth values.
     for (int growth : months) {
 
-        // Added current month's growth.
+        // added current month's growth.
         total += growth;
 
-        // Increased month count.
+        // increased month count.
         count++;
 
-        // Returned answer once target was reached.
+        // returned answer once target was reached.
         if (total >= k) {
             cout << count << "\n";
             return 0;
         }
     }
 
-    // Printed -1 if target growth was impossible.
+    // printed -1 if target growth was impossible.
     cout << -1 << "\n";
 
     return 0;

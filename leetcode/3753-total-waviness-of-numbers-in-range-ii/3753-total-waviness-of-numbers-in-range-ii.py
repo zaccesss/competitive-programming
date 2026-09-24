@@ -13,7 +13,7 @@ class Solution:
             @lru_cache(None)
             def dp(pos, tight, started, second_last, last):
                 if pos == m:
-                    # Returned one valid number
+                    # returned one valid number
                     return (1, 0)
 
                 limit = digits[pos] if tight else 9
@@ -53,11 +53,11 @@ class Solution:
                     add = 0
 
                     if second_last != -1:
-                        # Added peak check
+                        # added peak check
                         if last > second_last and last > d:
                             add = 1
 
-                        # Added valley check
+                        # added valley check
                         elif last < second_last and last < d:
                             add = 1
 
@@ -71,12 +71,12 @@ class Solution:
 
                     total_count += cnt
 
-                    # Added waviness contribution
+                    # added waviness contribution
                     total_waviness += wav + cnt * add
 
                 return (total_count, total_waviness)
 
             return dp(0, True, False, -1, -1)[1]
 
-        # Returned answer for range
+        # returned answer for range
         return solve(num2) - solve(num1 - 1)

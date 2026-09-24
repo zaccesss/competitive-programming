@@ -7,7 +7,7 @@ int main() {
  
     vector<pair<int, int>> seg;
  
-    // Read segments
+    // read segments
     for (int i = 0; i < n; i++) {
         int l, r;
         cin >> l >> r;
@@ -15,18 +15,18 @@ int main() {
         seg.push_back({r, l});
     }
  
-    // Sort by right endpoint
+    // sort by right endpoint
     sort(seg.begin(), seg.end());
  
     vector<int> ans;
     int last = INT_MIN;
  
     for (auto [r, l] : seg) {
-        // Already covered
+        // already covered
         if (last >= l && last <= r)
             continue;
  
-        // Place a new nail
+        // place a new nail
         last = r;
         ans.push_back(last);
     }

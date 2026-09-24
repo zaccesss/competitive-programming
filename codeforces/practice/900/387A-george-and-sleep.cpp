@@ -11,18 +11,18 @@ int main() {
     int sh = stoi(sleepTime.substr(0, 2));
     int sm = stoi(sleepTime.substr(3, 2));
 
-    // Converted times to minutes
+    // converted times to minutes
     int current = ch * 60 + cm;
     int sleep = sh * 60 + sm;
 
-    // Calculated bedtime
+    // calculated bedtime
     int bedtime = current - sleep;
 
     if (bedtime < 0) {
         bedtime += 1440;
     }
 
-    // Converted back to hours and minutes
+    // converted back to hours and minutes
     int hours = bedtime / 60;
     int minutes = bedtime % 60;
 

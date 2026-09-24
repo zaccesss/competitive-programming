@@ -9,7 +9,7 @@ class Solution:
             if ch != "0":
                 digits.append(ch)
 
-        # If there were no non-zero digits, x = 0
+        # if there were no non-zero digits, x = 0
         if not digits:
             return 0
 
@@ -21,5 +21,5 @@ class Solution:
         for ch in digits:
             digitSum += int(ch)
 
-        # I returned x multiplied by its digit sum
+        # returned x multiplied by its digit sum
         return x * digitSum

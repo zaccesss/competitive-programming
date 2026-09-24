@@ -1,4 +1,4 @@
-# Definition for a binary tree node.
+# definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
@@ -7,13 +7,13 @@
 class Solution:
     def createBinaryTree(self, descriptions: List[List[int]]) -> Optional[TreeNode]:
 
-        # Used nodes to store value -> TreeNode mapping.
+        # used nodes to store value -> TreeNode mapping.
         nodes = {}
 
-        # Used children to track all child values.
+        # used children to track all child values.
         children = set()
 
-        # Built the tree connections.
+        # built the tree connections.
         for parent, child, isLeft in descriptions:
 
             if parent not in nodes:
@@ -29,7 +29,7 @@ class Solution:
 
             children.add(child)
 
-        # Found the root node.
+        # found the root node.
         for value in nodes:
             if value not in children:
                 return nodes[value] 

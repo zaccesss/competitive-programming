@@ -18,7 +18,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
         cin >> parent[i];
 
-        // Count outgoing tracks
+        // count outgoing tracks
         if (parent[i] != 0)
             out[parent[i]]++;
     }
@@ -30,7 +30,7 @@ int main() {
             vector<int> path;
             int cur = i;
 
-            // Follow the path backwards
+            // follow the path backwards
             while (cur != 0) {
                 path.push_back(cur);
 

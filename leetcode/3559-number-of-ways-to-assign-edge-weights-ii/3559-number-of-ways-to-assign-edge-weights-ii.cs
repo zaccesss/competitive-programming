@@ -6,7 +6,7 @@ public class Solution
 
         int n = edges.Length + 1;
 
-        // Used adjacency list for the tree.
+        // used adjacency list for the tree.
         List<int>[] graph = new List<int>[n + 1];
 
         for (int i = 0; i <= n; i++)
@@ -25,13 +25,13 @@ public class Solution
 
         int LOG = 18;
 
-        // Used depth to store node depths.
+        // used depth to store node depths.
         int[] depth = new int[n + 1];
 
-        // Used binary lifting table.
+        // used binary lifting table.
         int[,] up = new int[LOG, n + 1];
 
-        // Built depths and immediate parents.
+        // built depths and immediate parents.
         Queue<int> queue = new Queue<int>();
 
         bool[] visited = new bool[n + 1];
@@ -60,7 +60,7 @@ public class Solution
             }
         }
 
-        // Built binary lifting ancestors.
+        // built binary lifting ancestors.
         for (int k = 1; k < LOG; k++)
         {
             for (int node = 1; node <= n; node++)
@@ -70,7 +70,7 @@ public class Solution
             }
         }
 
-        // Precomputed powers of two modulo MOD.
+        // precomputed powers of two modulo MOD.
         int[] pow2 = new int[n + 1];
 
         pow2[0] = 1;
@@ -81,7 +81,7 @@ public class Solution
                 (int)((2L * pow2[i - 1]) % MOD);
         }
 
-        // Used LCA to find lowest common ancestor.
+        // used LCA to find lowest common ancestor.
         int Lca(int a, int b)
         {
             if (depth[a] < depth[b])
@@ -116,7 +116,7 @@ public class Solution
             return up[0, a];
         }
 
-        // Used answer to store query results.
+        // used answer to store query results.
         int[] answer = new int[queries.Length];
 
         for (int i = 0; i < queries.Length; i++)
@@ -131,7 +131,7 @@ public class Solution
                 + depth[v]
                 - 2 * depth[ancestor];
 
-            // Added zero for empty paths.
+            // added zero for empty paths.
             if (dist == 0)
             {
                 answer[i] = 0;
@@ -142,7 +142,7 @@ public class Solution
             }
         }
 
-        // Returned all query answers.
+        // returned all query answers.
         return answer;
     }
 }
