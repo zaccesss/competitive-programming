@@ -1,4 +1,4 @@
-// Solution for Codeforces 230A - Dragons
+// solution for Codeforces 230A - Dragons
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -32,11 +32,11 @@ int main() {
     vector<int> set2;
     vector<int> set3;
 
-    // Used one negative number for set 1.
+    // used one negative number for set 1.
     set1.push_back(negative.back());
     negative.pop_back();
 
-    // If there are no positive numbers,
+    // if there are no positive numbers,
     // used two negatives to create a positive product.
     if (positive.empty()) {
 
@@ -51,7 +51,7 @@ int main() {
         set2 = positive;
     }
 
-    // Put remaining numbers into set 3.
+    // put remaining numbers into set 3.
     for (int x : negative) {
         set3.push_back(x);
     }

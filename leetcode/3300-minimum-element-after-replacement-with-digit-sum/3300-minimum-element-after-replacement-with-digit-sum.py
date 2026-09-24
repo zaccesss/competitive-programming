@@ -1,26 +1,26 @@
 class Solution:
     def minElement(self, nums: List[int]) -> int:
 
-        # Used result to store minimum digit sum.
+        # used result to store minimum digit sum.
         result = float("inf")
 
-        # Looped through every number in nums.
+        # looped through every number in nums.
         for num in nums:
 
-            # Used total to store current digit sum.
+            # used total to store current digit sum.
             total = 0
 
-            # Looped through every digit in number.
+            # looped through every digit in number.
             while num > 0:
 
-                # Added last digit to total.
+                # added last digit to total.
                 total += num % 10
 
-                # Removed last digit from number.
+                # removed last digit from number.
                 num //= 10
 
-            # Updated minimum digit sum.
+            # updated minimum digit sum.
             result = min(result, total)
 
-        # Returned smallest digit sum.
+        # returned smallest digit sum.
         return result

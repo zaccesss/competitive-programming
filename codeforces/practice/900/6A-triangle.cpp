@@ -4,45 +4,45 @@ using namespace std;
 
 int main() {
 
-    // Used array to store stick lengths.
+    // used array to store stick lengths.
     int a[4];
 
-    // Read all stick lengths.
+    // read all stick lengths.
     for (int i = 0; i < 4; i++) {
         cin >> a[i];
     }
 
     bool segment = false;
 
-    // Checked every combination of three sticks.
+    // checked every combination of three sticks.
     for (int i = 0; i < 4; i++) {
 
         int sides[3];
         int idx = 0;
 
-        // Built current triple.
+        // built current triple.
         for (int j = 0; j < 4; j++) {
             if (j != i) {
                 sides[idx++] = a[j];
             }
         }
 
-        // Sorted the three sides.
+        // sorted the three sides.
         sort(sides, sides + 3);
 
-        // Returned triangle if possible.
+        // returned triangle if possible.
         if (sides[0] + sides[1] > sides[2]) {
             cout << "TRIANGLE\n";
             return 0;
         }
 
-        // Marked segment if degenerate triangle exists.
+        // marked segment if degenerate triangle exists.
         if (sides[0] + sides[1] == sides[2]) {
             segment = true;
         }
     }
 
-    // Returned segment if found.
+    // returned segment if found.
     if (segment) {
         cout << "SEGMENT\n";
     }

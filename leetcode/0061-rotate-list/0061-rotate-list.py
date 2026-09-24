@@ -1,4 +1,4 @@
-# Definition for singly-linked list.
+# definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
@@ -13,8 +13,8 @@ class Solution:
         if not head or not head.next or k == 0:
             return head
 
-        # Find the length of the linked list
-        # Also keep track of the tail node
+        # find the length of the linked list
+        # also keep track of the tail node
         length = 1
         tail = head
 
@@ -22,38 +22,38 @@ class Solution:
             tail = tail.next
             length += 1
 
-        # Reduce unnecessary rotations
-        # Example:
+        # reduce unnecessary rotations
+        # example:
         # length = 5, k = 7
         # rotating 7 times == rotating 2 times
         k = k % length
 
-        # If k becomes 0 after modulo,
+        # if k becomes 0 after modulo,
         # the list stays the same
         if k == 0:
             return head
 
-        # Connect the tail to the head
+        # connect the tail to the head
         # to make the list circular
         tail.next = head
 
-        # Find the new tail position
-        # Example:
+        # find the new tail position
+        # example:
         # length = 5, k = 2
         # new tail is at position 5 - 2 = 3
         steps = length - k
 
         new_tail = head
 
-        # Move to the new tail
+        # move to the new tail
         for _ in range(steps - 1):
             new_tail = new_tail.next
 
-        # The node after new_tail becomes new head
+        # the node after new_tail becomes new head
         new_head = new_tail.next
 
-        # Break the circular linked list
+        # break the circular linked list
         new_tail.next = None
 
-        # Return the rotated list
+        # return the rotated list
         return new_head

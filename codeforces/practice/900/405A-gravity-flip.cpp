@@ -3,22 +3,22 @@ using namespace std;
 
 int main() {
 
-    // Used n to store number of columns.
+    // used n to store number of columns.
     int n;
     cin >> n;
 
-    // Used heights to store column heights.
+    // used heights to store column heights.
     vector<int> heights(n);
 
-    // Read all column heights.
+    // read all column heights.
     for (int i = 0; i < n; i++) {
         cin >> heights[i];
     }
 
-    // Sorted heights in ascending order.
+    // sorted heights in ascending order.
     sort(heights.begin(), heights.end());
 
-    // Printed sorted heights.
+    // printed sorted heights.
     for (int i = 0; i < n; i++) {
         cout << heights[i];
 

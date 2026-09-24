@@ -1,28 +1,28 @@
 class Solution:
     def canReach(self, arr: List[int], start: int) -> bool:
 
-        # Queue for BFS
+        # queue for BFS
         queue = deque([start])
 
-        # Track visited indices
+        # track visited indices
         visited = set([start])
 
         while queue:
 
-            # Current index
+            # current index
             i = queue.popleft()
 
-            # Found value 0
+            # found value 0
             if arr[i] == 0:
                 return True
 
-            # Jump forward
+            # jump forward
             forward = i + arr[i]
 
-            # Jump backward
+            # jump backward
             backward = i - arr[i]
 
-            # Check forward position
+            # check forward position
             if (
                 0 <= forward < len(arr)
                 and forward not in visited
@@ -31,7 +31,7 @@ class Solution:
                 visited.add(forward)
                 queue.append(forward)
 
-            # Check backward position
+            # check backward position
             if (
                 0 <= backward < len(arr)
                 and backward not in visited
@@ -40,5 +40,5 @@ class Solution:
                 visited.add(backward)
                 queue.append(backward)
 
-        # No path reaches 0
+        # no path reaches 0
         return False

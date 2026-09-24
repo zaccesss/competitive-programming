@@ -3,7 +3,7 @@ class Solution {
 
         val n = nums.size
 
-        // Placed each valid number into its correct index.
+        // placed each valid number into its correct index.
         for (i in 0 until n) {
 
             while (
@@ -22,7 +22,7 @@ class Solution {
             }
         }
 
-        // Found first missing positive.
+        // found first missing positive.
         for (i in 0 until n) {
 
             if (nums[i] != i + 1) {
@@ -31,7 +31,7 @@ class Solution {
             }
         }
 
-        // All numbers 1..n exist.
+        // all numbers 1..n exist.
         return n + 1
     }
 }

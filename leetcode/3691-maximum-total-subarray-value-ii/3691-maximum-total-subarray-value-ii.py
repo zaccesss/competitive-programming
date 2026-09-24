@@ -6,13 +6,13 @@ class Solution:
 
         n = len(nums)
 
-        # Used sparse tables for range maximum and minimum queries.
+        # used sparse tables for range maximum and minimum queries.
         st_max = [nums[:]]
         st_min = [nums[:]]
 
         level = 1
 
-        # Built sparse tables.
+        # built sparse tables.
         while (1 << level) <= n:
 
             prev_max = st_max[level - 1]
@@ -42,7 +42,7 @@ class Solution:
 
             level += 1
 
-        # Used RMQ to get subarray value in O(1).
+        # used RMQ to get subarray value in O(1).
         def value(left: int, right: int) -> int:
 
             length = right - left + 1
@@ -60,10 +60,10 @@ class Solution:
 
             return maximum - minimum
 
-        # Used max heap to track largest remaining subarray values.
+        # used max heap to track largest remaining subarray values.
         heap = []
 
-        # Added the largest interval for every starting index.
+        # added the largest interval for every starting index.
         for left in range(n):
 
             heapq.heappush(
@@ -71,17 +71,17 @@ class Solution:
                 (-value(left, n - 1), left, n - 1)
             )
 
-        # Used answer to store the maximum total value.
+        # used answer to store the maximum total value.
         answer = 0
 
-        # Processed the k largest distinct subarrays.
+        # processed the k largest distinct subarrays.
         for _ in range(k):
 
             current_value, left, right = heapq.heappop(heap)
 
             answer += -current_value
 
-            # Added the next candidate interval.
+            # added the next candidate interval.
             if right > left:
 
                 heapq.heappush(
@@ -93,5 +93,5 @@ class Solution:
                     )
                 )
 
-        # Returned the maximum total value.
+        # returned the maximum total value.
         return answer

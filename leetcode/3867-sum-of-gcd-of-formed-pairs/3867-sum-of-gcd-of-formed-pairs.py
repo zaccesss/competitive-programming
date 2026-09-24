@@ -5,18 +5,18 @@ class Solution:
         pre = []
         mx = 0
 
-        # Build prefix GCD array
+        # build prefix GCD array
         for x in nums:
             mx = max(mx, x)
             pre.append(gcd(x, mx))
 
-        # Sort the prefix GCDs
+        # sort the prefix GCDs
         pre.sort()
 
         ans = 0
         l, r = 0, len(pre) - 1
 
-        # Pair smallest with largest
+        # pair smallest with largest
         while l < r:
             ans += gcd(pre[l], pre[r])
             l += 1

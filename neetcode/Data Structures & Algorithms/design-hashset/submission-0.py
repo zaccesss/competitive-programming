@@ -29,7 +29,7 @@ class MyHashSet:
         
 
 
-# Your MyHashSet object will be instantiated and called as such:
+# your MyHashSet object will be instantiated and called as such:
 # obj = MyHashSet()
 # obj.add(key)
 # obj.remove(key)

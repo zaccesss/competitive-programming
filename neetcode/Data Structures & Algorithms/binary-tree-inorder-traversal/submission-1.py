@@ -1,4 +1,4 @@
-# Definition for a binary tree node.
+# definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
@@ -7,28 +7,28 @@
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
 
-        # Used result to store traversal order.
+        # used result to store traversal order.
         result = []
 
-        # Used stack for iterative traversal.
+        # used stack for iterative traversal.
         stack = []
 
-        # Continued while nodes remained to process.
+        # continued while nodes remained to process.
         while root or stack:
 
-            # Moved to leftmost node.
+            # moved to leftmost node.
             while root:
                 stack.append(root)
                 root = root.left
 
-            # Retrieved next node to visit.
+            # retrieved next node to visit.
             root = stack.pop()
 
-            # Added current node value.
+            # added current node value.
             result.append(root.val)
 
-            # Moved to right subtree.
+            # moved to right subtree.
             root = root.right
 
-        # Returned inorder traversal.
+        # returned inorder traversal.
         return result  

@@ -6,10 +6,10 @@ class Solution:
 
         while left < right:
 
-            # Found mismatch
+            # found mismatch
             if s[left] != s[right]:
 
-                # Check by skipping left character
+                # check by skipping left character
                 l1 = left + 1
                 r1 = right
                 ok1 = True
@@ -21,7 +21,7 @@ class Solution:
                     l1 += 1
                     r1 -= 1
 
-                # Check by skipping right character
+                # check by skipping right character
                 l2 = left
                 r2 = right - 1
                 ok2 = True

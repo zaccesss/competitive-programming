@@ -1,6 +1,6 @@
-// Codeforces 25A - IQ Test
+// codeforces 25A - IQ Test
 // https://codeforces.com/problemset/problem/25/A
-// Solution by zac
+// solution by zac
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -8,19 +8,19 @@ class Solution:
             if nums[m] == target:
                 return True
 
-            # Cannot determine sorted half
+            # cannot determine sorted half
             if nums[l] == nums[m] == nums[r]:
                 l += 1
                 r -= 1
 
-            # Left half is sorted
+            # left half is sorted
             elif nums[l] <= nums[m]:
                 if nums[l] <= target < nums[m]:
                     r = m - 1
                 else:
                     l = m + 1
 
-            # Right half is sorted
+            # right half is sorted
             else:
                 if nums[m] < target <= nums[r]:
                     l = m + 1

@@ -6,7 +6,7 @@ class Solution:
 
         n = len(nums)
 
-        # Placed each valid number into its correct index.
+        # placed each valid number into its correct index.
         for i in range(n):
 
             while (
@@ -23,12 +23,12 @@ class Solution:
                     nums[i]
                 )
 
-        # Found first missing positive.
+        # found first missing positive.
         for i in range(n):
 
             if nums[i] != i + 1:
 
                 return i + 1
 
-        # All numbers 1..n exist.
+        # all numbers 1..n exist.
         return n + 1

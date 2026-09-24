@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Check if team a beats team b
+// check if team a beats team b
 bool win(pair<int,int> a, pair<int,int> b) {
     return a.first > b.second && a.second > b.first;
 }
@@ -9,17 +9,17 @@ bool win(pair<int,int> a, pair<int,int> b) {
 int main() {
     int a[5], b[5];
 
-    // Read defence and attack skills
+    // read defence and attack skills
     for (int i = 1; i <= 4; i++)
         cin >> a[i] >> b[i];
 
-    // Team 1's two possible arrangements
+    // team 1's two possible arrangements
     pair<int,int> t1[2] = {
         {a[2], b[1]},
         {a[1], b[2]}
     };
 
-    // Team 2's two possible arrangements
+    // team 2's two possible arrangements
     pair<int,int> t2[2] = {
         {a[4], b[3]},
         {a[3], b[4]}
@@ -27,7 +27,7 @@ int main() {
 
     bool ok1 = false;
 
-    // Can Team 1 guarantee a win?
+    // can Team 1 guarantee a win?
     for (int i = 0; i < 2; i++) {
         bool good = true;
         for (int j = 0; j < 2; j++)
@@ -43,7 +43,7 @@ int main() {
 
     bool ok2 = true;
 
-    // Can Team 2 always find a winning response?
+    // can Team 2 always find a winning response?
     for (int i = 0; i < 2; i++) {
         bool good = false;
         for (int j = 0; j < 2; j++)

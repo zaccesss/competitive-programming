@@ -1,6 +1,6 @@
-// Codeforces A - Codehorses T-shirts
-// Solution by zac
-// Implementation of the Hungarian algorithm for minimum-cost perfect matching in a bipartite graph.
+// codeforces A - Codehorses T-shirts
+// solution by zac
+// implementation of the Hungarian algorithm for minimum-cost perfect matching in a bipartite graph.
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -22,7 +22,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             if (a[i].size() != b[j].size()) continue; // cannot transform if lengths differ
-            int d = 0; // Hamming distance between strings of equal length
+            int d = 0; // hamming distance between strings of equal length
             for (size_t k = 0; k < a[i].size(); ++k) {
                 if (a[i][k] != b[j][k]) ++d; // count differing characters
             }
@@ -30,8 +30,8 @@ int main() {
         }
     }
 
-    // We need a minimum-cost perfect matching between a[] and b[].
-    // Use the Hungarian algorithm on an n x n cost matrix.
+    // we need a minimum-cost perfect matching between a[] and b[].
+    // use the Hungarian algorithm on an n x n cost matrix.
     int N = n;
     vector<int> u(N+1), v(N+1), p(N+1), way(N+1);
     for (int i = 1; i <= N; ++i) {
