@@ -12,7 +12,7 @@ class Solution {
 
         val n = edges.size + 1
 
-        // Used adjacency list for the tree.
+        // used adjacency list for the tree.
         val graph = Array(n + 1) {
             mutableListOf<Int>()
         }
@@ -26,15 +26,15 @@ class Solution {
             graph[v].add(u)
         }
 
-        // Used depth to store node depths.
+        // used depth to store node depths.
         val depth = IntArray(n + 1)
 
-        // Used binary lifting table.
+        // used binary lifting table.
         val up = Array(LOG) {
             IntArray(n + 1)
         }
 
-        // Built depths and parents with BFS.
+        // built depths and parents with BFS.
         val queue = ArrayDeque<Int>()
 
         val visited = BooleanArray(n + 1)
@@ -62,7 +62,7 @@ class Solution {
             }
         }
 
-        // Built binary lifting table.
+        // built binary lifting table.
         for (k in 1 until LOG) {
 
             for (node in 1..n) {
@@ -74,7 +74,7 @@ class Solution {
             }
         }
 
-        // Precomputed powers of 2 modulo MOD.
+        // precomputed powers of 2 modulo MOD.
         val pow2 = IntArray(n + 1)
 
         pow2[0] = 1
@@ -86,7 +86,7 @@ class Solution {
                     .toInt()
         }
 
-        // Used LCA to find lowest common ancestor.
+        // used LCA to find lowest common ancestor.
         fun lca(
             startA: Int,
             startB: Int
@@ -127,7 +127,7 @@ class Solution {
             return up[0][a]
         }
 
-        // Processed all queries.
+        // processed all queries.
         val answer = IntArray(queries.size)
 
         for (i in queries.indices) {

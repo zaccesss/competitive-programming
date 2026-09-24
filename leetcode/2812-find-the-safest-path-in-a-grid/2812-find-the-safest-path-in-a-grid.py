@@ -7,12 +7,12 @@ class Solution:
 
         n = len(grid)
 
-        # Distance from every cell to its nearest thief
+        # distance from every cell to its nearest thief
         dist = [[-1] * n for _ in range(n)]
 
         queue = deque()
 
-        # Add every thief into the queue
+        # add every thief into the queue
         for r in range(n):
             for c in range(n):
                 if grid[r][c] == 1:
@@ -21,7 +21,7 @@ class Solution:
 
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
-        # Multi-source BFS
+        # multi-source BFS
         while queue:
             r, c = queue.popleft()
 
@@ -37,7 +37,7 @@ class Solution:
                     dist[nr][nc] = dist[r][c] + 1
                     queue.append((nr, nc))
 
-        # Check if a path exists with safeness >= limit
+        # check if a path exists with safeness >= limit
         def can_reach(limit):
 
             if dist[0][0] < limit:

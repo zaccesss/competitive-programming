@@ -6,14 +6,14 @@ class Solution:
         answer = []
 
         for num in nums:
-            # Computed right sum
+            # computed right sum
             right = total - left - num
 
-            # Added difference
+            # added difference
             answer.append(abs(left - right))
 
-            # Updated left sum
+            # updated left sum
             left += num
 
-        # Returned answer
+        # returned answer
         return answer

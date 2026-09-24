@@ -1,8 +1,8 @@
-# Method 1
+# method 1
 #print('My favorite quote is "To be or not to be."')
 
-# Method 2
+# method 2
 print("""My favorite quote is "To be or not to be.""")
 
-# Method 3
+# method 3
 #print("My favorite quote is \"To be or not to be.\"")

@@ -8,10 +8,10 @@ class Solution {
         int[][] queries
     ) {
 
-        // Used n to store number of nodes.
+        // used n to store number of nodes.
         int n = edges.length + 1;
 
-        // Built adjacency list for the tree.
+        // built adjacency list for the tree.
         List<Integer>[] graph =
             new ArrayList[n + 1];
 
@@ -29,14 +29,14 @@ class Solution {
             graph[v].add(u);
         }
 
-        // Used depth to store node depths.
+        // used depth to store node depths.
         int[] depth = new int[n + 1];
 
-        // Used up for binary lifting ancestors.
+        // used up for binary lifting ancestors.
         int[][] up =
             new int[LOG][n + 1];
 
-        // Built depths and immediate parents using BFS.
+        // built depths and immediate parents using BFS.
         boolean[] visited =
             new boolean[n + 1];
 
@@ -68,7 +68,7 @@ class Solution {
             }
         }
 
-        // Built binary lifting table.
+        // built binary lifting table.
         for (int k = 1; k < LOG; k++) {
 
             for (int node = 1; node <= n; node++) {
@@ -80,7 +80,7 @@ class Solution {
             }
         }
 
-        // Precomputed powers of two modulo MOD.
+        // precomputed powers of two modulo MOD.
         int[] pow2 =
             new int[n + 1];
 
@@ -95,17 +95,17 @@ class Solution {
                 );
         }
 
-        // Used answer to store results.
+        // used answer to store results.
         int[] answer =
             new int[queries.length];
 
-        // Processed all queries.
+        // processed all queries.
         for (int i = 0; i < queries.length; i++) {
 
             int u = queries[i][0];
             int v = queries[i][1];
 
-            // Found lowest common ancestor.
+            // found lowest common ancestor.
             int ancestor =
                 lca(
                     u,
@@ -114,19 +114,19 @@ class Solution {
                     up
                 );
 
-            // Calculated distance.
+            // calculated distance.
             int dist =
                 depth[u]
                 + depth[v]
                 - 2 * depth[ancestor];
 
-            // Empty path has no valid assignments.
+            // empty path has no valid assignments.
             if (dist == 0) {
 
                 answer[i] = 0;
             } else {
 
-                // Answer equals 2^(distance - 1).
+                // answer equals 2^(distance - 1).
                 answer[i] =
                     pow2[dist - 1];
             }
@@ -135,7 +135,7 @@ class Solution {
         return answer;
     }
 
-    // Used binary lifting to find LCA.
+    // used binary lifting to find LCA.
     private int lca(
         int a,
         int b,
@@ -153,7 +153,7 @@ class Solution {
         int diff =
             depth[a] - depth[b];
 
-        // Lifted deeper node.
+        // lifted deeper node.
         for (int k = 0; k < LOG; k++) {
 
             if (
@@ -165,13 +165,13 @@ class Solution {
             }
         }
 
-        // Found LCA immediately.
+        // found LCA immediately.
         if (a == b) {
 
             return a;
         }
 
-        // Lifted both nodes together.
+        // lifted both nodes together.
         for (
             int k = LOG - 1;
             k >= 0;
@@ -188,7 +188,7 @@ class Solution {
             }
         }
 
-        // Returned lowest common ancestor.
+        // returned lowest common ancestor.
         return up[0][a];
     }
 }

@@ -1,4 +1,4 @@
-# Definition for singly-linked list.
+# definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
@@ -7,26 +7,26 @@
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
     
-        # Used prev to store the previous node.
+        # used prev to store the previous node.
         prev = None
 
-        # Used curr to traverse the linked list.
+        # used curr to traverse the linked list.
         curr = head
 
-        # Looped through the list until curr became None.
+        # looped through the list until curr became None.
         while curr:
 
-            # Saved the next node before reversing pointers.
+            # saved the next node before reversing pointers.
             nextNode = curr.next
 
-            # Reversed the current node pointer.
+            # reversed the current node pointer.
             curr.next = prev
 
-            # Moved prev one step forward.
+            # moved prev one step forward.
             prev = curr
 
-            # Moved curr to the next node.
+            # moved curr to the next node.
             curr = nextNode
 
-        # Returned prev as the new head of the reversed list.
+        # returned prev as the new head of the reversed list.
         return prev

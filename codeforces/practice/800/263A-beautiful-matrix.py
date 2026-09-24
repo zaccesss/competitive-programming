@@ -1,4 +1,4 @@
-# Read the 5x5 matrix and find the position of the single 1
+# read the 5x5 matrix and find the position of the single 1
 for i in range(5):
     row = input().split()  # read each row as a list of strings
     for j in range(5):

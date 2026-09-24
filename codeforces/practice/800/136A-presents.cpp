@@ -1,4 +1,4 @@
-// Codeforces Round #136 (Div. 2) - Problem A: Presents
+// codeforces Round #136 (Div. 2) - Problem A: Presents
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,4 +1,4 @@
-# Definition for a binary tree node.
+# definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
@@ -7,49 +7,49 @@
 class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
 
-        # Used result to store traversal order.
+        # used result to store traversal order.
         result = []
 
-        # Used current to traverse tree.
+        # used current to traverse tree.
         current = root
 
-        # Traversed tree until all nodes were processed.
+        # traversed tree until all nodes were processed.
         while current:
 
-            # Processed node if left child did not exist.
+            # processed node if left child did not exist.
             if not current.left:
 
-                # Added current node value.
+                # added current node value.
                 result.append(current.val)
 
-                # Moved to right child.
+                # moved to right child.
                 current = current.right
 
             else:
 
-                # Used predecessor to find rightmost node.
+                # used predecessor to find rightmost node.
                 predecessor = current.left
 
-                # Found inorder predecessor.
+                # found inorder predecessor.
                 while predecessor.right and predecessor.right != current:
                     predecessor = predecessor.right
 
-                # Created temporary thread.
+                # created temporary thread.
                 if not predecessor.right:
 
-                    # Added current node value.
+                    # added current node value.
                     result.append(current.val)
 
                     predecessor.right = current
 
                     current = current.left
 
-                # Removed temporary thread.
+                # removed temporary thread.
                 else:
 
                     predecessor.right = None
 
                     current = current.right
 
-        # Returned preorder traversal.
+        # returned preorder traversal.
         return result

@@ -5,14 +5,14 @@ using namespace std;
 
 int main() {
 
-    // Used encoded to store the encrypted password.
+    // used encoded to store the encrypted password.
     string encoded;
     cin >> encoded;
 
-    // Used mapping to store code -> digit.
+    // used mapping to store code -> digit.
     unordered_map<string, char> mapping;
 
-    // Read digit encodings.
+    // read digit encodings.
     for (int digit = 0; digit <= 9; digit++) {
         string code;
         cin >> code;
@@ -20,7 +20,7 @@ int main() {
         mapping[code] = char('0' + digit);
     }
 
-    // Decoded the password.
+    // decoded the password.
     for (int i = 0; i < 80; i += 10) {
 
         string block = encoded.substr(i, 10);

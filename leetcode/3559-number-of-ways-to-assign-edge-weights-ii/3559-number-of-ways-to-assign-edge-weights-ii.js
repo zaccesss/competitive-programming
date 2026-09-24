@@ -10,7 +10,7 @@ var assignEdgeWeights = function(edges, queries) {
 
     const n = edges.length + 1;
 
-    // Used adjacency list for the tree.
+    // used adjacency list for the tree.
     const graph =
         Array.from(
             { length: n + 1 },
@@ -23,18 +23,18 @@ var assignEdgeWeights = function(edges, queries) {
         graph[v].push(u);
     }
 
-    // Used depth to store node depths.
+    // used depth to store node depths.
     const depth =
         new Array(n + 1).fill(0);
 
-    // Used binary lifting table.
+    // used binary lifting table.
     const up =
         Array.from(
             { length: LOG },
             () => new Array(n + 1).fill(0)
         );
 
-    // Built depths and parents with BFS.
+    // built depths and parents with BFS.
     const queue = [1];
 
     const visited =
@@ -65,7 +65,7 @@ var assignEdgeWeights = function(edges, queries) {
         }
     }
 
-    // Built binary lifting table.
+    // built binary lifting table.
     for (let k = 1; k < LOG; k++) {
 
         for (let node = 1; node <= n; node++) {
@@ -77,7 +77,7 @@ var assignEdgeWeights = function(edges, queries) {
         }
     }
 
-    // Precomputed powers of 2 modulo MOD.
+    // precomputed powers of 2 modulo MOD.
     const pow2 =
         new Array(n + 1).fill(1);
 
@@ -87,7 +87,7 @@ var assignEdgeWeights = function(edges, queries) {
             (pow2[i - 1] * 2) % MOD;
     }
 
-    // Used LCA to find lowest common ancestor.
+    // used LCA to find lowest common ancestor.
     function lca(a, b) {
 
         if (depth[a] < depth[b]) {
@@ -127,7 +127,7 @@ var assignEdgeWeights = function(edges, queries) {
         return up[0][a];
     }
 
-    // Processed all queries.
+    // processed all queries.
     const answer = [];
 
     for (const [u, v] of queries) {

@@ -10,7 +10,7 @@ class Solution {
 
         let n = edges.count + 1
 
-        // Used adjacency list for the tree.
+        // used adjacency list for the tree.
         var graph = Array(
             repeating: [Int](),
             count: n + 1
@@ -25,13 +25,13 @@ class Solution {
             graph[v].append(u)
         }
 
-        // Used depth to store node depths.
+        // used depth to store node depths.
         var depth = Array(
             repeating: 0,
             count: n + 1
         )
 
-        // Used binary lifting table.
+        // used binary lifting table.
         var up = Array(
             repeating: Array(
                 repeating: 0,
@@ -40,7 +40,7 @@ class Solution {
             count: LOG
         )
 
-        // Built depths and parents with BFS.
+        // built depths and parents with BFS.
         var queue = [1]
 
         var visited = Array(
@@ -74,7 +74,7 @@ class Solution {
             }
         }
 
-        // Built binary lifting table.
+        // built binary lifting table.
         for k in 1..<LOG {
 
             for node in 1...n {
@@ -86,7 +86,7 @@ class Solution {
             }
         }
 
-        // Precomputed powers of 2 modulo MOD.
+        // precomputed powers of 2 modulo MOD.
         var pow2 = Array(
             repeating: 1,
             count: n + 1
@@ -101,7 +101,7 @@ class Solution {
                 )
         }
 
-        // Used LCA to find lowest common ancestor.
+        // used LCA to find lowest common ancestor.
         func lca(
             _ startA: Int,
             _ startB: Int
@@ -145,7 +145,7 @@ class Solution {
             return up[0][a]
         }
 
-        // Processed all queries.
+        // processed all queries.
         var answer = [Int]()
 
         answer.reserveCapacity(

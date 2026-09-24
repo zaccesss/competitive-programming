@@ -3,24 +3,24 @@ using namespace std;
 
 int main() {
 
-    // Used n for poster length and k for ladder position.
+    // used n for poster length and k for ladder position.
     int n, k;
     cin >> n >> k;
 
-    // Used slogan to store poster text.
+    // used slogan to store poster text.
     string slogan;
     cin >> slogan;
 
-    // Moved to left end if closer to left side.
+    // moved to left end if closer to left side.
     if (k <= (n + 1) / 2) {
 
-        // Moved ladder to position 1.
+        // moved ladder to position 1.
         while (k > 1) {
             cout << "LEFT\n";
             k--;
         }
 
-        // Printed characters from left to right.
+        // printed characters from left to right.
         for (int i = 0; i < n; i++) {
 
             cout << "PRINT " << slogan[i] << "\n";
@@ -31,16 +31,16 @@ int main() {
         }
     }
 
-    // Otherwise moved to right end.
+    // otherwise moved to right end.
     else {
 
-        // Moved ladder to position n.
+        // moved ladder to position n.
         while (k < n) {
             cout << "RIGHT\n";
             k++;
         }
 
-        // Printed characters from right to left.
+        // printed characters from right to left.
         for (int i = n - 1; i >= 0; i--) {
 
             cout << "PRINT " << slogan[i] << "\n";

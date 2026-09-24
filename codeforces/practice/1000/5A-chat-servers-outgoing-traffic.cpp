@@ -1,4 +1,4 @@
-// Solution for Codeforces 5A - Chat Servers Outgoing Traffic
+// solution for Codeforces 5A - Chat Servers Outgoing Traffic
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -19,7 +19,7 @@ int main() {
         } else if (line[0] == '-') {
             --online; // user left the chat
         } else {
-            // A message has the form "name:text"; only text length counts.
+            // a message has the form "name:text"; only text length counts.
             size_t colon = line.find(':');
             traffic += 1LL * online * (line.size() - colon - 1);
         }

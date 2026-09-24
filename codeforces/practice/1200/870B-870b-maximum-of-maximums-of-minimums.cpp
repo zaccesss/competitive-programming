@@ -15,20 +15,20 @@ int main() {
         cin >> a[i];
     }
 
-    // Case 1:
-    // The whole array is one segment.
+    // case 1:
+    // the whole array is one segment.
     if (k == 1) {
         cout << *min_element(a.begin(), a.end()) << endl;
     }
 
-    // Case 2:
-    // Best answer is the larger of the two ends.
+    // case 2:
+    // best answer is the larger of the two ends.
     else if (k == 2) {
         cout << max(a[0], a[n - 1]) << endl;
     }
 
-    // Case 3:
-    // We can isolate the largest element.
+    // case 3:
+    // we can isolate the largest element.
     else {
         cout << *max_element(a.begin(), a.end()) << endl;
     }

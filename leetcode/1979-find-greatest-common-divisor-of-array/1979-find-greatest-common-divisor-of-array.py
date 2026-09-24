@@ -1,10 +1,10 @@
 class Solution:
     def findGCD(self, nums: List[int]) -> int:
-        # Find the smallest and largest numbers
+        # find the smallest and largest numbers
         mn = min(nums)
         mx = max(nums)
 
-        # Compute their GCD
+        # compute their GCD
         while mx:
             mn, mx = mx, mn % mx
 

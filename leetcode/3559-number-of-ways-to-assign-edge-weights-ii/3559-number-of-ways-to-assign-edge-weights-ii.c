@@ -1,5 +1,5 @@
 /**
- * Note: The returned array must be malloced, assume caller calls free().
+ * note: The returned array must be malloced, assume caller calls free().
  */
 
 #define MOD 1000000007LL
@@ -58,7 +58,7 @@ int* assignEdgeWeights(
 
     *returnSize = queriesSize;
 
-    /* Used adjacency list for the tree. */
+    /* used adjacency list for the tree. */
     int* head = malloc((n + 1) * sizeof(int));
     int* to = malloc((2 * edgesSize) * sizeof(int));
     int* next = malloc((2 * edgesSize) * sizeof(int));
@@ -84,7 +84,7 @@ int* assignEdgeWeights(
         head[v] = idx++;
     }
 
-    /* Used BFS to build depths and parents. */
+    /* used BFS to build depths and parents. */
     int* queue = malloc((n + 5) * sizeof(int));
 
     int front = 0;
@@ -121,7 +121,7 @@ int* assignEdgeWeights(
         }
     }
 
-    /* Built binary lifting table. */
+    /* built binary lifting table. */
     for (int k = 1; k < LOG; k++)
     {
         for (int node = 1; node <= n; node++)
@@ -133,7 +133,7 @@ int* assignEdgeWeights(
         }
     }
 
-    /* Precomputed powers of two modulo MOD. */
+    /* precomputed powers of two modulo MOD. */
     pow2Arr[0] = 1;
 
     for (int i = 1; i <= n; i++)
@@ -142,7 +142,7 @@ int* assignEdgeWeights(
             (int)((2LL * pow2Arr[i - 1]) % MOD);
     }
 
-    /* Used answer to store query results. */
+    /* used answer to store query results. */
     int* answer = malloc(queriesSize * sizeof(int));
 
     for (int i = 0; i < queriesSize; i++)
@@ -157,7 +157,7 @@ int* assignEdgeWeights(
             + depthArr[v]
             - 2 * depthArr[ancestor];
 
-        /* Added zero for empty paths. */
+        /* added zero for empty paths. */
         if (dist == 0)
         {
             answer[i] = 0;

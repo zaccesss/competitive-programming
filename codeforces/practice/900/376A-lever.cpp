@@ -3,40 +3,40 @@ using namespace std;
 
 int main() {
 
-    // Used s to store lever description.
+    // used s to store lever description.
     string s;
     cin >> s;
 
-    // Used pivot to store position of '^'.
+    // used pivot to store position of '^'.
     int pivot = s.find('^');
 
-    // Used long long because torques can be large.
+    // used long long because torques can be large.
     long long leftTorque = 0;
     long long rightTorque = 0;
 
-    // Processed every position on the lever.
+    // processed every position on the lever.
     for (int i = 0; i < s.size(); i++) {
 
-        // Skipped empty positions and pivot.
+        // skipped empty positions and pivot.
         if (s[i] == '=' || s[i] == '^') {
             continue;
         }
 
-        // Converted digit character to weight.
+        // converted digit character to weight.
         int weight = s[i] - '0';
 
-        // Added contribution to left side.
+        // added contribution to left side.
         if (i < pivot) {
             leftTorque += 1LL * weight * (pivot - i);
         }
 
-        // Added contribution to right side.
+        // added contribution to right side.
         else if (i > pivot) {
             rightTorque += 1LL * weight * (i - pivot);
         }
     }
 
-    // Compared both torques.
+    // compared both torques.
     if (leftTorque > rightTorque) {
         cout << "left\n";
     }

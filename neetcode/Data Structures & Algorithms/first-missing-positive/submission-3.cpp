@@ -4,7 +4,7 @@ public:
 
         int n = nums.size();
 
-        // Placed each valid number into its correct index.
+        // placed each valid number into its correct index.
         for (int i = 0; i < n; i++) {
 
             while (
@@ -20,7 +20,7 @@ public:
             }
         }
 
-        // Found first missing positive.
+        // found first missing positive.
         for (int i = 0; i < n; i++) {
 
             if (nums[i] != i + 1) {
@@ -29,7 +29,7 @@ public:
             }
         }
 
-        // All numbers 1..n exist.
+        // all numbers 1..n exist.
         return n + 1;
     }
 };

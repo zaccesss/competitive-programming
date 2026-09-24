@@ -1,4 +1,4 @@
-// Solution for Codeforces 3A - Shortest Path of the King
+// solution for Codeforces 3A - Shortest Path of the King
 
 #include <bits/stdc++.h>
 using namespace std;

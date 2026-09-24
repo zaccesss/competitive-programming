@@ -10,10 +10,10 @@ class Solution:
 
         MOD = 1_000_000_007
 
-        # Used n to store number of nodes.
+        # used n to store number of nodes.
         n = len(edges) + 1
 
-        # Built adjacency list for the tree.
+        # built adjacency list for the tree.
         graph = [[] for _ in range(n + 1)]
 
         for u, v in edges:
@@ -22,13 +22,13 @@ class Solution:
 
         LOG = (n + 1).bit_length()
 
-        # Used depth to store node depths.
+        # used depth to store node depths.
         depth = [0] * (n + 1)
 
-        # Used parent to store immediate ancestors.
+        # used parent to store immediate ancestors.
         parent = [0] * (n + 1)
 
-        # Built depths and parents using BFS.
+        # built depths and parents using BFS.
         q = deque([1])
 
         while q:
@@ -46,12 +46,12 @@ class Solution:
 
                 q.append(nxt)
 
-        # Used binary lifting table.
+        # used binary lifting table.
         up = [[0] * (n + 1) for _ in range(LOG)]
 
         up[0] = parent[:]
 
-        # Built binary lifting ancestors.
+        # built binary lifting ancestors.
         for j in range(1, LOG):
 
             prev = up[j - 1]
@@ -62,7 +62,7 @@ class Solution:
 
                 curr[node] = prev[prev[node]]
 
-        # Precomputed powers of two modulo MOD.
+        # precomputed powers of two modulo MOD.
         pow2 = [1] * n
 
         for i in range(1, n):
@@ -71,7 +71,7 @@ class Solution:
                 pow2[i - 1] * 2
             ) % MOD
 
-        # Used LCA to find lowest common ancestor.
+        # used LCA to find lowest common ancestor.
         def lca(a: int, b: int) -> int:
 
             if depth[a] < depth[b]:
@@ -106,26 +106,26 @@ class Solution:
 
             return up[0][a]
 
-        # Used answer to store query results.
+        # used answer to store query results.
         answer = [0] * len(queries)
 
-        # Processed all queries.
+        # processed all queries.
         for i, (u, v) in enumerate(queries):
 
             ancestor = lca(u, v)
 
-            # Calculated distance.
+            # calculated distance.
             dist = (
                 depth[u]
                 + depth[v]
                 - 2 * depth[ancestor]
             )
 
-            # Empty path has no valid assignments.
+            # empty path has no valid assignments.
             if dist:
 
-                # Answer equals 2^(distance - 1).
+                # answer equals 2^(distance - 1).
                 answer[i] = pow2[dist - 1]
 
-        # Returned all query answers.
+        # returned all query answers.
         return answer
