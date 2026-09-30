@@ -92,8 +92,8 @@ VS Code users can also run the default build task with `Ctrl+Shift+B`.
 | Platform | Username | Profile |
 |---|---|---|
 | Codeforces | `zaccesss` | [codeforces.com/profile/zaccesss](https://codeforces.com/profile/zaccesss) |
-| LeetCode | `zacadjei` | [leetcode.com/u/zacadjei](https://leetcode.com/u/zacadjei) |
-| NeetCode | `zaccess` | [neetcode.io/profile/zaccess](https://neetcode.io/profile/zaccess) |
+| LeetCode | `zaccessss` | [leetcode.com/u/zaccessss](https://leetcode.com/u/zaccessss) |
+| NeetCode | `zaccesss` | [neetcode.io/user/SleekGenin452](https://neetcode.io/user/SleekGenin452) |
 
 ---
 

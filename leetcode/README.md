@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-> **@zacadjei** · Accepted submissions synced automatically via LeetHub v2
+> **@zaccessss** · Accepted submissions synced automatically via LeetHub v2
 
 [![Markdown Lint](https://github.com/zaccesss/leetcode-submissions/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/zaccesss/leetcode-submissions/actions/workflows/markdownlint.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -70,8 +70,8 @@ Solutions prioritise clarity and understanding over cleverness. The point is to 
 
 | Platform | Username | Profile |
 |---|---|---|
-| LeetCode | `zacadjei` | [leetcode.com/u/zacadjei](https://leetcode.com/u/zacadjei) |
-| NeetCode | `zaccess` | [neetcode.io/profile/zaccess](https://neetcode.io/profile/zaccess) |
+| LeetCode | `zaccessss` | [leetcode.com/u/zaccessss](https://leetcode.com/u/zaccessss) |
+| NeetCode | `zaccesss` | [neetcode.io/user/SleekGenin452](https://neetcode.io/user/SleekGenin452) |
 | Codeforces | `zaccesss` | [codeforces.com/profile/zaccesss](https://codeforces.com/profile/zaccesss) |
 
 ---
