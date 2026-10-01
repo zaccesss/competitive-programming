@@ -10,6 +10,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 
 - Tidied code comments.
+- Markdown linting skips the synced `leetcode/`, `neetcode/` and `codeforces/` folders, which every sync regenerates from the submission repos.
 - Profile links now use my current handles: LeetCode `zaccessss` and NeetCode at `neetcode.io/user/SleekGenin452`.
 - `sync.yml` now excludes each source's CODEOWNERS, CODE_OF_CONDUCT.md, SECURITY.md, SUPPORT.md, CHANGELOG.md and `.markdownlint.json`, since this repo already carries its own copy of each at the root
 - `sync.yml` also excludes codeforces-submissions' `scripts/`, `.vscode/`, `.gitignore` and `bin/`, local build tooling and editor config rather than solution content. Removed the same four already-synced paths from `codeforces/` here

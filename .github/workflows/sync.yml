@@ -103,9 +103,7 @@ jobs:
           fi
 
           msg="$(printf '%s, ' "${parts[@]}")"
-          # the solutions are the account owner's, so sync commits carry that identity through the
-          # GitHub noreply address: it attributes and counts exactly like a real
-          # one, but code search finds no spammable email in this file.
+          # the solutions are the account owner's, so sync commits carry the owner's commit identity.
           if [ -n "$SIGNING_KEY" ]; then
             printf '%s\n' "$SIGNING_KEY" > ~/.sign_key && chmod 600 ~/.sign_key
             ssh-keygen -y -f ~/.sign_key > ~/.sign_key.pub
