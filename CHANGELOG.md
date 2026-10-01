@@ -9,6 +9,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Sync commits use the automation identity, since each submission is already credited in its source repo.
 - Tidied code comments.
 - Markdown linting skips the synced `leetcode/`, `neetcode/` and `codeforces/` folders, which every sync regenerates from the submission repos.
 - Profile links now use my current handles: LeetCode `zaccessss` and NeetCode at `neetcode.io/user/SleekGenin452`.
