@@ -22,7 +22,7 @@ class Solution:
                 if board[row][col] == "X":
                     continue
 
-                # skipped S because I already initialized it.
+                # skipped S because it is already initialised.
                 if row == n - 1 and col == n - 1:
                     continue
 
@@ -64,7 +64,7 @@ class Solution:
                 dpScore[row][col] = bestScore + value
                 dpWays[row][col] = ways
 
-        # if E is unreachable, I returned [0, 0].
+        # if E is unreachable, return [0, 0].
         if dpWays[0][0] == 0:
             return [0, 0]
 

@@ -1,0 +1,6 @@
+{
+  // the platform folders are read-only copies synced from the submission
+  // repos, which keep their own lint config. LeetHub and NeetCode regenerate
+  // these files on every submission, so they are not linted here.
+  "ignores": ["leetcode/**", "neetcode/**", "codeforces/**"]
+}

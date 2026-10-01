@@ -1,7 +1,7 @@
 # scan this repository for hard-coded secrets and credentials on every push to main and every PR
 # targeting main. sync.yml here handles the SOURCES_TOKEN read-only fine-grained token and the
-# CI_SIGNING_KEY commit-signing key, so I want a tripwire that fails loudly if a secret ever gets
-# committed by mistake. I install a pinned gitleaks binary directly rather than the action wrapper,
+# CI_SIGNING_KEY commit-signing key, so a tripwire fails loudly if a secret ever gets
+# committed by mistake. A pinned gitleaks binary is installed directly rather than the action wrapper,
 # which needs a paid licence for SARIF upload on private repos.
 
 name: Gitleaks Scan
@@ -12,7 +12,7 @@ on:
   pull_request:
     branches: [main]
 
-# least privilege, I only need to read the repository contents to scan them.
+# least privilege, the job only needs to read the repository contents to scan them.
 permissions:
   contents: read
 
