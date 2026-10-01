@@ -103,7 +103,8 @@ jobs:
           fi
 
           msg="$(printf '%s, ' "${parts[@]}")"
-          # the solutions are the account owner's, so sync commits carry the owner's commit identity.
+          # sync commits are automated copies, so they carry the bot identity. The submissions
+          # themselves are already credited to the owner in the source repos.
           if [ -n "$SIGNING_KEY" ]; then
             printf '%s\n' "$SIGNING_KEY" > ~/.sign_key && chmod 600 ~/.sign_key
             ssh-keygen -y -f ~/.sign_key > ~/.sign_key.pub
@@ -111,8 +112,8 @@ jobs:
             git config user.signingkey ~/.sign_key.pub
             git config commit.gpgsign true
           fi
-          git config user.name "Isaac Adjei"
-          git config user.email "code@isaacadjei.me"
+          git config user.name "Zac Bot"
+          git config user.email "automation@isaacadjei.me"
           git commit --quiet -m "sync: ${msg%, }"
 
           # bursty repository_dispatch events can still let two sync runs race to
