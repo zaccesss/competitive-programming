@@ -1,8 +1,8 @@
 name: Sync
 
-# aggregate my three submission repos into this one. Each platform keeps its own
+# aggregate the three submission repos into this one. Each platform keeps its own
 # source repo as the write target (LeetHub pushes LeetCode, the official NeetCode
-# GitHub Sync pushes NeetCode, my own scripts push Codeforces) and this workflow
+# GitHub Sync pushes NeetCode, separate scripts push Codeforces) and this workflow
 # copies each source into its platform folder here, so the whole archive is
 # browsable in one place. The source repos stay the systems of record.
 on:
@@ -103,9 +103,7 @@ jobs:
           fi
 
           msg="$(printf '%s, ' "${parts[@]}")"
-          # the solutions are mine, so sync commits carry my identity. I use my
-          # GitHub noreply address: it attributes and counts exactly like my real
-          # one, but code search finds no spammable email in this file.
+          # the solutions are the account owner's, so sync commits carry the owner's commit identity.
           if [ -n "$SIGNING_KEY" ]; then
             printf '%s\n' "$SIGNING_KEY" > ~/.sign_key && chmod 600 ~/.sign_key
             ssh-keygen -y -f ~/.sign_key > ~/.sign_key.pub
