@@ -8,7 +8,7 @@ def assign_edge_weights(edges, queries)
 
     n = edges.length + 1
 
-    # used adjacency list for the tree.
+    # Used adjacency list for the tree.
     graph = Array.new(n + 1) { [] }
 
     edges.each do |u, v|
@@ -17,15 +17,15 @@ def assign_edge_weights(edges, queries)
         graph[v] << u
     end
 
-    # used depth to store node depths.
+    # Used depth to store node depths.
     depth = Array.new(n + 1, 0)
 
-    # used binary lifting table.
+    # Used binary lifting table.
     up = Array.new(log) do
         Array.new(n + 1, 0)
     end
 
-    # built depths and parents with BFS.
+    # Built depths and parents with BFS.
     queue = [1]
 
     visited = Array.new(n + 1, false)
@@ -55,7 +55,7 @@ def assign_edge_weights(edges, queries)
         end
     end
 
-    # built binary lifting table.
+    # Built binary lifting table.
     (1...log).each do |k|
 
         (1..n).each do |node|
@@ -67,7 +67,7 @@ def assign_edge_weights(edges, queries)
         end
     end
 
-    # precomputed powers of 2 modulo mod.
+    # Precomputed powers of 2 modulo mod.
     pow2 = Array.new(n + 1, 1)
 
     (1..n).each do |i|
@@ -76,7 +76,7 @@ def assign_edge_weights(edges, queries)
             (pow2[i - 1] * 2) % mod
     end
 
-    # used LCA to find lowest common ancestor.
+    # Used LCA to find lowest common ancestor.
     lca = lambda do |a, b|
 
         if depth[a] < depth[b]
@@ -107,7 +107,7 @@ def assign_edge_weights(edges, queries)
         up[0][a]
     end
 
-    # processed all queries.
+    # Processed all queries.
     answer = []
 
     queries.each do |u, v|
