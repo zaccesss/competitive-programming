@@ -9,6 +9,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Community files follow the [AI policy](https://github.com/zaccesss/ai-policy): pull requests declare AI use and issue forms ask whether AI helped. Security reports go to security@isaacadjei.me.
 - Sync commits use the automation identity, since each submission is already credited in its source repo.
 - Tidied code comments.
 - Markdown linting skips the synced `leetcode/`, `neetcode/` and `codeforces/` folders, which every sync regenerates from the submission repos.
