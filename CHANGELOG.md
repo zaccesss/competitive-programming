@@ -7,6 +7,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `CODEOWNERS` and `SUPPORT.md`, matching the rest of the fleet
+- `.markdownlint.json`, `.github/workflows/markdownlint.yml` and its own `.github/workflows/README.md`, scoped to the root docs and `.github/` only since the platform folders are synced snapshots overwritten on the next run
+- YAML issue forms for bug reports and enhancements plus a pull request template
+- `.github/ISSUE_TEMPLATE/config.yml` disabling the blank issue option, pointing to the security policy and code@isaacadjei.me instead
+
 ### Changed
 
 - Community files follow the [AI policy](https://github.com/zaccesss/ai-policy): pull requests declare AI use and issue forms ask whether AI helped. Security reports go to security@isaacadjei.me.
@@ -17,18 +24,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `sync.yml` now excludes each source's CODEOWNERS, CODE_OF_CONDUCT.md, SECURITY.md, SUPPORT.md, CHANGELOG.md and `.markdownlint.json`, since this repo already carries its own copy of each at the root
 - `sync.yml` also excludes codeforces-submissions' `scripts/`, `.vscode/`, `.gitignore` and `bin/`, local build tooling and editor config rather than solution content. Removed the same four already-synced paths from `codeforces/` here
 - An hourly sync ran between drafting this fix and merging it, landing all six hygiene files across `codeforces/`, `leetcode/` and `neetcode/`. Removed all 18
-
-### Added
-
-- `CODEOWNERS` and `SUPPORT.md`, matching the rest of the fleet
-- `.markdownlint.json`, `.github/workflows/markdownlint.yml` and its own `.github/workflows/README.md`, scoped to the root docs and `.github/` only since the platform folders are synced snapshots overwritten on the next run
-- YAML issue forms for bug reports and enhancements plus a pull request template
-- `.github/ISSUE_TEMPLATE/config.yml` disabling the blank issue option, pointing to the security policy and code@isaacadjei.me instead
-
-### Changed
-
 - The Contact and Support section in the README now points to `SUPPORT.md` and `SECURITY.md` as callouts instead of plain prose
 - The top badge row and footer now use flat CI and licence shields instead of the old chunky Portfolio/LinkedIn/Email and platform badges, matching the rest of the fleet
+- The README says all three source repositories are private.
+- The contact address in the README, `SUPPORT.md` and the issue template config is contact@isaacadjei.me.
+- Routine tidy-up.
 
 ---
 

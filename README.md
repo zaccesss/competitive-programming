@@ -2,16 +2,16 @@
 
 > **One repo. Three platforms.** Every Codeforces, LeetCode and NeetCode solution I write, synced automatically into a single long-term archive.
 
-[![Sync](https://github.com/zaccesss/competitive-programming/actions/workflows/sync.yml/badge.svg)](https://github.com/zaccesss/competitive-programming/actions/workflows/sync.yml)
 [![Markdown Lint](https://github.com/zaccesss/competitive-programming/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/zaccesss/competitive-programming/actions/workflows/markdownlint.yml)
 [![Gitleaks](https://github.com/zaccesss/competitive-programming/actions/workflows/gitleaks-scan.yml/badge.svg)](https://github.com/zaccesss/competitive-programming/actions/workflows/gitleaks-scan.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-green.svg)](LICENSE)
+[![Sync](https://github.com/zaccesss/competitive-programming/actions/workflows/sync.yml/badge.svg)](https://github.com/zaccesss/competitive-programming/actions/workflows/sync.yml)
 
 ---
 
 ## About
 
-This repository is the single place to browse all of my competitive programming work. I never commit solutions here directly. Instead, each platform has its own source repo that the platform tooling writes to - codeforces and leetcode private, neetcode public because its sync tool cannot reach private repositories - and a sync workflow clones them with a read-only token and copies every source into its platform folder here. This archive is the public face of the whole collection.
+This repository is the single place to browse all of my competitive programming work. I never commit solutions here directly. Instead, each platform has its own private source repo that the platform tooling writes to and a sync workflow clones them with a read-only token and copies every source into its platform folder here. This archive is the public face of the whole collection.
 
 That split is deliberate. LeetHub and the NeetCode GitHub Sync each expect to own a whole repository, so they keep their own. This repo adds the part they cannot do: one archive, one structure, one place to send people.
 
@@ -125,7 +125,7 @@ New languages appear here automatically the moment a solution in one lands in a 
 Open an [issue](https://github.com/zaccesss/competitive-programming/issues) in this repository for questions or bugs. See [SUPPORT.md](SUPPORT.md) for the full breakdown of where to go.
 
 > [!TIP]
-> Reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or via my [website contact page](https://isaacadjei.me/contact).
+> Reach me directly at [contact@isaacadjei.me](mailto:contact@isaacadjei.me) or via my [website contact page](https://isaacadjei.me/contact).
 
 > [!IMPORTANT]
 > For a security issue, follow [SECURITY.md](SECURITY.md) rather than posting publicly.
