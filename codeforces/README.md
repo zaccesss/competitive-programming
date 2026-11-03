@@ -3,7 +3,7 @@
 > **@zaccesss** · Solutions pushed manually after each contest or practice session
 
 [![Markdown Lint](https://github.com/zaccesss/codeforces-submissions/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/zaccesss/codeforces-submissions/actions/workflows/markdownlint.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-green.svg)](LICENSE)
 
 ---
 
@@ -102,7 +102,7 @@ VS Code users can also run the default build task with `Ctrl+Shift+B`.
 Open an [issue](https://github.com/zaccesss/codeforces-submissions/issues) in this repository for questions or bugs. See [SUPPORT.md](SUPPORT.md) for the full breakdown of where to go.
 
 > [!TIP]
-> Reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
+> Reach me directly at [contact@isaacadjei.me](mailto:contact@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
 
 > [!IMPORTANT]
 > For a security issue, follow [SECURITY.md](SECURITY.md) rather than posting publicly.
