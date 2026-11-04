@@ -3,7 +3,7 @@
 > **@zaccessss** · Accepted submissions synced automatically via LeetHub v2
 
 [![Markdown Lint](https://github.com/zaccesss/leetcode-submissions/actions/workflows/markdownlint.yml/badge.svg)](https://github.com/zaccesss/leetcode-submissions/actions/workflows/markdownlint.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-green.svg)](LICENSE)
 
 ---
 
@@ -81,7 +81,7 @@ Solutions prioritise clarity and understanding over cleverness. The point is to 
 Open an [issue](https://github.com/zaccesss/leetcode-submissions/issues) in this repository for questions or bugs. See [SUPPORT.md](SUPPORT.md) for the full breakdown of where to go.
 
 > [!TIP]
-> Reach me directly at [code@isaacadjei.me](mailto:code@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
+> Reach me directly at [contact@isaacadjei.me](mailto:contact@isaacadjei.me) or through the [website contact page](https://isaacadjei.me/contact).
 
 > [!IMPORTANT]
 > For a security issue, follow [SECURITY.md](SECURITY.md) rather than posting publicly.
@@ -95,22 +95,22 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 ## Array
 |  |
 | ------- |
-| [0001-two-sum](https://github.com/zaccessss/leetcode-submissions/tree/master/0001-two-sum) |
-| [0014-longest-common-prefix](https://github.com/zaccessss/leetcode-submissions/tree/master/0014-longest-common-prefix) |
-| [0027-remove-element](https://github.com/zaccessss/leetcode-submissions/tree/master/0027-remove-element) |
+| [0001-two-sum](https://github.com/zaccesss/leetcode-submissions/tree/master/0001-two-sum) |
+| [0014-longest-common-prefix](https://github.com/zaccesss/leetcode-submissions/tree/master/0014-longest-common-prefix) |
+| [0027-remove-element](https://github.com/zaccesss/leetcode-submissions/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/zaccesss/leetcode-submissions/tree/master/0033-search-in-rotated-sorted-array) |
-| [0048-rotate-image](https://github.com/zaccessss/leetcode-submissions/tree/master/0048-rotate-image) |
-| [0049-group-anagrams](https://github.com/zaccessss/leetcode-submissions/tree/master/0049-group-anagrams) |
-| [0075-sort-colors](https://github.com/zaccessss/leetcode-submissions/tree/master/0075-sort-colors) |
+| [0048-rotate-image](https://github.com/zaccesss/leetcode-submissions/tree/master/0048-rotate-image) |
+| [0049-group-anagrams](https://github.com/zaccesss/leetcode-submissions/tree/master/0049-group-anagrams) |
+| [0075-sort-colors](https://github.com/zaccesss/leetcode-submissions/tree/master/0075-sort-colors) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/zaccesss/leetcode-submissions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
-| [0169-majority-element](https://github.com/zaccessss/leetcode-submissions/tree/master/0169-majority-element) |
-| [0217-contains-duplicate](https://github.com/zaccessss/leetcode-submissions/tree/master/0217-contains-duplicate) |
-| [0304-range-sum-query-2d-immutable](https://github.com/zaccessss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
-| [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
-| [0396-rotate-function](https://github.com/zaccessss/leetcode-submissions/tree/master/0396-rotate-function) |
-| [0705-design-hashset](https://github.com/zaccessss/leetcode-submissions/tree/master/0705-design-hashset) |
-| [0706-design-hashmap](https://github.com/zaccessss/leetcode-submissions/tree/master/0706-design-hashmap) |
+| [0169-majority-element](https://github.com/zaccesss/leetcode-submissions/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/zaccesss/leetcode-submissions/tree/master/0217-contains-duplicate) |
+| [0304-range-sum-query-2d-immutable](https://github.com/zaccesss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
+| [0347-top-k-frequent-elements](https://github.com/zaccesss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [0396-rotate-function](https://github.com/zaccesss/leetcode-submissions/tree/master/0396-rotate-function) |
+| [0705-design-hashset](https://github.com/zaccesss/leetcode-submissions/tree/master/0705-design-hashset) |
+| [0706-design-hashmap](https://github.com/zaccesss/leetcode-submissions/tree/master/0706-design-hashmap) |
 | [1288-remove-covered-intervals](https://github.com/zaccesss/leetcode-submissions/tree/master/1288-remove-covered-intervals) |
 | [1301-number-of-paths-with-max-score](https://github.com/zaccesss/leetcode-submissions/tree/master/1301-number-of-paths-with-max-score) |
 | [1306-jump-game-iii](https://github.com/zaccesss/leetcode-submissions/tree/master/1306-jump-game-iii) |
@@ -120,19 +120,19 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/zaccesss/leetcode-submissions/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/zaccesss/leetcode-submissions/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/zaccesss/leetcode-submissions/tree/master/1752-check-if-array-is-sorted-and-rotated) |
-| [1861-rotating-the-box](https://github.com/zaccessss/leetcode-submissions/tree/master/1861-rotating-the-box) |
-| [1914-cyclically-rotating-a-grid](https://github.com/zaccessss/leetcode-submissions/tree/master/1914-cyclically-rotating-a-grid) |
-| [1929-concatenation-of-array](https://github.com/zaccessss/leetcode-submissions/tree/master/1929-concatenation-of-array) |
+| [1861-rotating-the-box](https://github.com/zaccesss/leetcode-submissions/tree/master/1861-rotating-the-box) |
+| [1914-cyclically-rotating-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/1914-cyclically-rotating-a-grid) |
+| [1929-concatenation-of-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1929-concatenation-of-array) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2126-destroying-asteroids](https://github.com/zaccesss/leetcode-submissions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/zaccesss/leetcode-submissions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/zaccesss/leetcode-submissions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/zaccesss/leetcode-submissions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2540-minimum-common-value](https://github.com/zaccesss/leetcode-submissions/tree/master/2540-minimum-common-value) |
-| [2553-separate-the-digits-in-an-array](https://github.com/zaccessss/leetcode-submissions/tree/master/2553-separate-the-digits-in-an-array) |
+| [2553-separate-the-digits-in-an-array](https://github.com/zaccesss/leetcode-submissions/tree/master/2553-separate-the-digits-in-an-array) |
 | [2574-left-and-right-sum-differences](https://github.com/zaccesss/leetcode-submissions/tree/master/2574-left-and-right-sum-differences) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/zaccesss/leetcode-submissions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
-| [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/zaccessss/leetcode-submissions/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
+| [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/zaccesss/leetcode-submissions/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [2784-check-if-array-is-good](https://github.com/zaccesss/leetcode-submissions/tree/master/2784-check-if-array-is-good) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/zaccesss/leetcode-submissions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
@@ -146,10 +146,10 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
-| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccesss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
-| [3660-jump-game-ix](https://github.com/zaccessss/leetcode-submissions/tree/master/3660-jump-game-ix) |
+| [3660-jump-game-ix](https://github.com/zaccesss/leetcode-submissions/tree/master/3660-jump-game-ix) |
 | [3689-maximum-total-subarray-value-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3689-maximum-total-subarray-value-i) |
 | [3691-maximum-total-subarray-value-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3838-weighted-word-mapping](https://github.com/zaccesss/leetcode-submissions/tree/master/3838-weighted-word-mapping) |
@@ -157,14 +157,14 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 ## Hash Table
 |  |
 | ------- |
-| [0001-two-sum](https://github.com/zaccessss/leetcode-submissions/tree/master/0001-two-sum) |
-| [0049-group-anagrams](https://github.com/zaccessss/leetcode-submissions/tree/master/0049-group-anagrams) |
-| [0169-majority-element](https://github.com/zaccessss/leetcode-submissions/tree/master/0169-majority-element) |
-| [0217-contains-duplicate](https://github.com/zaccessss/leetcode-submissions/tree/master/0217-contains-duplicate) |
-| [0242-valid-anagram](https://github.com/zaccessss/leetcode-submissions/tree/master/0242-valid-anagram) |
-| [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
-| [0705-design-hashset](https://github.com/zaccessss/leetcode-submissions/tree/master/0705-design-hashset) |
-| [0706-design-hashmap](https://github.com/zaccessss/leetcode-submissions/tree/master/0706-design-hashmap) |
+| [0001-two-sum](https://github.com/zaccesss/leetcode-submissions/tree/master/0001-two-sum) |
+| [0049-group-anagrams](https://github.com/zaccesss/leetcode-submissions/tree/master/0049-group-anagrams) |
+| [0169-majority-element](https://github.com/zaccesss/leetcode-submissions/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/zaccesss/leetcode-submissions/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/zaccesss/leetcode-submissions/tree/master/0242-valid-anagram) |
+| [0347-top-k-frequent-elements](https://github.com/zaccesss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [0705-design-hashset](https://github.com/zaccesss/leetcode-submissions/tree/master/0705-design-hashset) |
+| [0706-design-hashmap](https://github.com/zaccesss/leetcode-submissions/tree/master/0706-design-hashmap) |
 | [1331-rank-transform-of-an-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1331-rank-transform-of-an-array) |
 | [1345-jump-game-iv](https://github.com/zaccesss/leetcode-submissions/tree/master/1345-jump-game-iv) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/zaccesss/leetcode-submissions/tree/master/1674-minimum-moves-to-make-array-complementary) |
@@ -177,16 +177,16 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 | [3121-count-the-number-of-special-characters-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3532-path-existence-queries-in-a-graph-i) |
-| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccesss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Sorting
 |  |
 | ------- |
-| [0049-group-anagrams](https://github.com/zaccessss/leetcode-submissions/tree/master/0049-group-anagrams) |
-| [0075-sort-colors](https://github.com/zaccessss/leetcode-submissions/tree/master/0075-sort-colors) |
-| [0169-majority-element](https://github.com/zaccessss/leetcode-submissions/tree/master/0169-majority-element) |
-| [0217-contains-duplicate](https://github.com/zaccessss/leetcode-submissions/tree/master/0217-contains-duplicate) |
-| [0242-valid-anagram](https://github.com/zaccessss/leetcode-submissions/tree/master/0242-valid-anagram) |
-| [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [0049-group-anagrams](https://github.com/zaccesss/leetcode-submissions/tree/master/0049-group-anagrams) |
+| [0075-sort-colors](https://github.com/zaccesss/leetcode-submissions/tree/master/0075-sort-colors) |
+| [0169-majority-element](https://github.com/zaccesss/leetcode-submissions/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/zaccesss/leetcode-submissions/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/zaccesss/leetcode-submissions/tree/master/0242-valid-anagram) |
+| [0347-top-k-frequent-elements](https://github.com/zaccesss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
 | [1288-remove-covered-intervals](https://github.com/zaccesss/leetcode-submissions/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1331-rank-transform-of-an-array) |
 | [1340-jump-game-v](https://github.com/zaccesss/leetcode-submissions/tree/master/1340-jump-game-v) |
@@ -201,19 +201,19 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 ## Simulation
 |  |
 | ------- |
-| [1914-cyclically-rotating-a-grid](https://github.com/zaccessss/leetcode-submissions/tree/master/1914-cyclically-rotating-a-grid) |
-| [1929-concatenation-of-array](https://github.com/zaccessss/leetcode-submissions/tree/master/1929-concatenation-of-array) |
+| [1914-cyclically-rotating-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/1914-cyclically-rotating-a-grid) |
+| [1929-concatenation-of-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1929-concatenation-of-array) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/zaccesss/leetcode-submissions/tree/master/2161-partition-array-according-to-given-pivot) |
-| [2553-separate-the-digits-in-an-array](https://github.com/zaccessss/leetcode-submissions/tree/master/2553-separate-the-digits-in-an-array) |
+| [2553-separate-the-digits-in-an-array](https://github.com/zaccesss/leetcode-submissions/tree/master/2553-separate-the-digits-in-an-array) |
 | [3838-weighted-word-mapping](https://github.com/zaccesss/leetcode-submissions/tree/master/3838-weighted-word-mapping) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/zaccesss/leetcode-submissions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## String
 |  |
 | ------- |
-| [0014-longest-common-prefix](https://github.com/zaccessss/leetcode-submissions/tree/master/0014-longest-common-prefix) |
-| [0049-group-anagrams](https://github.com/zaccessss/leetcode-submissions/tree/master/0049-group-anagrams) |
-| [0242-valid-anagram](https://github.com/zaccessss/leetcode-submissions/tree/master/0242-valid-anagram) |
-| [0796-rotate-string](https://github.com/zaccessss/leetcode-submissions/tree/master/0796-rotate-string) |
+| [0014-longest-common-prefix](https://github.com/zaccesss/leetcode-submissions/tree/master/0014-longest-common-prefix) |
+| [0049-group-anagrams](https://github.com/zaccesss/leetcode-submissions/tree/master/0049-group-anagrams) |
+| [0242-valid-anagram](https://github.com/zaccesss/leetcode-submissions/tree/master/0242-valid-anagram) |
+| [0796-rotate-string](https://github.com/zaccesss/leetcode-submissions/tree/master/0796-rotate-string) |
 | [1871-jump-game-vii](https://github.com/zaccesss/leetcode-submissions/tree/master/1871-jump-game-vii) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/zaccesss/leetcode-submissions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3093-longest-common-suffix-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3093-longest-common-suffix-queries) |
@@ -224,15 +224,15 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 ## Trie
 |  |
 | ------- |
-| [0014-longest-common-prefix](https://github.com/zaccessss/leetcode-submissions/tree/master/0014-longest-common-prefix) |
+| [0014-longest-common-prefix](https://github.com/zaccesss/leetcode-submissions/tree/master/0014-longest-common-prefix) |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/zaccesss/leetcode-submissions/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3093-longest-common-suffix-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3093-longest-common-suffix-queries) |
 ## Two Pointers
 |  |
 | ------- |
-| [0027-remove-element](https://github.com/zaccessss/leetcode-submissions/tree/master/0027-remove-element) |
-| [0075-sort-colors](https://github.com/zaccessss/leetcode-submissions/tree/master/0075-sort-colors) |
-| [1861-rotating-the-box](https://github.com/zaccessss/leetcode-submissions/tree/master/1861-rotating-the-box) |
+| [0027-remove-element](https://github.com/zaccesss/leetcode-submissions/tree/master/0027-remove-element) |
+| [0075-sort-colors](https://github.com/zaccesss/leetcode-submissions/tree/master/0075-sort-colors) |
+| [1861-rotating-the-box](https://github.com/zaccesss/leetcode-submissions/tree/master/1861-rotating-the-box) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/zaccesss/leetcode-submissions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2540-minimum-common-value](https://github.com/zaccesss/leetcode-submissions/tree/master/2540-minimum-common-value) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
@@ -242,18 +242,18 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 ## Divide and Conquer
 |  |
 | ------- |
-| [0169-majority-element](https://github.com/zaccessss/leetcode-submissions/tree/master/0169-majority-element) |
-| [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [0169-majority-element](https://github.com/zaccesss/leetcode-submissions/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/zaccesss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
 ## Counting
 |  |
 | ------- |
-| [0169-majority-element](https://github.com/zaccessss/leetcode-submissions/tree/master/0169-majority-element) |
-| [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [0169-majority-element](https://github.com/zaccesss/leetcode-submissions/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/zaccesss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
 | [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
-| [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [0347-top-k-frequent-elements](https://github.com/zaccesss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
@@ -261,39 +261,39 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 ## Bucket Sort
 |  |
 | ------- |
-| [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [0347-top-k-frequent-elements](https://github.com/zaccesss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
 ## Quickselect
 |  |
 | ------- |
-| [0347-top-k-frequent-elements](https://github.com/zaccessss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
+| [0347-top-k-frequent-elements](https://github.com/zaccesss/leetcode-submissions/tree/master/0347-top-k-frequent-elements) |
 ## Linked List
 |  |
 | ------- |
-| [0705-design-hashset](https://github.com/zaccessss/leetcode-submissions/tree/master/0705-design-hashset) |
-| [0706-design-hashmap](https://github.com/zaccessss/leetcode-submissions/tree/master/0706-design-hashmap) |
+| [0705-design-hashset](https://github.com/zaccesss/leetcode-submissions/tree/master/0705-design-hashset) |
+| [0706-design-hashmap](https://github.com/zaccesss/leetcode-submissions/tree/master/0706-design-hashmap) |
 ## Design
 |  |
 | ------- |
-| [0304-range-sum-query-2d-immutable](https://github.com/zaccessss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
-| [0705-design-hashset](https://github.com/zaccessss/leetcode-submissions/tree/master/0705-design-hashset) |
-| [0706-design-hashmap](https://github.com/zaccessss/leetcode-submissions/tree/master/0706-design-hashmap) |
+| [0304-range-sum-query-2d-immutable](https://github.com/zaccesss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
+| [0705-design-hashset](https://github.com/zaccesss/leetcode-submissions/tree/master/0705-design-hashset) |
+| [0706-design-hashmap](https://github.com/zaccesss/leetcode-submissions/tree/master/0706-design-hashmap) |
 ## Hash Function
 |  |
 | ------- |
-| [0705-design-hashset](https://github.com/zaccessss/leetcode-submissions/tree/master/0705-design-hashset) |
-| [0706-design-hashmap](https://github.com/zaccessss/leetcode-submissions/tree/master/0706-design-hashmap) |
+| [0705-design-hashset](https://github.com/zaccesss/leetcode-submissions/tree/master/0705-design-hashset) |
+| [0706-design-hashmap](https://github.com/zaccesss/leetcode-submissions/tree/master/0706-design-hashmap) |
 ## Math
 |  |
 | ------- |
-| [0048-rotate-image](https://github.com/zaccessss/leetcode-submissions/tree/master/0048-rotate-image) |
-| [0396-rotate-function](https://github.com/zaccessss/leetcode-submissions/tree/master/0396-rotate-function) |
-| [0788-rotated-digits](https://github.com/zaccessss/leetcode-submissions/tree/master/0788-rotated-digits) |
+| [0048-rotate-image](https://github.com/zaccesss/leetcode-submissions/tree/master/0048-rotate-image) |
+| [0396-rotate-function](https://github.com/zaccesss/leetcode-submissions/tree/master/0396-rotate-function) |
+| [0788-rotated-digits](https://github.com/zaccesss/leetcode-submissions/tree/master/0788-rotated-digits) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/zaccesss/leetcode-submissions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/zaccesss/leetcode-submissions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
-| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccesss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/zaccesss/leetcode-submissions/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3753-total-waviness-of-numbers-in-range-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3753-total-waviness-of-numbers-in-range-ii) |
@@ -303,33 +303,33 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 ## Dynamic Programming
 |  |
 | ------- |
-| [0396-rotate-function](https://github.com/zaccessss/leetcode-submissions/tree/master/0396-rotate-function) |
-| [0788-rotated-digits](https://github.com/zaccessss/leetcode-submissions/tree/master/0788-rotated-digits) |
+| [0396-rotate-function](https://github.com/zaccesss/leetcode-submissions/tree/master/0396-rotate-function) |
+| [0788-rotated-digits](https://github.com/zaccesss/leetcode-submissions/tree/master/0788-rotated-digits) |
 | [1301-number-of-paths-with-max-score](https://github.com/zaccesss/leetcode-submissions/tree/master/1301-number-of-paths-with-max-score) |
 | [1340-jump-game-v](https://github.com/zaccesss/leetcode-submissions/tree/master/1340-jump-game-v) |
 | [1871-jump-game-vii](https://github.com/zaccesss/leetcode-submissions/tree/master/1871-jump-game-vii) |
-| [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/zaccessss/leetcode-submissions/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
+| [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/zaccesss/leetcode-submissions/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/zaccesss/leetcode-submissions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
 | [3620-network-recovery-pathways](https://github.com/zaccesss/leetcode-submissions/tree/master/3620-network-recovery-pathways) |
-| [3660-jump-game-ix](https://github.com/zaccessss/leetcode-submissions/tree/master/3660-jump-game-ix) |
+| [3660-jump-game-ix](https://github.com/zaccesss/leetcode-submissions/tree/master/3660-jump-game-ix) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/zaccesss/leetcode-submissions/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3753-total-waviness-of-numbers-in-range-ii](https://github.com/zaccesss/leetcode-submissions/tree/master/3753-total-waviness-of-numbers-in-range-ii) |
 ## Matrix
 |  |
 | ------- |
-| [0048-rotate-image](https://github.com/zaccessss/leetcode-submissions/tree/master/0048-rotate-image) |
-| [0304-range-sum-query-2d-immutable](https://github.com/zaccessss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
+| [0048-rotate-image](https://github.com/zaccesss/leetcode-submissions/tree/master/0048-rotate-image) |
+| [0304-range-sum-query-2d-immutable](https://github.com/zaccesss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
 | [1301-number-of-paths-with-max-score](https://github.com/zaccesss/leetcode-submissions/tree/master/1301-number-of-paths-with-max-score) |
-| [1861-rotating-the-box](https://github.com/zaccessss/leetcode-submissions/tree/master/1861-rotating-the-box) |
-| [1914-cyclically-rotating-a-grid](https://github.com/zaccessss/leetcode-submissions/tree/master/1914-cyclically-rotating-a-grid) |
+| [1861-rotating-the-box](https://github.com/zaccesss/leetcode-submissions/tree/master/1861-rotating-the-box) |
+| [1914-cyclically-rotating-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/1914-cyclically-rotating-a-grid) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 ## Prefix Sum
 |  |
 | ------- |
-| [0304-range-sum-query-2d-immutable](https://github.com/zaccessss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
+| [0304-range-sum-query-2d-immutable](https://github.com/zaccesss/leetcode-submissions/tree/master/0304-range-sum-query-2d-immutable) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/zaccesss/leetcode-submissions/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1871-jump-game-vii](https://github.com/zaccesss/leetcode-submissions/tree/master/1871-jump-game-vii) |
 | [2574-left-and-right-sum-differences](https://github.com/zaccesss/leetcode-submissions/tree/master/2574-left-and-right-sum-differences) |
@@ -338,7 +338,7 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 ## String Matching
 |  |
 | ------- |
-| [0796-rotate-string](https://github.com/zaccessss/leetcode-submissions/tree/master/0796-rotate-string) |
+| [0796-rotate-string](https://github.com/zaccesss/leetcode-submissions/tree/master/0796-rotate-string) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -348,14 +348,14 @@ Made by [Isaac Adjei](https://isaacadjei.me).
 | [2685-count-the-number-of-complete-components](https://github.com/zaccesss/leetcode-submissions/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/zaccesss/leetcode-submissions/tree/master/3286-find-a-safe-walk-through-a-grid) |
-| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccesss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Number Theory
 |  |
 | ------- |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/zaccesss/leetcode-submissions/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [3312-sorted-gcd-pair-queries](https://github.com/zaccesss/leetcode-submissions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/zaccesss/leetcode-submissions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
-| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccessss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/zaccesss/leetcode-submissions/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/zaccesss/leetcode-submissions/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/zaccesss/leetcode-submissions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Greedy
