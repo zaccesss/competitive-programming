@@ -98,14 +98,14 @@ Roadmap-based preparation. Organised by course topic, then problem, with every a
 
 | Icon | Language | Extension | Where it shows up |
 |:---:|---|---|---|
-| <img src="https://techstack-generator.vercel.app/python-icon.svg" width="28" alt="Python icon" /> | Python | `.py` | Primary language on LeetCode and NeetCode |
-| <img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="28" alt="C++ icon" /> | C++ | `.cpp` | Primary language on Codeforces |
-| <img src="https://techstack-generator.vercel.app/java-icon.svg" width="28" alt="Java icon" /> | Java | `.java` | Interview crossover problems |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/python-icon.svg" width="28" alt="Python icon" /> | Python | `.py` | Primary language on LeetCode and NeetCode |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/cpp-icon.svg" width="28" alt="C++ icon" /> | C++ | `.cpp` | Primary language on Codeforces |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/java-icon.svg" width="28" alt="Java icon" /> | Java | `.java` | Interview crossover problems |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="28" alt="Kotlin icon" /> | Kotlin | `.kt` | Modern JVM rounds |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="28" alt="C icon" /> | C | `.c` | Low-level practice |
-| <img src="https://techstack-generator.vercel.app/csharp-icon.svg" width="28" alt="C sharp icon" /> | C# | `.cs` | Enterprise interview rounds |
-| <img src="https://techstack-generator.vercel.app/js-icon.svg" width="28" alt="JavaScript icon" /> | JavaScript | `.js` | Frontend and full-stack rounds |
-| <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="28" alt="TypeScript icon" /> | TypeScript | `.ts` | Typed full-stack rounds |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/csharp-icon.svg" width="28" alt="C sharp icon" /> | C# | `.cs` | Enterprise interview rounds |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/js-icon.svg" width="28" alt="JavaScript icon" /> | JavaScript | `.js` | Frontend and full-stack rounds |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/ts-icon.svg" width="28" alt="TypeScript icon" /> | TypeScript | `.ts` | Typed full-stack rounds |
 
 New languages appear here automatically the moment a solution in one lands in a source repo - there is nothing to configure.
 
