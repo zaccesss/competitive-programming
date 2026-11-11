@@ -71,9 +71,9 @@ VS Code users can also run the default build task with `Ctrl+Shift+B`.
 
 | Icon | Language | Extension | Notes |
 |:---:|---|---|---|
-| <img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="28"/> | C++ | `.cpp` | Primary language for competitive programming |
-| <img src="https://techstack-generator.vercel.app/python-icon.svg" width="28"/> | Python | `.py` | Occasionally used for simpler problems |
-| <img src="https://techstack-generator.vercel.app/java-icon.svg" width="28"/> | Java | `.java` | Used when practising interview crossover problems |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/cpp-icon.svg" width="28"/> | C++ | `.cpp` | Primary language for competitive programming |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/python-icon.svg" width="28"/> | Python | `.py` | Occasionally used for simpler problems |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/java-icon.svg" width="28"/> | Java | `.java` | Used when practising interview crossover problems |
 
 ---
 
