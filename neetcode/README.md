@@ -41,14 +41,14 @@ Python For Beginners/python-hello-world/submission-0.py
 
 | Icon | Language | Extension |
 |:---:|---|---|
-| <img src="https://techstack-generator.vercel.app/python-icon.svg" width="28"/> | Python | `.py` |
-| <img src="https://techstack-generator.vercel.app/java-icon.svg" width="28"/> | Java | `.java` |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/python-icon.svg" width="28"/> | Python | `.py` |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/java-icon.svg" width="28"/> | Java | `.java` |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="28"/> | Kotlin | `.kt` |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="28"/> | C | `.c` |
-| <img src="https://techstack-generator.vercel.app/cpp-icon.svg" width="28"/> | C++ | `.cpp` |
-| <img src="https://techstack-generator.vercel.app/csharp-icon.svg" width="28"/> | C# | `.cs` |
-| <img src="https://techstack-generator.vercel.app/js-icon.svg" width="28"/> | JavaScript | `.js` |
-| <img src="https://techstack-generator.vercel.app/ts-icon.svg" width="28"/> | TypeScript | `.ts` |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/cpp-icon.svg" width="28"/> | C++ | `.cpp` |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/csharp-icon.svg" width="28"/> | C# | `.cs` |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/js-icon.svg" width="28"/> | JavaScript | `.js` |
+| <img src="https://cdn.jsdelivr.net/gh/qkrdmstlr3/techstack-generator@1a8656741692dfe08effc82600f4d0d4bb87d420/static/ts-icon.svg" width="28"/> | TypeScript | `.ts` |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" width="28"/> | Rust | `.rs` |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="28"/> | Go | `.go` |
 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="28"/> | SQL | `.sql` |

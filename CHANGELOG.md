@@ -30,6 +30,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - The contact address in the README, `SUPPORT.md` and the issue template config is contact@isaacadjei.me.
 - Routine tidy-up.
 
+### Fixed
+
+- The README stack icons load from the icon project's own repository at a fixed commit. The old host refuses every request.
+
 ---
 
 ## [v1.1.4] - 2026-08-05
